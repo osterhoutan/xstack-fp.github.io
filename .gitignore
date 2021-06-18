@@ -1,5 +1,6 @@
 .vscode/
 .mypy_cache/
+_site/
 **/desktop.ini
 .sass-cache/
 .jekyll-cache/
