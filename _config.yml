@@ -53,8 +53,8 @@ gems:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-maps
   - jekyll-scholar
+  # - jekyll-maps
 
 paginate: 6
 paginate_path: "/blog/page:num/"
@@ -66,9 +66,9 @@ jekyll-mentions:
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old, scripts, par_site_tar.gz, fv_site_tar.gz, update_log.txt]
 
 
-maps:
-  google:
-      api_key: AIzaSyCUws1pOq7EnOvKS3niZxdzi3gVQajQhws
+# maps:
+#   google:
+#       api_key: AIzaSyCUws1pOq7EnOvKS3niZxdzi3gVQajQhws
 
 scholar:
   style: chicago-annotated-bibliography
