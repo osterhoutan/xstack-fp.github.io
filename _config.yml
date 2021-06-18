@@ -16,7 +16,7 @@ defaults:
     author:
 
 # Jekyll
-theme:              jekyll-theme-slate
+# theme:              jekyll-theme-slate
 permalink:          /blog/:title/
 markdown:           kramdown
 highlighter:        rouge
