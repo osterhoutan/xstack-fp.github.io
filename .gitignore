@@ -1,7 +1,6 @@
 .vscode/
 .mypy_cache/
 **/desktop.ini
-_site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata

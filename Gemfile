@@ -8,5 +8,5 @@ gem 'jekyll-feed'
 gem 'jekyll-paginate'
 
 
-gem 'jekyll-maps'
+#gem 'jekyll-maps'
 gem 'jekyll-scholar'
