@@ -1,7 +1,7 @@
 # Site
-title:              ${ProjName}
-bio:                'This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the ${ProjName} project.'
-description:        "This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the ${ProjName} project."
+title:              Formal Verification at Utah
+bio:                'This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance.'
+description:        "This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance."
 locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
@@ -16,7 +16,6 @@ defaults:
     author:
 
 # Jekyll
-theme:              jekyll-theme-slate
 permalink:          /blog/:title/
 markdown:           kramdown
 highlighter:        rouge
