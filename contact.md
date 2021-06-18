@@ -1,9 +1,6 @@
 ---
 layout: page
 title: Contact
-location:
-  latitude: 40.768874
-  longitude: -111.846271
 ---
 
 Phone number: (801) 581-8224
