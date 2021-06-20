@@ -6,7 +6,6 @@ locale:             en_US
 baseurl:            "comport" # the subpath of your site, e.g. /blog #! will likely need replace me latter too
 url:                "https://osterhoutan-UofU.github.io" # the base hostname & protocol for your site #! Replace me later
 destination:        ../docs #? nessisary for github pages to know where to find the site root.
-source:             ./site-src #? nessisary for a clean build enviroment
 
 defaults:
 - scope:
