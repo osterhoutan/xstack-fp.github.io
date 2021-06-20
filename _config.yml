@@ -3,8 +3,9 @@ title:              ${ProjName}
 bio:                'This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the ${ProjName} project.'
 description:        "This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the ${ProjName} project."
 locale:             en_US
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+baseurl: "/comport" # the subpath of your site, e.g. /blog #! Replace me latter
+url: "https://osterhoutan-UofU.github.io" # the base hostname & protocol for your site
+destination         : ./docs #? nessisary for github pages to know where to find the site root.
 
 defaults:
 - scope:
@@ -39,6 +40,7 @@ analytics-id:       "default"
 twitter:            default
 facebook:           default
 instagram:          default
+# Probs replace this one with the org/project repo url
 github:             default
 
 # personal
@@ -54,10 +56,10 @@ gems:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-scholar
-  # - jekyll-maps
+  - jekyll-maps
 
 paginate: 6
-paginate_path: "/blog/page:num/"
+paginate_path: "./blog/page:num/"
 
 jekyll-mentions:
     base_url: https://github.com
