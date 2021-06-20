@@ -1,24 +1,24 @@
 # Site
-title:              ${ProjName}
-bio:                'This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the ${ProjName} project.'
-description:        "This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the ${ProjName} project."
+title:              "Comport (XStack)"
+bio:                'This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the Comport (XStack) project.'
+description:        "This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the Comport (XStack) project."
 locale:             en_US
-baseurl: "/comport" # the subpath of your site, e.g. /blog #! Replace me latter
-url: "https://osterhoutan-UofU.github.io" # the base hostname & protocol for your site
-destination         : ./docs #? nessisary for github pages to know where to find the site root.
+baseurl:            "comport" # the subpath of your site, e.g. /blog #! will likely need replace me latter too
+url:                "https://osterhoutan-UofU.github.io" # the base hostname & protocol for your site #! Replace me later
+destination:        ./docs #? nessisary for github pages to know where to find the site root.
 
 defaults:
 - scope:
     path: ''
     type: posts
   values:
-    permalink: "/blog/:title/"
+    permalink: /comport/blog/:year/:month/:day/:title/ #! Fix me later
     layout: post
     author:
 
 # Jekyll
 # theme:              jekyll-theme-slate
-permalink:          /blog/:title/
+permalink:          /comport/blog/:year/:month/:day/:title/  #! Fix me later
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
@@ -41,7 +41,7 @@ twitter:            default
 facebook:           default
 instagram:          default
 # Probs replace this one with the org/project repo url
-github:             default
+github:             default #! replace me with repo or org github url
 
 # personal
 location:           Salt Lake City, UT
@@ -58,14 +58,24 @@ gems:
   - jekyll-scholar
   - jekyll-maps
 
+plugins:
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-scholar
+  - jekyll-maps
+
+
 paginate: 6
-paginate_path: "./blog/page:num/"
+paginate_path: "/comport/blog/page:num/" #! Fix me later
 
 jekyll-mentions:
     base_url: https://github.com
 
 # Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old, scripts, par_site_tar.gz, fv_site_tar.gz, update_log.txt]
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, docs, src, vendor, CNAME, LICENSE, Rakefile, old, scripts, par_site_tar.gz, fv_site_tar.gz, update_log.txt, .vscode, .mypy_cache, update_scripts]
 
 
 # maps:
