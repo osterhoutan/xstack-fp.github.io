@@ -95,7 +95,7 @@ def string_to_entry(text, origin):
             # grab out field and value, note value may be incomplete
             field = line[0:eqi]
             value = line[eqi+1:].strip()
-            if "=" in value and "href=" not in value:
+            if "=" in value and "http" not in value:
                 print("Warning: Two '=' found on one line: '{}'".format(line))
 
             # single line values that start with '{' must end with '},'
@@ -227,7 +227,7 @@ def read_entries(filename, origins):
 
 
 def read_all_entries(filenames, origins):
-    entries = list()
+    entries:list = list()
     for filename in filenames:
         # grab all entries in each file
         print("Reading: {}".format(filename))
@@ -381,7 +381,7 @@ ord_to_month = {
 def write_out_publications(entries, filename, cpu):
     # filter to only entries of type inproceedings, article, or inbook
     publications = [e for e in entries if
-                    e["at"].lower() in {"inproceedings", "article", "inbook"}]
+                    e["at"].lower() != "comment"]
 
     if cpu:
         # cpu gets:
@@ -550,7 +550,8 @@ def main(argv):
     backend_git = argv[1]
     content_git = argv[2]
 
-    origins = [o for o in os.listdir(content_git) if path.isdir(path.join(content_git,o))]
+    origins = {o for o in os.listdir(content_git) if path.isdir(path.join(content_git,o))}
+    origins.add('')
     filenames = glob.iglob(path.join(content_git, "**/*.bib"), recursive=True)
     entries = read_all_entries(filenames, origins)
 

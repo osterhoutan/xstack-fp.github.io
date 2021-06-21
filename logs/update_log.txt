@@ -1270,3 +1270,80 @@ Configuration file: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xs
 
 
 
+
+Done updating Comport (XStack) ()
+
+
+
+git pull output:
+From github-UofU:osterhoutan-UofU/comport
+ = [up to date]      master     -> origin/master
+Already up to date.
+
+
+
+
+Updating Comport (XStack) ()
+
+update.py output:
+git pull output:
+From github-UofU:osterhoutan-UofU/comport
+ = [up to date]      master     -> origin/master
+Already up to date.
+
+
+
+
+Updating Comport (XStack) ()
+
+update.py output:
+Reading: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-content/education.bib
+Reading: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-content/people.bib
+Reading: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-content/pubs.bib
+Extra: 'note = {Accepted at HPEC; Best Student Paper Finalist}'
+Warning: Extra data at end of entry: 
+@inproceedings{rbp-hpec-submission,
+title = {Message Scheduling for Performant, Many-Core Belief Propagation},
+author = {Mark Van der Merwe and Vinu Joseph and Ganesh Gopalakrishnan},
+CATEGORY = {Parallel},
+journal = {IEEE HPEC}
+year = 2019,
+note = {Accepted at HPEC; Best Student Paper Finalist}
+url = {https://arxiv.org/abs/1909.11469}}
+
+Extra: 'url = {https://arxiv.org/abs/1909.11469}}'
+Warning: Extra data at end of entry: 
+@inproceedings{rbp-hpec-submission,
+title = {Message Scheduling for Performant, Many-Core Belief Propagation},
+author = {Mark Van der Merwe and Vinu Joseph and Ganesh Gopalakrishnan},
+CATEGORY = {Parallel},
+journal = {IEEE HPEC}
+year = 2019,
+note = {Accepted at HPEC; Best Student Paper Finalist}
+url = {https://arxiv.org/abs/1909.11469}}
+
+Reading: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-content/software.bib
+Reading: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-content/test/src-gen.bib
+Warning: Two '=' found on one line: 'abstract = {Objective: To compare the quality, relevance, and structure of drug studies published in symposium proceedings that are sponsored by drug companies with 1) articles from symposia with other sponsors and 2) articles in the peerreviewed parent journals of symposium proceedings; and to study the relation between drug company sponsorship and study outcome. Design: Cross-sectional studies of clinical drug studies published in symposium proceedings or their parent medical journals. Measurements: The proportion of articles with no methods sections (which are necessary to assess quality); methodologic quality and clinical relevance scores; and the proportion of articles with outcomes favoring the drug of interest. Results: Symposia sponsored by single drug companies had more articles without methods sections (10\%; 108 of 1064) than did symposia that had other sponsors (3\%; 58 of 2314) or symposia that had no mentioned sponsor (2\%; 29 of 1663) (P{$<$} 0.001). The mean methodologic quality and relevance scores of articles were similar both by type of sponsorship and between articles published in symposia sponsored by single drug companies and articles from the parent journals. Significantly more articles with drug company support (98\%; 39 of 40) than without drug company support (79\%; 89 of 112) had outcomes favoring the drug of interest (P = 0.01). Conclusions: Articles in symposia sponsored by single drug companies were similar in quality and clinical relevance to articles with other sponsors and to articles published in the parent journals. Articles with drug company support are more likely than articles without drug company support to have outcomes favoring the drug of interest.},'
+Warning: Two '=' found on one line: 'abstract = {The frequency with which scientists fabricate and falsify data, or commit other forms of scientific misconduct is a matter of controversy. Many surveys have asked scientists directly whether they have committed or know of a colleague who committed research misconduct, but their results appeared difficult to compare and synthesize. This is the first metaanalysis of these surveys. To standardize outcomes, the number of respondents who recalled at least one incident of misconduct was calculated for each question, and the analysis was limited to behaviours that distort scientific knowledge: fabrication, falsification, ``cooking'' of data, etc\ldots{} Survey questions on plagiarism and other forms of professional misconduct were excluded. The final sample consisted of 21 surveys that were included in the systematic review, and 18 in the meta-analysis. A pooled weighted average of 1.97\% (N = 7, 95\%CI: 0.86\textendash 4.45) of scientists admitted to have fabricated, falsified or modified data or results at least once \textendash a serious form of misconduct by any standard\textendash{} and up to 33.7\% admitted other questionable research practices. In surveys asking about the behaviour of colleagues, admission rates were 14.12\% (N = 12, 95\% CI: 9.91\textendash 19.72) for falsification, and up to 72\% for other questionable research practices. Meta-regression showed that self reports surveys, surveys using the words ``falsification'' or ``fabrication'', and mailed surveys yielded lower percentages of misconduct. When these factors were controlled for, misconduct was reported more frequently by medical/ pharmacological researchers than others. Considering that these surveys ask sensitive questions and have other limitations, it appears likely that this is a conservative estimate of the true prevalence of scientific misconduct.},'
+Warning: Two '=' found on one line: 'abstract = {Background We investigated a consecutive series of children with chronic enterocolitis and regressive developmental disorder. Methods 12 children (mean age 6 years [range 3\textendash 10], 11 boys) were referred to a paediatric gastroenterology unit with a history of normal development followed by loss of acquired skills, including language, together with diarrhoea and abdominal pain. Children underwent gastroenterological, neurological, and developmental assessment and review of developmental records. Ileocolonoscopy and biopsy sampling, magnetic-resonance imaging (MRI), electroencephalography (EEG), and lumbar puncture were done under sedation. Barium follow-through radiography was done where possible. Biochemical, haematological, and immunological profiles were examined. Findings Onset of behavioural symptoms was associated, by the parents, with measles, mumps, and rubella vaccination in eight of the 12 children, with measles infection in one child, and otitis media in another. All 12 children had intestinal abnormalities, ranging from lymphoid nodular hyperplasia to aphthoid ulceration. Histology showed patchy chronic inflammation in the colon in 11 children and reactive ileal lymphoid hyperplasia in seven, but no granulomas. Behavioural disorders included autism (nine), disintegrative psychosis (one), and possible postviral or vaccinal encephalitis (two). There were no focal neurological abnormalities and MRI and EEG tests were normal. Abnormal laboratory results were significantly raised urinary methylmalonic acid compared with agematched controls (p=0{$\cdot$}003), low haemoglobin in four children, and a low serum IgA in four children. Interpretation We identified associated gastrointestinal disease and developmental regression in a group of previously normal children, which was generally associated in time with possible environmental triggers.},'
+
+
+
+updating blog output:
+'/mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-content/test/2021-01-16-test-title.md' -> '/mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-src/_posts/2021-01-16-test-title.md'
+
+
+
+bundle exec jekyll build output:
+Configuration file: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-src/_config.yml
+            Source: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-src
+       Destination: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/docs
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 0.805 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.
+
+
+

@@ -9,10 +9,10 @@ SITE_NAME='Comport (XStack)'
 # What is the URL for the Site (must be URL complient & ommit protocall)
 SITE_URL='osterohutan-UofU.github.io/comport' #! Update me latergit
 
-# Where this file should be located in the cpu-website-backend git
-SCRIPT_DIR="$( cd "$(dirname "${BASH_SOURCE[0]}")" && pwd )"
 # The main dir of the cpu-website-backend git
-REPO_ROOT_DIR="$( cd ${SCRIPT_DIR} && pwd )"
+REPO_ROOT_DIR="$( cd "$(dirname "${BASH_SOURCE[0]}")" && pwd )"
+# Where this file should be located in the cpu-website-backend git
+SCRIPT_DIR="$( cd ${REPO_ROOT_DIR} && cd scripts && pwd )"
 # The main dir of the cpu-website git
 CONTENT_DIR="$( cd ${REPO_ROOT_DIR} && cd site-content && pwd )"
 # The location of the jekyll website directory
@@ -67,7 +67,7 @@ if [[ ${CHANGED} -eq 1 ]]; then
 	# Run the script that takes content and formats it for the backend
 	cd ${SCRIPT_DIR}
 	echo "update.py output:" |& tee -a ${LOGFILE}
-	./update.py ${SITE_SRC_DIR} ${CONTENT_DIR} |& tee -a ${LOGFILE}
+	python3 "${SCRIPT_DIR}/update.py" ${SITE_SRC_DIR} ${CONTENT_DIR} |& tee -a ${LOGFILE}
 	echo -e "\n\n" |& tee -a ${LOGFILE}
 
 	# Update blogs
