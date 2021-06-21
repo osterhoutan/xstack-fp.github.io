@@ -5,9 +5,9 @@ set -o pipefail # pipes pass failure
 
 # << FILL ME IN TO COMPETE TEMPLATE >>
 # What is the project name (must be URI compliant)
-SITE_NAME='${ProjName}'
+SITE_NAME='Comport (XStack)'
 # What is the URL for the Site (must be URL complient & ommit protocall)
-SITE_URL='${URL}'
+SITE_URL='osterohutan-UofU.github.io/comport' #! Update me latergit
 
 # Where this file should be located in the cpu-website-backend git
 SCRIPT_DIR="$( cd "$(dirname "${BASH_SOURCE[0]}")" && pwd )"
@@ -40,6 +40,9 @@ git pull |& grep -q -v 'Already up-to-date.' && CHANGED=0
 # check if local copy is up to date
 if [[ -z $( git status -s ) ]]; then
 	CHANGED=0
+else 
+	echo -e "Local Changes detected!\n"
+	CHANGED=1
 fi
 
 # if [[ ${FIRST} -eq 1 || ${CHANGED} -eq 1 ]]

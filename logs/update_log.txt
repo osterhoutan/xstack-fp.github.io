@@ -40,3 +40,38 @@ Configuration file: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xs
 
 
 
+
+Done updating ${ProjName} ()
+
+
+
+git pull output:
+From github-UofU:osterhoutan-UofU/comport
+ = [up to date]      master     -> origin/master
+Already up to date.
+
+
+
+
+Updating Comport (XStack) ()
+
+update.py output:
+
+
+
+updating blog output:
+
+
+
+bundle exec jekyll build output:
+Configuration file: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-src/_config.yml
+            Source: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-src
+       Destination: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/docs
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 0.466 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.
+
+
+
