@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://osterhoutan-uofu.github.io/comport/feed.xml" rel="self" type="application/atom+xml" /><link href="https://osterhoutan-uofu.github.io/comport/" rel="alternate" type="text/html" /><updated>2021-06-20T19:00:28-06:00</updated><id>https://osterhoutan-uofu.github.io/comport/feed.xml</id><title type="html">Comport (XStack)</title><subtitle>This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the Comport (XStack) project.</subtitle><entry><title type="html">test blog post 00</title><link href="https://osterhoutan-uofu.github.io/comport/comport/blog/2021/01/16/test-title/" rel="alternate" type="text/html" title="test blog post 00" /><published>2021-01-16T00:00:00-07:00</published><updated>2021-01-16T00:00:00-07:00</updated><id>https://osterhoutan-uofu.github.io/comport/comport/blog/2021/01/16/test-title</id><content type="html" xml:base="https://osterhoutan-uofu.github.io/comport/comport/blog/2021/01/16/test-title/">&lt;h2 id=&quot;test-title&quot;&gt;Test Title&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://osterhoutan-uofu.github.io/comport/feed.xml" rel="self" type="application/atom+xml" /><link href="https://osterhoutan-uofu.github.io/comport/" rel="alternate" type="text/html" /><updated>2021-06-20T19:02:34-06:00</updated><id>https://osterhoutan-uofu.github.io/comport/feed.xml</id><title type="html">Comport (XStack)</title><subtitle>This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the Comport (XStack) project.</subtitle><entry><title type="html">test blog post 00</title><link href="https://osterhoutan-uofu.github.io/comport/comport/blog/2021/01/16/test-title/" rel="alternate" type="text/html" title="test blog post 00" /><published>2021-01-16T00:00:00-07:00</published><updated>2021-01-16T00:00:00-07:00</updated><id>https://osterhoutan-uofu.github.io/comport/comport/blog/2021/01/16/test-title</id><content type="html" xml:base="https://osterhoutan-uofu.github.io/comport/comport/blog/2021/01/16/test-title/">&lt;h2 id=&quot;test-title&quot;&gt;Test Title&lt;/h2&gt;
 
 &lt;p&gt;test content&lt;/p&gt;
 
@@ -7,10 +7,12 @@ The later is recomended fo rmost people.&lt;/p&gt;
 
 &lt;p&gt;gobldey gook&lt;/p&gt;
 
-&lt;p&gt;test image w/ jekyll liquid comments (image is in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/site-src/images&lt;/code&gt; directory already)
-&lt;img src=&quot;https://osterhoutan-uofu.github.io/comport/images/DecidabilityDiagram.png&quot; alt=&quot;test-image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;test image w/ jekyll liquid comments (image is in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/site-src/images&lt;/code&gt; directory already)&lt;/p&gt;
 
-&lt;p&gt;test image w/ external media:
-&lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXqq3j05ykEU69GBIwyuuuiFhePdmiIIk3zMJ6gfim7Sv3yaJ0v86GjGf4_W9P-BqgHjA&amp;amp;usqp=CAU&quot; alt=&quot;Test-Image-2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://osterhoutan-uofu.github.io/comport/images/DecidabilityDiagram.png&quot; alt=&quot;test-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;test image w/ external media:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXqq3j05ykEU69GBIwyuuuiFhePdmiIIk3zMJ6gfim7Sv3yaJ0v86GjGf4_W9P-BqgHjA&amp;amp;usqp=CAU&quot; alt=&quot;Test-Image-2&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;that is all for now&lt;/p&gt;</content><author><name>Andrew the dev/tester</name></author><summary type="html">Test Title</summary></entry></feed>

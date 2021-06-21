@@ -690,3 +690,583 @@ Configuration file: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xs
 
 
 
+
+Done updating Comport (XStack) ()
+
+
+
+git pull output:
+From github-UofU:osterhoutan-UofU/comport
+ = [up to date]      master     -> origin/master
+Already up to date.
+
+
+
+
+Updating Comport (XStack) ()
+
+update.py output:
+Reading: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-content/test/src-gen.bib
+Warning: Two '=' found on one line: 'url = {https://www.jstor.org/stable/3561468?origin=crossref},'
+Warning: Two '=' found on one line: 'url = {http://annals.org/article.aspx?doi=10.7326/0003-4819-124-5-199603010-00004},'
+Warning: Two '=' found on one line: 'abstract = {Objective: To compare the quality, relevance, and structure of drug studies published in symposium proceedings that are sponsored by drug companies with 1) articles from symposia with other sponsors and 2) articles in the peerreviewed parent journals of symposium proceedings; and to study the relation between drug company sponsorship and study outcome. Design: Cross-sectional studies of clinical drug studies published in symposium proceedings or their parent medical journals. Measurements: The proportion of articles with no methods sections (which are necessary to assess quality); methodologic quality and clinical relevance scores; and the proportion of articles with outcomes favoring the drug of interest. Results: Symposia sponsored by single drug companies had more articles without methods sections (10\%; 108 of 1064) than did symposia that had other sponsors (3\%; 58 of 2314) or symposia that had no mentioned sponsor (2\%; 29 of 1663) (P{$<$} 0.001). The mean methodologic quality and relevance scores of articles were similar both by type of sponsorship and between articles published in symposia sponsored by single drug companies and articles from the parent journals. Significantly more articles with drug company support (98\%; 39 of 40) than without drug company support (79\%; 89 of 112) had outcomes favoring the drug of interest (P = 0.01). Conclusions: Articles in symposia sponsored by single drug companies were similar in quality and clinical relevance to articles with other sponsors and to articles published in the parent journals. Articles with drug company support are more likely than articles without drug company support to have outcomes favoring the drug of interest.},'
+Warning: Two '=' found on one line: 'abstract = {The frequency with which scientists fabricate and falsify data, or commit other forms of scientific misconduct is a matter of controversy. Many surveys have asked scientists directly whether they have committed or know of a colleague who committed research misconduct, but their results appeared difficult to compare and synthesize. This is the first metaanalysis of these surveys. To standardize outcomes, the number of respondents who recalled at least one incident of misconduct was calculated for each question, and the analysis was limited to behaviours that distort scientific knowledge: fabrication, falsification, ``cooking'' of data, etc\ldots{} Survey questions on plagiarism and other forms of professional misconduct were excluded. The final sample consisted of 21 surveys that were included in the systematic review, and 18 in the meta-analysis. A pooled weighted average of 1.97\% (N = 7, 95\%CI: 0.86\textendash 4.45) of scientists admitted to have fabricated, falsified or modified data or results at least once \textendash a serious form of misconduct by any standard\textendash{} and up to 33.7\% admitted other questionable research practices. In surveys asking about the behaviour of colleagues, admission rates were 14.12\% (N = 12, 95\% CI: 9.91\textendash 19.72) for falsification, and up to 72\% for other questionable research practices. Meta-regression showed that self reports surveys, surveys using the words ``falsification'' or ``fabrication'', and mailed surveys yielded lower percentages of misconduct. When these factors were controlled for, misconduct was reported more frequently by medical/ pharmacological researchers than others. Considering that these surveys ask sensitive questions and have other limitations, it appears likely that this is a conservative estimate of the true prevalence of scientific misconduct.},'
+Warning: Two '=' found on one line: 'url = {https://www.ssrn.com/abstract=3391293},'
+Warning: Two '=' found on one line: 'abstract = {The mission statement for the National Science foundation (https://www.google.com/search?q=nsf+mission+statement).},'
+Warning: Two '=' found on one line: 'abstract = {Background We investigated a consecutive series of children with chronic enterocolitis and regressive developmental disorder. Methods 12 children (mean age 6 years [range 3\textendash 10], 11 boys) were referred to a paediatric gastroenterology unit with a history of normal development followed by loss of acquired skills, including language, together with diarrhoea and abdominal pain. Children underwent gastroenterological, neurological, and developmental assessment and review of developmental records. Ileocolonoscopy and biopsy sampling, magnetic-resonance imaging (MRI), electroencephalography (EEG), and lumbar puncture were done under sedation. Barium follow-through radiography was done where possible. Biochemical, haematological, and immunological profiles were examined. Findings Onset of behavioural symptoms was associated, by the parents, with measles, mumps, and rubella vaccination in eight of the 12 children, with measles infection in one child, and otitis media in another. All 12 children had intestinal abnormalities, ranging from lymphoid nodular hyperplasia to aphthoid ulceration. Histology showed patchy chronic inflammation in the colon in 11 children and reactive ileal lymphoid hyperplasia in seven, but no granulomas. Behavioural disorders included autism (nine), disintegrative psychosis (one), and possible postviral or vaccinal encephalitis (two). There were no focal neurological abnormalities and MRI and EEG tests were normal. Abnormal laboratory results were significantly raised urinary methylmalonic acid compared with agematched controls (p=0{$\cdot$}003), low haemoglobin in four children, and a low serum IgA in four children. Interpretation We identified associated gastrointestinal disease and developmental regression in a group of previously normal children, which was generally associated in time with possible environmental triggers.},'
+Warning: Two '=' found on one line: 'url = {https://en.wikipedia.org/w/index.php?title=Bayh\%E2\%80\%93Dole_Act\&oldid=970880917},'
+Warning: Two '=' found on one line: 'url = {https://en.wikipedia.org/w/index.php?title=Vannevar_Bush\&oldid=984619702},'
+Entries with no home:
+@book{bush1945,
+  author = {{Vannevar Bush}},
+  title = {Science, the Endless Frontier},
+  year = {1945},
+  url = {https://www.nsf.gov/od/lpa/nsf50/vbush1945.htm},
+  abstract = {The classic case for why government must support science\textemdash with a new essay by physicist and former congressman Rush Holt on what democracy needs from science today.},
+  annotation = {(tex.lccn: 2020028357)},
+  collaborator = {{Rush D. Holt}},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\K7UH257V\\vbush1945.html},
+  isbn = {978-0-691-20165-8},
+  keywords = {academic,ethics,historical,important,research,scientific research},
+  origin = {test},
+  publisher = {{Princeton University Press}},
+  raw = {@book{bush1945,
+  title = {Science, the Endless Frontier},
+  author = {{Vannevar Bush}},
+  year = {1945},
+  publisher = {{Princeton University Press}},
+  url = {https://www.nsf.gov/od/lpa/nsf50/vbush1945.htm},
+  urldate = {2020-10-24},
+  abstract = {The classic case for why government must support science\textemdash with a new essay by physicist and former congressman Rush Holt on what democracy needs from science today.},
+  annotation = {(tex.lccn: 2020028357)},
+  collaborator = {{Rush D. Holt}},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\K7UH257V\\vbush1945.html},
+  isbn = {978-0-691-20165-8},
+  keywords = {academic,ethics,historical,important,research,scientific research}
+}
+},
+  urldate = {2020-10-24}
+}
+
+@book{cartwright1983,
+  author = {Cartwright, Nancy},
+  title = {How the {{Laws}} of {{Physics Lie}}},
+  month = {jun},
+  year = {1983},
+  url = {https://oxford.universitypressscholarship.com/view/10.1093/0198247044.001.0001/acprof-9780198247043},
+  abstract = {Nancy Cartwright argues for a novel conception of the role of fundamental scientific laws in modern natural science. If we attend closely to the manner in which theoretical laws figure in the practice of science, we see that despite their great explanatory power these laws do not describe reality. Instead, fundamental laws describe highly idealized objects in models. Thus, the correct account of explanation in science is not the traditional covering law view, but the 'simulacrum' account. On this view, explanation is a matter of constructing a model that may employ, but need not be consistent with, a theoretical framework, in which phenomenological laws that are true of the empirical case in question can be derived. Anti-realism about theoretical laws does not, however, commit one to anti-realism about theoretical entities. Belief in theoretical entities can be grounded in well-tested localized causal claims about concrete physical processes, sometimes now called 'entity realism'. Such causal claims provide the basis for partial realism and they are ineliminable from the practice of explanation and intervention in nature.},
+  doi = {10.1093/0198247044.001.0001},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\Y6D9SPVD\\Cartwright - 1983 - How the Laws of Physics Lie.pdf},
+  isbn = {978-0-19-824704-3},
+  language = {en},
+  origin = {test},
+  publisher = {{Oxford University Press}},
+  raw = {@book{cartwright1983,
+  title = {How the {{Laws}} of {{Physics Lie}}},
+  author = {Cartwright, Nancy},
+  year = {1983},
+  month = jun,
+  publisher = {{Oxford University Press}},
+  doi = {10.1093/0198247044.001.0001},
+  url = {https://oxford.universitypressscholarship.com/view/10.1093/0198247044.001.0001/acprof-9780198247043},
+  urldate = {2020-10-07},
+  abstract = {Nancy Cartwright argues for a novel conception of the role of fundamental scientific laws in modern natural science. If we attend closely to the manner in which theoretical laws figure in the practice of science, we see that despite their great explanatory power these laws do not describe reality. Instead, fundamental laws describe highly idealized objects in models. Thus, the correct account of explanation in science is not the traditional covering law view, but the 'simulacrum' account. On this view, explanation is a matter of constructing a model that may employ, but need not be consistent with, a theoretical framework, in which phenomenological laws that are true of the empirical case in question can be derived. Anti-realism about theoretical laws does not, however, commit one to anti-realism about theoretical entities. Belief in theoretical entities can be grounded in well-tested localized causal claims about concrete physical processes, sometimes now called 'entity realism'. Such causal claims provide the basis for partial realism and they are ineliminable from the practice of explanation and intervention in nature.},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\Y6D9SPVD\\Cartwright - 1983 - How the Laws of Physics Lie.pdf},
+  isbn = {978-0-19-824704-3},
+  language = {en}
+}
+},
+  urldate = {2020-10-07}
+}
+
+@book{cranor2011,
+  author = {Cranor, Carl F.},
+  title = {Legally {{Poisoned}}: {{How}} the {{Law Puts Us}} at {{Risk}} from {{Toxicants}}},
+  year = {2011},
+  address = {{Cambridge, Mass}},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\D9VSGVC4\\Cranor - 2011 - Legally poisoned how the law puts us at risk from.pdf;D\:\\Google-Drive\\.zotero\\storage\\FGJWS4U9\\Cranor 2011 (scanned).pdf},
+  isbn = {978-0-674-04970-3},
+  keywords = {adverse effects,bio-med,environmental exposure,environmental health,environmental pollutants,environmental pollution,environmental toxicology,ethics,government policy,law,legislation \& jurisprudence,philosophy,pollution,public health,toxicity,United States},
+  language = {en},
+  lccn = {RA566.3 .C73 2011},
+  origin = {test},
+  publisher = {{Harvard University Press}},
+  raw = {@book{cranor2011,
+  title = {Legally {{Poisoned}}: {{How}} the {{Law Puts Us}} at {{Risk}} from {{Toxicants}}},
+  shorttitle = {Legally {{Poisoned}}},
+  author = {Cranor, Carl F.},
+  year = {2011},
+  publisher = {{Harvard University Press}},
+  address = {{Cambridge, Mass}},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\D9VSGVC4\\Cranor - 2011 - Legally poisoned how the law puts us at risk from.pdf;D\:\\Google-Drive\\.zotero\\storage\\FGJWS4U9\\Cranor 2011 (scanned).pdf},
+  isbn = {978-0-674-04970-3},
+  keywords = {adverse effects,bio-med,environmental exposure,environmental health,environmental pollutants,environmental pollution,environmental toxicology,ethics,government policy,law,legislation \& jurisprudence,philosophy,pollution,public health,toxicity,United States},
+  language = {en},
+  lccn = {RA566.3 .C73 2011}
+}
+},
+  shorttitle = {Legally {{Poisoned}}}
+}
+
+@book{elliott2010,
+  author = {Elliott, Carl},
+  title = {White {{Coat}}, {{Black Hat}}: {{Adventures}} on the {{Dark Side}} of {{Medicine}}},
+  year = {2010},
+  abstract = {In this lively narrative, physician and moral philosopher Carl Elliott traces for the first time the evolutionary path of the new direction in health care, revealing the dangerous underbelly of the beast that has emerged--a beast that sacrifices old-style doctoring to fit the values of consumer capitalism},
+  address = {{Boston}},
+  annotation = {OCLC: ocn520440993  Ch 6: The Ethicist},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\Q4MVHK7L\\Elliott - 2010 - White coat, black hat adventures on the dark side.pdf},
+  isbn = {978-0-8070-6142-8},
+  keywords = {conflict of interest,drug/pharamaceutical evaluation,ethics,medical ethics,medicine,pharmaceutical industry,professional misconduct,United States},
+  language = {en},
+  lccn = {R724 .E385 2010},
+  origin = {test},
+  publisher = {{Beacon Press}},
+  raw = {@book{elliott2010,
+  title = {White {{Coat}}, {{Black Hat}}: {{Adventures}} on the {{Dark Side}} of {{Medicine}}},
+  shorttitle = {White {{Coat}}, {{Black Hat}}},
+  author = {Elliott, Carl},
+  year = {2010},
+  publisher = {{Beacon Press}},
+  address = {{Boston}},
+  abstract = {In this lively narrative, physician and moral philosopher Carl Elliott traces for the first time the evolutionary path of the new direction in health care, revealing the dangerous underbelly of the beast that has emerged--a beast that sacrifices old-style doctoring to fit the values of consumer capitalism},
+  annotation = {OCLC: ocn520440993  Ch 6: The Ethicist},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\Q4MVHK7L\\Elliott - 2010 - White coat, black hat adventures on the dark side.pdf},
+  isbn = {978-0-8070-6142-8},
+  keywords = {conflict of interest,drug/pharamaceutical evaluation,ethics,medical ethics,medicine,pharmaceutical industry,professional misconduct,United States},
+  language = {en},
+  lccn = {R724 .E385 2010}
+}
+},
+  shorttitle = {White {{Coat}}, {{Black Hat}}}
+}
+
+@book{fowler2017,
+  author = {Fowler, Samantha and Roush, Rebecca and Wise, James},
+  title = {Concepts of {{Biology}}},
+  year = {2017},
+  url = {https://openstax.org/details/books/concepts-biology},
+  abstract = {Biology Textbook Used by USU Sum202 BIOL1010 Biology and the Citizen},
+  copyright = {\textcopyright 2017 Rice University},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\KETX26VM\\Fowler et al. - Concepts of Biology.pdf},
+  isbn = {1-947172-03-4},
+  language = {en},
+  origin = {test},
+  publisher = {{openstax}},
+  raw = {@book{fowler2017,
+  title = {Concepts of {{Biology}}},
+  shorttitle = {Concepts of {{Biology}}},
+  author = {Fowler, Samantha and Roush, Rebecca and Wise, James},
+  year = {2017},
+  publisher = {{openstax}},
+  url = {https://openstax.org/details/books/concepts-biology},
+  abstract = {Biology Textbook Used by USU Sum202 BIOL1010 Biology and the Citizen},
+  copyright = {\textcopyright 2017 Rice University},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\KETX26VM\\Fowler et al. - Concepts of Biology.pdf},
+  isbn = {1-947172-03-4},
+  language = {en}
+}
+},
+  shorttitle = {Concepts of {{Biology}}}
+}
+
+@book{gaddis2015,
+  author = {Gaddis, Tony},
+  title = {Starting out with {{C}}++. {{From}} Control Structures through Objects},
+  year = {2015},
+  address = {{Boston}},
+  edition = {Eighth edition},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\CWKEVT67\\Gaddis - 2015 - Starting out with C++. From control structures thr.pdf},
+  isbn = {978-0-13-376939-5},
+  keywords = {C++ (Computer program language)},
+  language = {en},
+  lccn = {QA76.73.C153 G334 2015},
+  origin = {test},
+  publisher = {{Pearson}},
+  raw = {@book{gaddis2015,
+  title = {Starting out with {{C}}++. {{From}} Control Structures through Objects},
+  shorttitle = {C++},
+  author = {Gaddis, Tony},
+  year = {2015},
+  edition = {Eighth edition},
+  publisher = {{Pearson}},
+  address = {{Boston}},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\CWKEVT67\\Gaddis - 2015 - Starting out with C++. From control structures thr.pdf},
+  isbn = {978-0-13-376939-5},
+  keywords = {C++ (Computer program language)},
+  language = {en},
+  lccn = {QA76.73.C153 G334 2015}
+}
+},
+  shorttitle = {C++}
+}
+
+@book{gilbert2016,
+  author = {Gilbert, Strang},
+  title = {{{MATH2270}}\_textbook\_{{LinearAlgebra5}}\_(Reduced).Pdf},
+  year = {2016},
+  copyright = {Copyright \textcopyright 2016 by Gilbert Strang. All rights reserved.},
+  edition = {Fifth},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\65E7TLQJ\\MATH2270_textbook_LinearAlgebra5_(reduced).pdf},
+  isbn = {978-0-9802327-7-6},
+  language = {en-US},
+  origin = {test},
+  publisher = {{Massachusetts Institute of Technology (MIT) \& Wellesley-Cambridge Press}},
+  raw = {@book{gilbert2016,
+  title = {{{MATH2270}}\_textbook\_{{LinearAlgebra5}}\_(Reduced).Pdf},
+  shorttitle = {Intro {{To Linear Algebra}}},
+  author = {Gilbert, Strang},
+  year = {2016},
+  edition = {Fifth},
+  publisher = {{Massachusetts Institute of Technology (MIT) \& Wellesley-Cambridge Press}},
+  copyright = {Copyright \textcopyright 2016 by Gilbert Strang. All rights reserved.},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\65E7TLQJ\\MATH2270_textbook_LinearAlgebra5_(reduced).pdf},
+  isbn = {978-0-9802327-7-6},
+  language = {en-US}
+}
+},
+  shorttitle = {Intro {{To Linear Algebra}}}
+}
+
+@book{gopalakrishnan2019,
+  author = {Gopalakrishnan, Ganesh},
+  title = {Automata and Computability: Programmer's Perspective},
+  year = {2019},
+  abstract = {"This class-tested textbook provides a comprehensive and accessible introduction to the theory of automata and computation. The author uses illustrations, engaging examples, and historical remarks to make the material interesting and relevant for students. It incorporates modern/handy ideas, such as derivative-based parsing and a Lambda reducer showing the universality of Lambda calculus. The book also shows how to sculpt automata by making the regular language conversion pipeline available through a simple command interface. A Jupyter notebook will accompany the book to feature code, YouTube videos, and other supplements to assist instructors and students"--},
+  address = {{Boca Raton, FL}},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\K92XCEPS\\Gopalakrishnan - 2019 - Automata and computability programmer's perspecti.pdf},
+  isbn = {978-1-138-55242-5},
+  keywords = {automatic control,data processing,digital control systems,machine theory,programming},
+  lccn = {TJ223.M53 .G663 2019},
+  origin = {test},
+  publisher = {{CRC Press/Taylor \& Francis Group}},
+  raw = {@book{gopalakrishnan2019,
+  title = {Automata and Computability: Programmer's Perspective},
+  shorttitle = {Automata and Computability},
+  author = {Gopalakrishnan, Ganesh},
+  year = {2019},
+  publisher = {{CRC Press/Taylor \& Francis Group}},
+  address = {{Boca Raton, FL}},
+  abstract = {"This class-tested textbook provides a comprehensive and accessible introduction to the theory of automata and computation. The author uses illustrations, engaging examples, and historical remarks to make the material interesting and relevant for students. It incorporates modern/handy ideas, such as derivative-based parsing and a Lambda reducer showing the universality of Lambda calculus. The book also shows how to sculpt automata by making the regular language conversion pipeline available through a simple command interface. A Jupyter notebook will accompany the book to feature code, YouTube videos, and other supplements to assist instructors and students"--},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\K92XCEPS\\Gopalakrishnan - 2019 - Automata and computability programmer's perspecti.pdf},
+  isbn = {978-1-138-55242-5},
+  keywords = {automatic control,data processing,digital control systems,machine theory,programming},
+  lccn = {TJ223.M53 .G663 2019}
+}
+},
+  shorttitle = {Automata and Computability}
+}
+
+@book{herman2017,
+  author = {HERMAN, EDWIN "JED" and STRANG, GILBERT},
+  title = {Calculus, {{Volume}} 2},
+  year = {2017},
+  url = {https://openstax.org/details/books/calculus-volume-2},
+  copyright = {\textcopyright 2017 Rice University. Creative Commons Attribution Non-Commercial ShareAlike 4.0 International License (CC BY-NC-SA 4.0).},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\ACQVUI9D\\CalculusVolume2.pdf},
+  isbn = {978-1-947172-14-2},
+  language = {English},
+  origin = {test},
+  publisher = {{openstax}},
+  raw = {@book{herman2017,
+  title = {Calculus, {{Volume}} 2},
+  shorttitle = {Calculus, {{Vol}}. 2},
+  author = {HERMAN, EDWIN "JED" and STRANG, GILBERT},
+  year = {2017},
+  volume = {2},
+  publisher = {{openstax}},
+  url = {https://openstax.org/details/books/calculus-volume-2},
+  copyright = {\textcopyright 2017 Rice University. Creative Commons Attribution Non-Commercial ShareAlike 4.0 International License (CC BY-NC-SA 4.0).},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\ACQVUI9D\\CalculusVolume2.pdf},
+  isbn = {978-1-947172-14-2},
+  language = {English}
+}
+},
+  shorttitle = {Calculus, {{Vol}}. 2},
+  volume = {2}
+}
+
+@book{herman2018,
+  author = {HERMAN, EDWIN "JED" and STRANG, GILBERT},
+  title = {Calculus, {{Volume}} 3},
+  year = {2018},
+  url = {https://openstax.org/details/books/calculus-volume-3},
+  copyright = {\textcopyright 2018 Rice University. Creative Commons Attribution Non- Commercial ShareAlike 4.0 International License (CC BY-NC-SA 4.0)},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\5VPDPYKB\\CalculusVolume3-OP.pdf},
+  isbn = {978-1-947172-16-6},
+  language = {English},
+  origin = {test},
+  publisher = {{openstax}},
+  raw = {@book{herman2018,
+  title = {Calculus, {{Volume}} 3},
+  shorttitle = {Calculus, Vol. 3},
+  author = {HERMAN, EDWIN "JED" and STRANG, GILBERT},
+  year = {2018},
+  volume = {3},
+  publisher = {{openstax}},
+  url = {https://openstax.org/details/books/calculus-volume-3},
+  copyright = {\textcopyright 2018 Rice University. Creative Commons Attribution Non- Commercial ShareAlike 4.0 International License (CC BY-NC-SA 4.0)},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\5VPDPYKB\\CalculusVolume3-OP.pdf},
+  isbn = {978-1-947172-16-6},
+  language = {English}
+}
+},
+  shorttitle = {Calculus, Vol. 3},
+  volume = {3}
+}
+
+@misc{kueber2011,
+  author = {Kueber, Mike},
+  title = {Sunday Book Review \#22 \textendash{} {{White Coat}}, {{Black Hat}} by {{Carl Elliott}}},
+  month = {apr},
+  year = {2011},
+  url = {https://mkueber001.wordpress.com/2011/04/07/sunday-book-review-22-white-coat-black-hat-by-carl-elliott/},
+  abstract = {In the past few months, books about the medical profession have moved onto my reading list for a couple of reasons: Although ObamaCare is on life-support, America will need to replace it with somet\ldots},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\MF9TGIHW\\Kueber - 2011 - Sunday book review #22 – White Coat, Black Hat by .html},
+  journal = {Mike Kueber's Blog},
+  keywords = {book review,ethics,medicine,philosophy,research,summary,supplementary},
+  language = {en},
+  origin = {test},
+  raw = {@misc{kueber2011,
+  title = {Sunday Book Review \#22 \textendash{} {{White Coat}}, {{Black Hat}} by {{Carl Elliott}}},
+  author = {Kueber, Mike},
+  year = {2011},
+  month = apr,
+  url = {https://mkueber001.wordpress.com/2011/04/07/sunday-book-review-22-white-coat-black-hat-by-carl-elliott/},
+  urldate = {2020-10-27},
+  abstract = {In the past few months, books about the medical profession have moved onto my reading list for a couple of reasons: Although ObamaCare is on life-support, America will need to replace it with somet\ldots},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\MF9TGIHW\\Kueber - 2011 - Sunday book review #22 – White Coat, Black Hat by .html},
+  journal = {Mike Kueber's Blog},
+  keywords = {book review,ethics,medicine,philosophy,research,summary,supplementary},
+  language = {en}
+}
+},
+  urldate = {2020-10-27}
+}
+
+@incollection{lackey2008,
+  author = {Lackey, Jennifer},
+  title = {What Should We Do When We Disagree?},
+  booktitle = {Oxford {{Studies}} in {{Epistemology Volume}} 3},
+  year = {2008},
+  editor = {Gendler, Tamar Szab{\'o} and Hawthorne, John},
+  origin = {test},
+  pages = {274--93},
+  publisher = {{Oxford University Press}},
+  raw = {@incollection{lackey2008,
+  title = {What Should We Do When We Disagree?},
+  booktitle = {Oxford {{Studies}} in {{Epistemology Volume}} 3},
+  author = {Lackey, Jennifer},
+  editor = {Gendler, Tamar Szab{\'o} and Hawthorne, John},
+  year = {2008},
+  volume = {3},
+  pages = {274--93},
+  publisher = {{Oxford University Press}}
+}
+},
+  volume = {3}
+}
+
+@incollection{muller2020,
+  author = {M{\"u}ller, Vincent C.},
+  title = {Ethics of {{Artificial Intelligence}} and {{Robotics}}},
+  booktitle = {The {{Stanford Encyclopedia}} of {{Philosophy}}},
+  year = {2020},
+  url = {https://plato.stanford.edu/archives/win2020/entries/ethics-ai/},
+  abstract = {Artificial intelligence (AI) and robotics are digital technologiesthat will have significant impact on the development of humanity in the nearfuture. They have raised fundamental questions about what we should dowith these systems, what the systems themselves should do, what risksthey involve, and how we can control these., After the Introduction to the field (\textsection 1), the main themes (\textsection 2) of thisarticle are: Ethical issues that arise with AI systems asobjects, i.e., tools made and used by humans. This includesissues of privacy (\textsection 2.1) and manipulation (\textsection 2.2), opacity (\textsection 2.3) and bias (\textsection 2.4), human-robotinteraction (\textsection 2.5), employment (\textsection 2.6), and the effects of autonomy (\textsection 2.7). Then AI systemsas subjects, i.e., ethics for the AI systems themselves inmachine ethics (\textsection 2.8) and artificial moral agency (\textsection 2.9). Finally, the problem of apossible future AI superintelligence leading to a"singularity" (\textsection 2.10). We close with a remark on the vision of AI (\textsection 3)., For each section within these themes, we provide a general explanationof the ethical issues, outline existing positionsand arguments, then analyse how these play out with currenttechnologies and finally, what policy consequencesmay be drawn.},
+  edition = {Winter 2020},
+  editor = {Zalta, Edward N.},
+  keywords = {AI,artificial intelligence machine learning,computer science,CS,ethics,philosophy,research},
+  origin = {test},
+  publisher = {{Metaphysics Research Lab, Stanford University}},
+  raw = {@incollection{muller2020,
+  title = {Ethics of {{Artificial Intelligence}} and {{Robotics}}},
+  booktitle = {The {{Stanford Encyclopedia}} of {{Philosophy}}},
+  author = {M{\"u}ller, Vincent C.},
+  editor = {Zalta, Edward N.},
+  year = {2020},
+  edition = {Winter 2020},
+  publisher = {{Metaphysics Research Lab, Stanford University}},
+  url = {https://plato.stanford.edu/archives/win2020/entries/ethics-ai/},
+  urldate = {2020-10-09},
+  abstract = {Artificial intelligence (AI) and robotics are digital technologiesthat will have significant impact on the development of humanity in the nearfuture. They have raised fundamental questions about what we should dowith these systems, what the systems themselves should do, what risksthey involve, and how we can control these., After the Introduction to the field (\textsection 1), the main themes (\textsection 2) of thisarticle are: Ethical issues that arise with AI systems asobjects, i.e., tools made and used by humans. This includesissues of privacy (\textsection 2.1) and manipulation (\textsection 2.2), opacity (\textsection 2.3) and bias (\textsection 2.4), human-robotinteraction (\textsection 2.5), employment (\textsection 2.6), and the effects of autonomy (\textsection 2.7). Then AI systemsas subjects, i.e., ethics for the AI systems themselves inmachine ethics (\textsection 2.8) and artificial moral agency (\textsection 2.9). Finally, the problem of apossible future AI superintelligence leading to a``singularity'' (\textsection 2.10). We close with a remark on the vision of AI (\textsection 3)., For each section within these themes, we provide a general explanationof the ethical issues, outline existing positionsand arguments, then analyse how these play out with currenttechnologies and finally, what policy consequencesmay be drawn.},
+  keywords = {AI,artificial intelligence machine learning,computer science,CS,ethics,philosophy,research}
+}
+},
+  urldate = {2020-10-09}
+}
+
+@misc{nsf2014,
+  author = {NSF, National Science Foundation},
+  title = {The {{NSF Statutory Mission}} \& {{Vision Statements}}},
+  year = {2014},
+  url = {https://www.nsf.gov/pubs/2014/nsf14002/pdf/02_mission_vision.pdf},
+  abstract = {The mission statement for the National Science foundation (https://www.google.com/search?q=nsf+mission+statement).},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\9IFXTSKZ\\02_mission_vision.pdf},
+  origin = {test},
+  publisher = {{The NSF}},
+  raw = {@misc{nsf2014,
+  title = {The {{NSF Statutory Mission}} \& {{Vision Statements}}},
+  author = {NSF, National Science Foundation},
+  year = {2014},
+  publisher = {{The NSF}},
+  url = {https://www.nsf.gov/pubs/2014/nsf14002/pdf/02_mission_vision.pdf},
+  abstract = {The mission statement for the National Science foundation (https://www.google.com/search?q=nsf+mission+statement).},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\9IFXTSKZ\\02_mission_vision.pdf}
+}
+}
+}
+
+@misc{ori2017,
+  author = {ORI, The Office of Research Integrity},
+  title = {The {{Lab}}},
+  year = {2017},
+  url = {https://ori.hhs.gov/TheLab/},
+  type = {Interactive {{Javascript Application}}},
+  abstract = {In this program you have the opportunity to become four distinct characters and deal with issues of ethical conduct of research from a variety of perspectives. A tutorial for each character also provides the chance to examine the process of ethical decision-making.},
+  copyright = {\textcopyright{} 2017 Vet-Works \& WILL Interactive},
+  journal = {The Lab: Avoiding Research Misconduct},
+  keywords = {academia,ethics,interactive,philosophy},
+  language = {en-US},
+  origin = {test},
+  raw = {@misc{ori2017,
+  title = {The {{Lab}}},
+  shorttitle = {The {{Lab}}},
+  author = {ORI, The Office of Research Integrity},
+  year = {2017},
+  url = {https://ori.hhs.gov/TheLab/},
+  urldate = {2020-11-02},
+  abstract = {In this program you have the opportunity to become four distinct characters and deal with issues of ethical conduct of research from a variety of perspectives. A tutorial for each character also provides the chance to examine the process of ethical decision-making.},
+  copyright = {\textcopyright{} 2017 Vet-Works \& WILL Interactive},
+  journal = {The Lab: Avoiding Research Misconduct},
+  keywords = {academia,ethics,interactive,philosophy},
+  language = {en-US},
+  type = {Interactive {{Javascript Application}}}
+}
+},
+  shorttitle = {The {{Lab}}},
+  urldate = {2020-11-02}
+}
+
+@book{rosen2012discrete,
+  author = {Rosen, Kenneth},
+  title = {Discrete Mathematics and Its Applications},
+  year = {2012},
+  address = {{New York}},
+  isbn = {978-0-07-338309-5},
+  origin = {test},
+  publisher = {{McGraw-Hill}},
+  raw = {@book{rosen2012discrete,
+  title = {Discrete Mathematics and Its Applications},
+  author = {Rosen, Kenneth},
+  year = {2012},
+  publisher = {{McGraw-Hill}},
+  address = {{New York}},
+  isbn = {978-0-07-338309-5}
+}
+}
+}
+
+@misc{stemwedel,
+  author = {Stemwedel, Janet D.},
+  title = {Reading "{{White Coat}}, {{Black Hat}}" and Discovering That Ethicists Might Be Black Hats.},
+  year = {unknown},
+  url = {https://blogs.scientificamerican.com/doing-good-science/reading-white-coat-black-hat-and-discovering-that-ethicists-might-be-black-hats/},
+  abstract = {,},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\F8J8VVTP\\Stemwedel - Reading White Coat, Black Hat and discovering th.html},
+  journal = {Scientific American Blog Network},
+  keywords = {biology,ethics,medicine,misconduct,philosophy,research,supplementary},
+  language = {en},
+  origin = {test},
+  raw = {@misc{stemwedel,
+  title = {Reading "{{White Coat}}, {{Black Hat}}" and Discovering That Ethicists Might Be Black Hats.},
+  author = {Stemwedel, Janet D.},
+  url = {https://blogs.scientificamerican.com/doing-good-science/reading-white-coat-black-hat-and-discovering-that-ethicists-might-be-black-hats/},
+  urldate = {2020-10-27},
+  abstract = {,},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\F8J8VVTP\\Stemwedel - Reading White Coat, Black Hat and discovering th.html},
+  journal = {Scientific American Blog Network},
+  keywords = {biology,ethics,medicine,misconduct,philosophy,research,supplementary},
+  language = {en}
+}
+},
+  urldate = {2020-10-27}
+}
+
+@book{strang2016,
+  author = {Strang, Gilbert},
+  title = {Introduction to Linear Algebra},
+  year = {2016},
+  address = {{Wellesley, MA}},
+  edition = {Fifth},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\AXQHY8LF\\Strang - 2016 - Introduction to linear algebra.pdf},
+  isbn = {978-0-9802327-7-6},
+  language = {English},
+  origin = {test},
+  publisher = {{Wellesley-Cambridge Press}},
+  raw = {@book{strang2016,
+  title = {Introduction to Linear Algebra},
+  author = {Strang, Gilbert},
+  year = {2016},
+  edition = {Fifth},
+  publisher = {{Wellesley-Cambridge Press}},
+  address = {{Wellesley, MA}},
+  file = {D\:\\Google-Drive\\.zotero\\storage\\AXQHY8LF\\Strang - 2016 - Introduction to linear algebra.pdf},
+  isbn = {978-0-9802327-7-6},
+  language = {English}
+}
+}
+}
+
+@misc{weisstein,
+  author = {Weisstein, Eric W.},
+  title = {Divide (Definition)},
+  year = {unknown},
+  url = {https://mathworld.wolfram.com/Divide.html},
+  type = {Text},
+  abstract = {To divide is to perform the operation of division, i.e., to see how many times a divisor d goes into another number n. n divided by d is written n/d or n{$\div$}d. The result need not be an integer, but if it is, some additional terminology is used. d|n is read "d divides n" and means that d is a divisor of n. In this case, n is said to be divisible by d. Clearly, 1|n and n|n. By convention, n|0 for every n except 0 (Hardy and Wright 1979, p. 1). The "divisibility"...},
+  annotation = {ZSCC: NoCitationData[s0]},
+  copyright = {Copyright 1999-2020 Wolfram Research, Inc.  See https://mathworld.wolfram.com/about/terms.html for a full terms of use statement.},
+  journal = {Wolfram Mathworld},
+  language = {en},
+  origin = {test},
+  publisher = {{Wolfram Research, Inc.}},
+  raw = {@misc{weisstein,
+  title = {Divide (Definition)},
+  shorttitle = {Divide},
+  author = {Weisstein, Eric W.},
+  publisher = {{Wolfram Research, Inc.}},
+  url = {https://mathworld.wolfram.com/Divide.html},
+  urldate = {2020-11-17},
+  abstract = {To divide is to perform the operation of division, i.e., to see how many times a divisor d goes into another number n. n divided by d is written n/d or n{$\div$}d. The result need not be an integer, but if it is, some additional terminology is used. d|n is read "d divides n" and means that d is a divisor of n. In this case, n is said to be divisible by d. Clearly, 1|n and n|n. By convention, n|0 for every n except 0 (Hardy and Wright 1979, p. 1). The "divisibility"...},
+  annotation = {ZSCC: NoCitationData[s0]},
+  copyright = {Copyright 1999-2020 Wolfram Research, Inc.  See https://mathworld.wolfram.com/about/terms.html for a full terms of use statement.},
+  journal = {Wolfram Mathworld},
+  language = {en},
+  type = {Text}
+}
+},
+  shorttitle = {Divide},
+  urldate = {2020-11-17}
+}
+
+
+
+
+updating blog output:
+'/mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-content/test/2021-01-16-test-title.md' -> '/mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-src/_posts/2021-01-16-test-title.md'
+
+
+
+bundle exec jekyll build output:
+Configuration file: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-src/_config.yml
+            Source: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-src
+       Destination: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/docs
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 0.794 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.
+
+
+
