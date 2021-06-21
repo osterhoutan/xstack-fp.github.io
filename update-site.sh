@@ -12,7 +12,7 @@ SITE_URL='${URL}'
 # Where this file should be located in the cpu-website-backend git
 SCRIPT_DIR="$( cd "$(dirname "${BASH_SOURCE[0]}")" && pwd )"
 # The main dir of the cpu-website-backend git
-REPO_ROOT_DIR="$( cd ${SCRIPT_DIR} && cd .. && pwd )"
+REPO_ROOT_DIR="$( cd ${SCRIPT_DIR} && pwd )"
 # The main dir of the cpu-website git
 CONTENT_DIR="$( cd ${REPO_ROOT_DIR} && cd site-content && pwd )"
 # The location of the jekyll website directory
@@ -46,7 +46,7 @@ if [[ ${CHANGED} -eq 1 ]]; then
 		echo -e "\nUpdate found\n\n"
 	fi
 
-	FIRST=0
+	# FIRST=0
 
 	# Do a real pull to get the content
 	echo "git pull output:" |& tee -a ${LOGFILE}
