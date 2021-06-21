@@ -37,6 +37,11 @@ cd ${REPO_ROOT_DIR}
 CHANGED=1
 git pull |& grep -q -v 'Already up-to-date.' && CHANGED=0
 
+# check if local copy is up to date
+if [[ -z $( git status -s ) ]]; then
+	CHANGED=0
+fi
+
 # if [[ ${FIRST} -eq 1 || ${CHANGED} -eq 1 ]]
 if [[ ${CHANGED} -eq 1 ]]; then
 	# There were
