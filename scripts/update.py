@@ -251,25 +251,13 @@ def read_all_entries(filenames, origins):
 
 
 
-def write_out_people(entries, filename, cpu):
+def write_out_people(entries, filename):
     # filter to only comment entries
     comment_type = [e for e in entries if e["at"] == "comment"]
     # filter those to only things marked as people or person
     people = [e for e in comment_type if
               ("person" in e.get("type", "").lower()
                or "people" in e.get("type", "").lower())]
-
-    if cpu:
-        # cpu gets:
-        # - all non ganesh entres
-        # - ganesh entries only if it has the parallel type
-        query = lambda e : ("ganesh" not in  e.get("origin", "").lower()
-                            or ("ganesh" in  e.get("origin", "").lower()
-                                and "parallel" in e.get("category","").lower()))
-    else:
-        # fv gets:
-        # - only ganesh entries
-        query = lambda e : ("ganesh" in e.get("origin", "").lower())
 
     # grab Ganesh
     ganesh = [e for e in people if e.get("title", "") == "Ganesh Gopalakrishnan"]
@@ -378,29 +366,10 @@ ord_to_month = {
     12 : "December",
 }
 
-def write_out_publications(entries, filename, cpu):
-    # filter to only entries of type inproceedings, article, or inbook
+def write_out_publications(entries, filename):
+    # filter to only entries of not of types COMMENT or PREAMBLE
     publications = [e for e in entries if
-                    e["at"].lower() != "comment"]
-
-    if cpu:
-        # cpu gets:
-        # - all non ganesh entres
-        # - ganesh entries only if it has the parallel type
-        query = lambda e : ("ganesh" not in  e.get("origin", "").lower()
-                            or ("ganesh" in  e.get("origin", "").lower()
-                                and "parallel" in e.get("category","").lower()))
-    else:
-        # fv gets:
-        # - only ganesh entries
-        query = lambda e : ("ganesh" in e.get("origin", "").lower())
-
-    to_remove = [e for e in publications if
-                 not query(e)]
-    for e in to_remove:
-        entries.remove(e)
-    publications = [e for e in publications if
-                    query(e)]
+                    e["at"].lower() not in {"comment","preamble"}]
 
     with open(filename, "w") as f:
         for p in publications:
@@ -411,30 +380,12 @@ def write_out_publications(entries, filename, cpu):
             entries.remove(p)
 
 
-def write_out_education(entries, filename, cpu):
+def write_out_education(entries, filename):
     # filter to only comment entries
     comment_type = [e for e in entries if e["at"] == "comment"]
     # filter those to only education entries
     education = [e for e in comment_type if
                  "education" in e.get("type", "").lower()]
-    if cpu:
-        # cpu gets:
-        # - all non ganesh entres
-        # - ganesh entries only if it has the parallel type
-        query = lambda e : ("ganesh" not in  e.get("origin", "").lower()
-                            or ("ganesh" in  e.get("origin", "").lower()
-                                and "parallel" in e.get("category","").lower()))
-    else:
-        # fv gets:
-        # - only ganesh entries
-        query = lambda e : ("ganesh" in e.get("origin", "").lower())
-
-    to_remove = [e for e in education if
-                 not query(e)]
-    for e in to_remove:
-        entries.remove(e)
-    education = [e for e in education if
-                 query(e)]
 
     # get unique years sorted from most recent to oldest
     years = [e["year"] for e in education]
@@ -483,31 +434,12 @@ def write_out_education(entries, filename, cpu):
 
 
 
-def write_out_software(entries, filename, cpu):
+def write_out_software(entries, filename):
     # filter to only comment entries
     comment_type = [e for e in entries if e["at"] == "comment"]
     # filter those to only software entries
     software = [e for e in comment_type if
                 "software" in e.get("type", "").lower()]
-
-    if cpu:
-        # cpu gets:
-        # - all non ganesh entres
-        # - ganesh entries only if it has the parallel type
-        query = lambda e : ("ganesh" not in  e.get("origin", "").lower()
-                            or ("ganesh" in  e.get("origin", "").lower()
-                                and "parallel" in e.get("category", "").lower()))
-    else:
-        # fv gets:
-        # - only ganesh entries
-        query = lambda e : ("ganesh" in e.get("origin", "").lower())
-
-    to_remove = [e for e in software if
-                 not query(e)]
-    for e in to_remove:
-        entries.remove(e)
-    software = [e for e in software if
-                query(e)]
 
     # sort by name
     software.sort(key=lambda e: e["title"])
@@ -546,7 +478,7 @@ def main(argv):
         print("  content_git: root directory of the git with bib and md files to populate into the backend_git")
         print("  -cpu: flag to filter content for the cpu website")
         return -1
-    cpu = (len(argv) == 4)
+    
     backend_git = argv[1]
     content_git = argv[2]
 
@@ -560,10 +492,10 @@ def main(argv):
     education_md = path.join(backend_git, "education.md")
     people_md = path.join(backend_git, "people.md")
 
-    write_out_people(entries, people_md, cpu)
-    write_out_publications(entries, publications_md, cpu)
-    write_out_education(entries, education_md, cpu)
-    write_out_software(entries, software_md, cpu)
+    write_out_people(entries, people_md)
+    write_out_publications(entries, publications_md)
+    write_out_education(entries, education_md)
+    write_out_software(entries, software_md)
 
     if len(entries) != 0:
         print("Entries with no home:")
