@@ -41,7 +41,7 @@ git pull |& grep -q -v 'Already up-to-date.' && CHANGED=0
 if [[ -z $( git status -s ) ]]; then
 	CHANGED=0
 else 
-	echo -e "Local Changes detected!\n"
+	echo -e "Local Changes detected!\n" |& tee -a ${LOGFILE}
 	CHANGED=1
 fi
 
@@ -49,9 +49,9 @@ fi
 if [[ ${CHANGED} -eq 1 ]]; then
 	# There were
 	if [[ ${FIRST} -eq 1 ]]; then
-		echo -e "\nMaking sure websites are updated\n\n"
+		echo -e "\nMaking sure websites are updated\n\n" |& tee -a ${LOGFILE}
 	else
-		echo -e "\nUpdate found\n\n"
+		echo -e "\nUpdate found\n\n" |& tee -a ${LOGFILE}
 	fi
 
 	# FIRST=0
