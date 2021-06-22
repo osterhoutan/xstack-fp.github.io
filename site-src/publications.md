@@ -18,17 +18,28 @@ title: Publications
     var styles = `
     /* COLLAPSIBLE ITEM STUFF */
 
+    .collapsible-bib-entry {
+        margin-bottom: 8px;
+    }
+
     /* Style the button that is used to open and close the collapsible content */
     .collapsible-bib-btn {
         background-color: #4B6C86;
         color: white;
         cursor: pointer;
-        padding: 18px;
+        padding: 8px;
         width: 100%;
         border: none;
         text-align: left;
         outline: none;
-        font-size: 15px;
+    }
+
+    .collapsible-bib-authors {
+        font-style: italic;
+        font-size: 11pt;
+    }
+    .collapsible-bib-title {
+        font-size: 14pt;
     }
 
     /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -42,7 +53,7 @@ title: Publications
 
     /* Style the collapsible content. Note: hidden by default */
     .collapsible-bib-content {
-        padding: 0 18px;
+        padding: 0 8px;
         display: none;
         overflow: hidden;
         background-color: #5d7a9151;
@@ -80,32 +91,32 @@ title: Publications
     document.head.appendChild(styleSheet)
 
 
-    // - Extract Bib entries from list ----
-    var genDiv = document.getElementById("collapsible-bib-gen");
-    var outDiv = document.getElementById("collapsible-bib");
-    var all_entries = document.getElementsByClassName("collapsible-bib");
-    var headerElements = genDiv.getElementsByTagName("h2");
+    // // - Extract Bib entries from list ----
+    // var genDiv = document.getElementById("collapsible-bib-gen");
+    // var outDiv = document.getElementById("collapsible-bib");
+    // var all_entries = document.getElementsByClassName("collapsible-bib");
+    // var headerElements = genDiv.getElementsByTagName("h2");
     
-    var headers = [];
-    for (var elem of headerElements) {
-        headers.push(elem.textContent);
-    }
-    years.sort();
+    // var headers = [];
+    // for (var elem of headerElements) {
+    //     headers.push(elem.textContent);
+    // }
+    // years.sort();
 
-    for (var y of years) {
-        var year_entries = all_entries.getElementsByClassName("collapsible-bib-entry-year-"+y);
-        var secDiv = document.createElement("div");
-        secDiv.id = "collapsible-bib-section-year-"+y;
-        secDiv.classList.push("collapsible-bib-section");
-        outDiv.children.appendChild(secDiv);
-        var secHeader = document.createElement("h2");
-        secHeader.textContent = y;
-        outDiv.children.appendChild(secHeader);
-        for (var e of year_entries) {
-            outDiv.children.appendChild(e);
-        }
-    }
-    genDiv.innerHTML = '';
+    // for (var y of years) {
+    //     var year_entries = all_entries.getElementsByClassName("collapsible-bib-entry-year-"+y);
+    //     var secDiv = document.createElement("div");
+    //     secDiv.id = "collapsible-bib-section-year-"+y;
+    //     secDiv.classList.push("collapsible-bib-section");
+    //     outDiv.children.appendChild(secDiv);
+    //     var secHeader = document.createElement("h2");
+    //     secHeader.textContent = y;
+    //     outDiv.children.appendChild(secHeader);
+    //     for (var e of year_entries) {
+    //         outDiv.children.appendChild(e);
+    //     }
+    // }
+    // genDiv.innerHTML = '';
 
 
     // - Modify all pertinent collapsible elements ----

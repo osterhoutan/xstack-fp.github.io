@@ -121,13 +121,14 @@
     } */
 </style> -->
 
+<!-- <div class="collapsible-bib-entry collapsible-bib-entry-year-{{entry.year | strip}}"> -->
 
 <!-- This is a generated entry for a publication citation -->
-<div class="collapsible-bib-entry collapsible-bib-entry-year-{{entry.year | strip}}">
-    <button type="button" class="collapsible-bib-btn">
-        <span class="collapsible-bib-title"> {{ entry.title }} </span> <br />
-        <span class="collapsible-bib-authors"> {{ entry.author }} </span> 
-    </button>
+<div class="collapsible-bib-entry">
+    <div class="collapsible-bib-btn">
+        <h3 class="collapsible-bib-title"> {{ entry.title }} </h3>
+        <p class="collapsible-bib-authors"> {{ entry.author }} </p> 
+    </div>
     <div class="collapsible-bib-content">
         {% if entry.abstract %}
         <div class="collapsible-bib-abstract">
@@ -136,7 +137,7 @@
         </div>
         {% endif %}
         <div class="collapsible-bib-reference">
-            <p> {{ reference }} </p>
+            {{ reference }}
         </div>
         <div class="collapsible-bib-bibtex">
             <pre>{{ entry.bibtex }}</pre>
@@ -232,31 +233,31 @@
 
 
     // - Extract Bib entries from list ----
-    var genDiv = document.getElementById("collapsible-bib-gen");
-    var outDiv = document.getElementById("collapsible-bib");
-    var all_entries = document.getElementsByClassName("collapsible-bib");
-    var headerElements = genDiv.getElementsByTagName("h2");
+    // var genDiv = document.getElementById("collapsible-bib-gen");
+    // var outDiv = document.getElementById("collapsible-bib");
+    // var all_entries = document.getElementsByClassName("collapsible-bib");
+    // var headerElements = genDiv.getElementsByTagName("h2");
     
-    var headers = [];
-    for (var elem of headerElements) {
-        headers.push(elem.textContent);
-    }
-    years.sort();
+    // var headers = [];
+    // for (var elem of headerElements) {
+    //     headers.push(elem.textContent);
+    // }
+    // years.sort();
 
-    for (var y of years) {
-        var year_entries = all_entries.getElementsByClassName("collapsible-bib-entry-year-"+y);
-        var secDiv = document.createElement("div");
-        secDiv.id = "collapsible-bib-section-year-"+y;
-        secDiv.classList.push("collapsible-bib-section");
-        outDiv.children.appendChild(secDiv);
-        var secHeader = document.createElement("h2");
-        secHeader.textContent = y;
-        outDiv.children.appendChild(secHeader);
-        for (var e of year_entries) {
-            outDiv.children.appendChild(e);
-        }
-    }
-    genDiv.innerHTML = '';
+    // for (var y of years) {
+    //     var year_entries = all_entries.getElementsByClassName("collapsible-bib-entry-year-"+y);
+    //     var secDiv = document.createElement("div");
+    //     secDiv.id = "collapsible-bib-section-year-"+y;
+    //     secDiv.classList.push("collapsible-bib-section");
+    //     outDiv.children.appendChild(secDiv);
+    //     var secHeader = document.createElement("h2");
+    //     secHeader.textContent = y;
+    //     outDiv.children.appendChild(secHeader);
+    //     for (var e of year_entries) {
+    //         outDiv.children.appendChild(e);
+    //     }
+    // }
+    // genDiv.innerHTML = '';
 
 
     // - Modify all pertinent collapsible elements ----

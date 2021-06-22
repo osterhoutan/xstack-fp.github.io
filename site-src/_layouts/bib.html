@@ -3,11 +3,11 @@
 
 
 <!-- This is a generated entry for a publication citation -->
-<div class="collapsible-bib-entry collapsible-bib-entry-year-{{entry.year | strip}}">
-    <div type="button" class="collapsible-bib-btn">
-        <span class="collapsible-bib-title"> {{ entry.title }} </span> <br />
-        <span class="collapsible-bib-authors"> {{ entry.author }} </span> 
-    </div>
+<div class="collapsible-bib-entry">
+    <button class="collapsible-bib-btn">
+        <h3 class="collapsible-bib-title"> {{ entry.title }} </h3>
+        <p class="collapsible-bib-authors"> {{ entry.author }} </p> 
+    </button>
     <div class="collapsible-bib-content">
         {% if entry.abstract %}
         <div class="collapsible-bib-abstract">
@@ -16,7 +16,7 @@
         </div>
         {% endif %}
         <div class="collapsible-bib-reference">
-            <p> {{ reference }} </p>
+            {{ reference }}
         </div>
         <div class="collapsible-bib-bibtex">
             <pre>{{ entry.bibtex }}</pre>
