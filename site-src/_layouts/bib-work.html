@@ -5,7 +5,7 @@
 <!-- <svg viewBox="-1 0 17 16" class="gs_or_svg"><path d="M1.5 3.5v5h2v.375L1.75 12.5h3L6.5 8.875V3.5zM9.5 3.5v5h2v.375L9.75 12.5h3L14.5 8.875V3.5z"></path></svg> -->
 
 
-<!-- <style type="text/css">
+<style type="text/css">
     /* COLLAPSIBLE ITEM STUFF */
 
     /* Style the button that is used to open and close the collapsible content */
@@ -64,6 +64,15 @@
         fill: white;
     }
 
+    div.collapsible-bib-bibtex {
+        padding: 6pt 2pt 2pt 2pt;
+    }
+    div.collapsible-bib-bibtex > pre {
+        border: 1px #204765;
+        padding: 2pt;
+        background-color: #f7e99cd7;
+    }
+
     /* TABLE STUFF */
     /* .tg-bib {
         border: none;
@@ -119,7 +128,7 @@
         fill: none;
         stroke: #1a0dab;
     } */
-</style> -->
+</style>
 
 <!-- <div class="collapsible-bib-entry collapsible-bib-entry-year-{{entry.year | strip}}"> -->
 
@@ -144,6 +153,7 @@
         </div>
     </div>
 </div>
+<!-- div.collapsible-bib-bibtex > pre -->
 <!-- <button type="button" class="collapsible-bib-btn">
     <h3> {{ entry.title }} </h3>
     <p>&emsp;<i> {{ entry.author }} </i></p>
