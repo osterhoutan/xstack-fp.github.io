@@ -36,13 +36,18 @@ title: Publications
 
     .collapsible-bib-authors {
         font-style: italic;
-        font-size: 8pt;
+        font-size: 10pt;
         text-transform: capitalize;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
     .collapsible-bib-title {
-        font-size: 14pt;
+        font-size: 12pt;
         overflow-wrap: break-word;
         text-transform: capitalize;
+        color: white;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -123,18 +128,28 @@ title: Publications
 
 
     // - Modify all pertinent collapsible elements ----
-    var coll = document.getElementsByClassName("collapsible-bib-btn");
-    var i;
+    // var coll = document.getElementsByClassName("collapsible-bib-btn");
+    // var i;
+    //
+    // for (i = 0; i < coll.length; i++) {
+    //     coll[i].addEventListener("click", function () {
+    //         this.classList.toggle("collapsible-bib-active");
+    //         var content = this.nextElementSibling;
+    //         if (content.style.maxHeight) {
+    //             content.style.maxHeight = null;
+    //         } else {
+    //             content.style.maxHeight = content.scrollHeight + "px";
+    //         }
+    //     });
+    // }
 
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-            this.classList.toggle("collapsible-bib-active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
-        });
+    function collapsible_bib_btn_onClick() {
+        this.classList.toggle("collapsible-bib-active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
     }
 </script> 
