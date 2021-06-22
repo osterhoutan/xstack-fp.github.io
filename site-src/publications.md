@@ -62,7 +62,6 @@ title: Publications
     /* Style the collapsible content. Note: hidden by default */
     .collapsible-bib-content {
         padding: 0 8px;
-        display: none;
         overflow: hidden;
         background-color: #5d7a9151;
         color: black;

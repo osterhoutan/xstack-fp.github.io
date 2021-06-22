@@ -125,11 +125,9 @@
 
 <!-- This is a generated entry for a publication citation -->
 <div class="collapsible-bib-entry">
-    <div class="collapsible-bib-btn" 
-            id="collapsible-bib-btn-{{key}}" 
-            onClick="collapsible_bib_btn_onClick('{{key}}')">
+    <div class="collapsible-bib-btn" id="collapsible-bib-btn-{{key}}" onClick="collapsible_bib_btn_onClick('{{key}}')">
         <h3 class="collapsible-bib-title"> {{ entry.title }} </h3>
-        <p class="collapsible-bib-authors"> {{ entry.author }} </p> 
+        <p class="collapsible-bib-authors"> {{ entry.author }} </p>
     </div>
     <div class="collapsible-bib-content" id="collapsible-bib-content-{{key}}">
         {% if entry.abstract %}
@@ -258,7 +256,7 @@
     // var outDiv = document.getElementById("collapsible-bib");
     // var all_entries = document.getElementsByClassName("collapsible-bib");
     // var headerElements = genDiv.getElementsByTagName("h2");
-    
+
     // var headers = [];
     // for (var elem of headerElements) {
     //     headers.push(elem.textContent);
@@ -298,17 +296,22 @@
     // }
 
     function collapsible_bib_btn_onClick(key) {
-        var btn = document.getElementById("collapsible-bib-btn-"+key);
+        var btn = document.getElementById("collapsible-bib-btn-" + key);
         btn.classList.toggle("collapsible-bib-active");
         // var content = btn.nextElementSibling;
-        var content = document.getElementById("collapsible-bib-content-"+key);
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
+        var content = document.getElementById("collapsible-bib-content-" + key);
+        if (content.style.display === "block") {
+            content.style.display = "none";
         } else {
-            content.style.maxHeight = content.scrollHeight + "px";
+            content.style.display = "block";
         }
+        // if (content.style.maxHeight) {
+        //     content.style.maxHeight = null;
+        // } else {
+        //     content.style.maxHeight = content.scrollHeight + "px";
+        // }
     }
-</script> 
+</script>
 
 <!-- TABLE STUFF (DISCARDED) -->
 <!-- <table class="tg-bib">
