@@ -88,4 +88,6 @@ scholar:
   order: descending
   group_by: year
   group_order: descending
-  bibliography_template: {{reference}}
+  bibliography_template: bib
+  reference_tagname: div
+  # bibliography_template: {{reference}}

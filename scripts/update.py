@@ -259,12 +259,9 @@ def write_out_people(entries, filename):
               ("person" in e.get("type", "").lower()
                or "people" in e.get("type", "").lower())]
 
-    # grab Ganesh
-    ganesh = [e for e in people if e.get("title", "") == "Ganesh Gopalakrishnan"]
     # grab professors
     professors = [e for e in people if
-                  (e.get("title", "") != "Ganesh Gopalakrishnan"
-                   and e.get("notes", "").lower().count("professor") >= 1
+                  (e.get("notes", "").lower().count("professor") >= 1
                    and e.get("notes", "").lower().count("assistant") == 0)]
     # grab assistant_professors
     assistant_professors = [e for e in people if
@@ -292,7 +289,7 @@ def write_out_people(entries, filename):
     alumns.sort(key=lambda e:e["title"].split()[-1])
 
     # join in order
-    faculty = ganesh + professors + assistant_professors
+    faculty = professors + assistant_professors
     students =  ras + phds + mss + alumns
     with open(filename, "w") as f:
         # include the frontmatter

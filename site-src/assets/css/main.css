@@ -4494,3 +4494,121 @@ body.is-loading #intro:not(.hidden) + #header + #nav {
     }
 
 }
+
+/* << MY CUSTOM CSS FOR MY SCHOLAR REFERENCE TEMPLATE */
+
+    /* COLLAPSIBLE ITEM STUFF */
+
+    /* Style the button that is used to open and close the collapsible content */
+    /* .collapsible-bib-btn {
+        background-color: #4B6C86;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+    } */
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    /* .collapsible-bib-btn:hover {
+        background-color: #ccc;
+    } */
+
+    /* .collapsible-bib-active {
+        background-color: #204765;
+    } */
+
+    /* Style the collapsible content. Note: hidden by default */
+    /* .collapsible-bib-content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #5d7a9151;
+        color: black;
+        max-height: 0;
+        transition: max-height 0.2s ease-out;
+    } */
+
+    /* Add icon  */
+    /* .collapsible-bib-btn:after {
+        content: url({{ "/images/cite.svg" | absolute_url }});
+        color: white;
+        float: right;
+        margin-left: 5px;
+        fill: none;
+        -webkit-transition: -webkit-transform 1s ease-in-out;
+        -ms-transition: -ms-transform 1s ease-in-out;
+        transition: transform 1s ease-in-out;
+    }
+
+    .collapsible-bib-active:after,
+    .collapsible-bib-btn:hover:after {
+        transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+    }
+
+    .collapsible-bib-active {
+        fill: white;
+    }
+    */
+
+    /* TABLE STUFF */
+    /* .tg-bib {
+        border: none;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    
+    .tg-bib td {
+        border-style: solid;
+        border-width: 0px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+    }
+    
+    .tg-bib th {
+        border-style: solid;
+        border-width: 0px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+    }
+    
+    .tg-bib .tg-bib-wp8o {
+        border-color: #000000;
+        text-align: center;
+        vertical-align: top
+    }
+    
+    .tg-bib .tg-bib-lqy6 {
+        text-align: right;
+        vertical-align: top
+    }
+    
+    .tg-bib .tg-bib-0lax {
+        text-align: left;
+        vertical-align: top
+    } */
+
+    /* SVG STUFF */
+
+    /* Basic Template for styling the SVG cite symbol */
+    /* .gs_or_svg {
+        position: relative;
+        width: 29px;
+        height: 16px;
+        vertical-align: text-bottom;
+        fill: none;
+        stroke: #1a0dab;
+    } */
+ */

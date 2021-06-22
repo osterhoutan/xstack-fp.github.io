@@ -4,10 +4,10 @@ title: People
 ---
 
 # Faculty
-* [Ganesh Gopalakrishnan](http://www.cs.utah.edu/~ganesh), Professor
-
-
 * [Martin Berzins](http://www.cs.utah.edu/~mb), Professor
+
+
+* [Ganesh Gopalakrishnan](http://www.cs.utah.edu/~ganesh), Professor
 
 
 * [Mary Hall](http://www.cs.utah.edu/~mhall), Professor
