@@ -36,10 +36,13 @@ title: Publications
 
     .collapsible-bib-authors {
         font-style: italic;
-        font-size: 11pt;
+        font-size: 8pt;
+        text-transform: capitalize;
     }
     .collapsible-bib-title {
         font-size: 14pt;
+        overflow-wrap: break-word;
+        text-transform: capitalize;
     }
 
     /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
