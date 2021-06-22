@@ -3,12 +3,14 @@
 
 
 <!-- This is a generated entry for a publication citation -->
-<div class="collapsible-bib-entry" onClick="collapsible_bib_btn_onClick()">
-    <div class="collapsible-bib-btn">
+<div class="collapsible-bib-entry">
+    <div class="collapsible-bib-btn" 
+            id="collapsible-bib-btn-{{key}}" 
+            onClick="collapsible_bib_btn_onClick('{{key}}')">
         <h3 class="collapsible-bib-title"> {{ entry.title }} </h3>
         <p class="collapsible-bib-authors"> {{ entry.author }} </p> 
     </div>
-    <div class="collapsible-bib-content">
+    <div class="collapsible-bib-content" id="collapsible-bib-content-{{key}}">
         {% if entry.abstract %}
         <div class="collapsible-bib-abstract">
             <h4><i>abstract</i></h4>

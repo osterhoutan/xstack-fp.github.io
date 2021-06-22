@@ -124,12 +124,14 @@
 <!-- <div class="collapsible-bib-entry collapsible-bib-entry-year-{{entry.year | strip}}"> -->
 
 <!-- This is a generated entry for a publication citation -->
-<div class="collapsible-bib-entry" onClick="collapsible_bib_btn_onClick()">
-    <div class="collapsible-bib-btn">
+<div class="collapsible-bib-entry">
+    <div class="collapsible-bib-btn" 
+            id="collapsible-bib-btn-{{key}}" 
+            onClick="collapsible_bib_btn_onClick('{{key}}')">
         <h3 class="collapsible-bib-title"> {{ entry.title }} </h3>
         <p class="collapsible-bib-authors"> {{ entry.author }} </p> 
     </div>
-    <div class="collapsible-bib-content">
+    <div class="collapsible-bib-content" id="collapsible-bib-content-{{key}}">
         {% if entry.abstract %}
         <div class="collapsible-bib-abstract">
             <h4><i>abstract</i></h4>
@@ -170,17 +172,36 @@
     var styles = `
     /* COLLAPSIBLE ITEM STUFF */
 
+    .collapsible-bib-entry {
+        margin-bottom: 8px;
+    }
+
     /* Style the button that is used to open and close the collapsible content */
     .collapsible-bib-btn {
         background-color: #4B6C86;
         color: white;
         cursor: pointer;
-        padding: 18px;
+        padding: 8px;
         width: 100%;
         border: none;
         text-align: left;
         outline: none;
-        font-size: 15px;
+    }
+
+    .collapsible-bib-authors {
+        font-style: italic;
+        font-size: 10pt;
+        text-transform: capitalize;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .collapsible-bib-title {
+        font-size: 12pt;
+        overflow-wrap: break-word;
+        text-transform: capitalize;
+        color: white;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -194,7 +215,7 @@
 
     /* Style the collapsible content. Note: hidden by default */
     .collapsible-bib-content {
-        padding: 0 18px;
+        padding: 0 8px;
         display: none;
         overflow: hidden;
         background-color: #5d7a9151;
@@ -232,7 +253,7 @@
     document.head.appendChild(styleSheet)
 
 
-    // - Extract Bib entries from list ----
+    // // - Extract Bib entries from list ----
     // var genDiv = document.getElementById("collapsible-bib-gen");
     // var outDiv = document.getElementById("collapsible-bib");
     // var all_entries = document.getElementsByClassName("collapsible-bib");
@@ -261,19 +282,31 @@
 
 
     // - Modify all pertinent collapsible elements ----
-    var coll = document.getElementsByClassName("collapsible-bib-btn");
-    var i;
+    // var coll = document.getElementsByClassName("collapsible-bib-btn");
+    // var i;
+    //
+    // for (i = 0; i < coll.length; i++) {
+    //     coll[i].addEventListener("click", function () {
+    //         this.classList.toggle("collapsible-bib-active");
+    //         var content = this.nextElementSibling;
+    //         if (content.style.maxHeight) {
+    //             content.style.maxHeight = null;
+    //         } else {
+    //             content.style.maxHeight = content.scrollHeight + "px";
+    //         }
+    //     });
+    // }
 
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-            this.classList.toggle("collapsible-bib-active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
-        });
+    function collapsible_bib_btn_onClick(key) {
+        var btn = document.getElementById("collapsible-bib-btn-"+key);
+        btn.classList.toggle("collapsible-bib-active");
+        // var content = btn.nextElementSibling;
+        var content = document.getElementById("collapsible-bib-content-"+key);
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
     }
 </script> 
 

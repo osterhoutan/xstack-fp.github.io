@@ -143,9 +143,11 @@ title: Publications
     //     });
     // }
 
-    function collapsible_bib_btn_onClick() {
-        this.classList.toggle("collapsible-bib-active");
-        var content = this.nextElementSibling;
+    function collapsible_bib_btn_onClick(key) {
+        var btn = document.getElementById("collapsible-bib-btn-"+key);
+        btn.classList.toggle("collapsible-bib-active");
+        // var content = btn.nextElementSibling;
+        var content = document.getElementById("collapsible-bib-content-"+key);
         if (content.style.maxHeight) {
             content.style.maxHeight = null;
         } else {
