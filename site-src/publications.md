@@ -52,7 +52,7 @@ title: Publications
 
     /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
     .collapsible-bib-btn:hover {
-        background-color: #204765aa;
+        background-color: #204765ee;
     }
 
     .collapsible-bib-active {
