@@ -73,7 +73,7 @@ title: Publications
         background-color: #5d7a9151;
         color: black;
         max-height: 0;
-        transition: max-height 1s ease-out;
+        transition: max-height 0.6s ease-out;
     }
 
     /* Add icon  */
@@ -85,9 +85,9 @@ title: Publications
         margin-left: 2px;
         margin-right: 4px;
         fill: none;
-        -webkit-transition: -webkit-transform 1s ease-in-out;
-        -ms-transition: -ms-transform 1s ease-in-out;
-        transition: transform 1s ease-in-out;
+        -webkit-transition: -webkit-transform 0.8s ease-in-out;
+        -ms-transition: -ms-transform 0.8s ease-in-out;
+        transition: transform 0.8s ease-in-out;
     }
 
     .collapsible-bib-active > h3 > svg,
