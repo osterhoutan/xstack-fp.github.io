@@ -64,13 +64,15 @@
         padding: 6pt 2pt 2pt 2pt;
         margin: 0pt;
     }
-    div.collapsible-bib-bibtex > pre {
+
+    div.collapsible-bib-bibtex>pre {
         border: 1px #204765;
         padding: 2pt;
         margin: 2pt;
         background-color: #f7e99cb6;
         overflow-x: auto;
     }
+
     div.collapsible-bib-reference {
         padding-top: 6pt;
     }
@@ -151,7 +153,7 @@
             {{ reference }}
         </div>
         <div class="collapsible-bib-bibtex">
-            <pre>{{ entry.bibtex | strip_html }}</pre>
+            <pre id="collapsible-bib-bibtex-pre-{{key}}">{{ entry.bibtex }}</pre>
         </div>
     </div>
 </div>
@@ -312,16 +314,15 @@
         btn.classList.toggle("collapsible-bib-active");
         // var content = btn.nextElementSibling;
         var content = document.getElementById("collapsible-bib-content-" + key);
-        if (content.style.display === "block") {
-            content.style.display = "none";
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
         } else {
-            content.style.display = "block";
+            var bibtex = document.getElementById("collapsible-bib-bibtex-pre-" + key);
+            var links = bibtex.getElementsByTagName('a');
+            for (var e of links)
+                e.textContent = e.getAttribute("href");
+            content.style.maxHeight = content.scrollHeight + "px";
         }
-        // if (content.style.maxHeight) {
-        //     content.style.maxHeight = null;
-        // } else {
-        //     content.style.maxHeight = content.scrollHeight + "px";
-        // }
     }
 </script>
 

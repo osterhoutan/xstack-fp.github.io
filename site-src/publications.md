@@ -165,6 +165,10 @@ title: Publications
         if (content.style.maxHeight) {
             content.style.maxHeight = null;
         } else {
+            var bibtex = document.getElementById("collapsible-bib-bibtex-pre-" + key);
+            var links = bibtex.getElementsByTagName('a');
+            for (var e of links)
+                e.textContent = e.getAttribute("href");
             content.style.maxHeight = content.scrollHeight + "px";
         }
     }
