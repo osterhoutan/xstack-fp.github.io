@@ -52,6 +52,8 @@ title: Publications
 
     .collapsible-bib-bibtex > h4 {
         margin-bottom: 0;
+        font-style: italic;
+        text-transform: none;
     }
 
     /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
