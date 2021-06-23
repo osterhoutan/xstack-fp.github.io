@@ -37,14 +37,14 @@ title: Publications
     .collapsible-bib-authors {
         font-style: italic;
         font-size: 10pt;
-        text-transform: capitalize;
+        text-transform: none;
         margin-bottom: 0;
         padding-bottom: 0;
     }
     .collapsible-bib-title {
         font-size: 12pt;
         overflow-wrap: break-word;
-        text-transform: capitalize;
+        text-transform: none;
         color: white;
         margin-bottom: 0;
         padding-bottom: 0;
@@ -53,6 +53,7 @@ title: Publications
     .collapsible-bib-bibtex > h4 {
         margin-bottom: 0;
         font-style: italic;
+        font-size: 12pt;
         text-transform: none;
     }
 
