@@ -2367,7 +2367,7 @@
     }
 
     /* Add icon  */
-    .collapsible-bib-btn:after {
+    .collapsible-bib-btn > h3:before {
         content: url(https://osterhoutan-uofu.github.io/comport/images/cite.svg);
         color: white;
         float: right;
@@ -2378,14 +2378,14 @@
         transition: transform 1s ease-in-out;
     }
 
-    .collapsible-bib-active:after,
-    .collapsible-bib-btn:hover:after {
+    .collapsible-bib-active > h3:before,
+    .collapsible-bib-btn:hover > h3:before {
         transform: rotate(180deg);
         -ms-transform: rotate(180deg);
         -webkit-transform: rotate(180deg);
     }
 
-    .collapsible-bib-active:after {
+    .collapsible-bib-active > h3:before {
         fill: white;
     }
 

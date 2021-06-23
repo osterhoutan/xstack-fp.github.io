@@ -70,7 +70,7 @@ title: Publications
     }
 
     /* Add icon  */
-    .collapsible-bib-btn:after {
+    .collapsible-bib-btn > h3:before {
         content: url({{ "/images/cite.svg" | absolute_url }});
         color: white;
         float: right;
@@ -81,14 +81,14 @@ title: Publications
         transition: transform 1s ease-in-out;
     }
 
-    .collapsible-bib-active:after,
-    .collapsible-bib-btn:hover:after {
+    .collapsible-bib-active > h3:before,
+    .collapsible-bib-btn:hover > h3:before {
         transform: rotate(180deg);
         -ms-transform: rotate(180deg);
         -webkit-transform: rotate(180deg);
     }
 
-    .collapsible-bib-active:after {
+    .collapsible-bib-active > h3:before {
         fill: white;
     }
 
