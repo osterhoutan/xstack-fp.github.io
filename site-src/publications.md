@@ -72,6 +72,7 @@ title: Publications
     /* Add icon  */
     .collapsible-bib-btn > h3 > svg {
         /* content: url({{ "/images/cite.svg" | absolute_url }}); */
+        max-width: 24px;
         color: white;
         float: right;
         margin-left: 5px;
