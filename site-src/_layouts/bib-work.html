@@ -151,7 +151,7 @@
             {{ reference }}
         </div>
         <div class="collapsible-bib-bibtex">
-            <pre>{{ entry.bibtex }}</pre>
+            <pre>{{ entry.bibtex | strip_html }}</pre>
         </div>
     </div>
 </div>
