@@ -9,18 +9,26 @@
             onClick="collapsible_bib_btn_onClick('{{key}}')">
         <h3 class="collapsible-bib-title">
             <svg viewBox="-1 0 17 16" class="gs_or_svg"><path d="M1.5 3.5v5h2v.375L1.75 12.5h3L6.5 8.875V3.5zM9.5 3.5v5h2v.375L9.75 12.5h3L14.5 8.875V3.5z"></path></svg> 
-            {{ entry.title }} 
+            {{ entry.title | strip_html }}
         </h3>
-        <p class="collapsible-bib-authors"> {{ entry.author }} </p> 
+        <p class="collapsible-bib-authors"> {{ entry.author | strip_html }} </p> 
     </div>
     <div class="collapsible-bib-content" id="collapsible-bib-content-{{key}}">
+        {% if entry.note %}
+        <div class="collapsible-bib-note">
+            <h4>note</h4>
+            <p>{{- entry.note | strip_html -}}</p>
+        </div>
+        {% endif %}
         {% if entry.abstract %}
         <div class="collapsible-bib-abstract">
             <h4><i>abstract</i></h4>
-            <p>{{ entry.abstract }}</p>
+            <p>{{- entry.abstract | strip_html -}}</p>
         </div>
         {% endif %}
         <div class="collapsible-bib-reference">
+            <h4>Citation <span class="colapsible-bib-refrence-style">{{- page.scholar.style | replace "-", " " 
+                                                                                            | replace "_", " " -}}</span></h4>
             {{ reference }}
         </div>
         <div class="collapsible-bib-bibtex">

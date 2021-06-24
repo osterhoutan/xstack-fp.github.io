@@ -1,7 +1,61 @@
-<!-- DYN -->
+<!-- ======================================================================= -->
+<!--                          DYN: JQUERY INCLUDES                           -->
+<!-- ======================================================================= -->
 <script src="{{ "/assets/js/jquery.min.js" | absolute_url }}"></script>
 <script src="{{ "/assets/js/jquery.scrollex.min.js" | absolute_url }}"></script>
 <script src="{{ "/assets/js/jquery.scrolly.min.js" | absolute_url }}"></script>
+
+
+
+<!-- ======================================================================= -->
+<!--                       3RD PARTY LIBRARY INCLUDES                        -->
+<!-- ======================================================================= -->
+
+<!-- ================== Site Includes (from _config.yml) =================== -->
+{% for include in site.js_include  -%}
+{% if include.name -%}
+<!-- include `{{ include.name }}` -->
+{%- endif %}
+<script 
+    {% if include.id -%}
+    id="{{- include.id | strip | replace " ", "-" -}}"
+    {%- endif %}
+    class="js-include {% if include.class -%} {{- include.class -}} {%- endif -%}"
+    {% if include.src -%}
+        {%- capture src_eval -%} {{- include.src -}} {%- endcapture -%}
+    {%- elseif include -%}
+        {%- capture src_eval -%} {{- include -}} {%- endcapture -%}
+    {%- endif -%}
+    src="{{ src_eval }}"
+    ></script>
+{%- endfor %}
+
+<!-- =============== Page Includes (from Page Front Matter) ================ -->
+{% for include in page.js_include  -%}
+{% if include.name -%}
+<!-- include `{{ include.name }}` -->
+{%- endif %}
+<script 
+    {% if include.id -%}
+    id="{{- include.id | strip | replace " ", "-" -}}"
+    {%- endif %}
+    class="js-include {% if include.class -%} {{- include.class -}} {%- endif -%}"
+    {% if include.src -%}
+        {%- capture src_eval -%} {{- include.src -}} {%- endcapture -%}
+    {%- elseif include -%}
+        {%- capture src_eval -%} {{- include -}} {%- endcapture -%}
+    {%- endif -%}
+    src="{{ src_eval }}"
+    ></script>
+{%- endfor %}
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+
+
+<!-- ======================================================================= -->
+<!--                      MISC JEKYLL TEMPLATE INCLUDES                      -->
+<!-- ======================================================================= -->
+<script src="{{ "/assets/js/collapsible_bib.min.js" | absolute_url }}"></script>
 <script src="{{ "/assets/js/skel.min.js" | absolute_url }}"></script>
 <script src="{{ "/assets/js/util.js" | absolute_url }}"></script>
 <script src="{{ "/assets/js/main.js" | absolute_url }}"></script>

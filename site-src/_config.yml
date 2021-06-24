@@ -6,19 +6,37 @@ locale:             en_US
 baseurl:            "/comport" # the subpath of your site, e.g. /blog #! will likely need replace me latter too
 url:                "https://osterhoutan-UofU.github.io" # the base hostname & protocol for your site #! Replace me later
 destination:        ../docs #? necessary for github pages to know where to find the site root.
+data_dir:           ../site-content/data
+
 
 defaults:
 - scope:
     path: ''
     type: posts
   values:
-    permalink: /comport/blog/:year/:month/:day/:title/ #! Fix me later
     layout: post
-    author:
+    author: anonymous
+    # permalink: /comport/blog/:year/:month/:day/:title/ #! Fix me later
+
+# Collections
+collections:
+- blog:
+    collections_dir : ../site-content/blog
+    permalink       : /:collection/:name
+- people:
+    collections_dir : ../site-content/info-pages/people
+    permalink       : /:collection/:name
+- education:
+    collections_dir : ../site-content/info-pages/education
+    permalink       : /:collection/:name
+- software:
+    collections_dir : ../site-content/info-pages/software
+    permalink       : /:collection/:name
+
 
 # Jekyll
 # theme:              jekyll-theme-slate
-permalink:          /comport/blog/:year/:month/:day/:title/  #! Fix me later
+# permalink:          /comport/blog/:year/:month/:day/:title/  #! Fix me later
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
@@ -72,7 +90,7 @@ paginate: 6
 paginate_path: "/comport/blog/page:num/" #! Fix me later
 
 jekyll-mentions:
-    base_url: https://github.com
+  base_url: https://github.com
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, docs, src, vendor, CNAME, LICENSE, Rakefile, old, scripts, par_site_tar.gz, fv_site_tar.gz, update_log.txt, .vscode, .mypy_cache, update_scripts]
@@ -83,6 +101,8 @@ exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.j
 #       api_key: AIzaSyCUws1pOq7EnOvKS3niZxdzi3gVQajQhws
 
 scholar:
+- source: ../site-content
+  bibliography: '**/*.bib'
   style: chicago-annotated-bibliography
   sort_by: year, month
   order: descending

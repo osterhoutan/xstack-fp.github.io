@@ -70,6 +70,9 @@ if [[ ${CHANGED} -eq 1 ]]; then
 	python3 "${SCRIPT_DIR}/update.py" ${SITE_SRC_DIR} ${CONTENT_DIR} |& tee -a ${LOGFILE}
 	echo -e "\n\n" |& tee -a ${LOGFILE}
 
+	# copy the pubs.bib file
+	cp ${CONTENT_DIR}/pubs.bib ${SITE_SRC_DIR}/_bibliography/pubs.bib
+
 	# Update blogs
 	echo "updating blog output:" |& tee -a ${LOGFILE}
 	rm -rf ${SITE_SRC_DIR}/_posts

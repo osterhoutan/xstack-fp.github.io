@@ -1,9 +1,11 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
+<!-- Title Header -->
 <title>{{ page.title }}</title>
 <meta name="description" content="{{ page.description }}">
 
+<!-- Fav icon stuff -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/icon/apple-touch-icon.png" | absolute_url }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/icon/favicon-32x32.png" | absolute_url }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/icon/favicon-16x16.png" | absolute_url }}">
@@ -16,3 +18,24 @@
 <!-- CSS -->
 <link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}" />
 <noscript><link rel="stylesheet" href="{{ "/assets/css/noscript.css" | absolute_url }}" /></noscript>
+
+
+<!-- ======================================================================= -->
+<!--                       3RD PARTY LIBRARY INCLUDES                        -->
+<!-- ======================================================================= -->
+
+<!-- ================== Site Includes (from _config.yml) =================== -->
+{% for include in site.css_include  -%}
+{%- if include -%}
+    {%- capture href_eval -%} {{- include -}} {%- endcapture -%}
+<link rel="stylesheet" href="{{ href_eval }}"/>
+{%- endif -%}
+{%- endfor %}
+
+<!-- =============== Page Includes (from Page Front Matter) ================ -->
+{% for include in page.css_include  -%}
+{%- if include -%}
+    {%- capture href_eval -%} {{- include -}} {%- endcapture -%}
+<link rel="stylesheet" href="{{ href_eval }}"/>
+{%- endif -%}
+{%- endfor %}
