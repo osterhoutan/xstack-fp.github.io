@@ -1,37 +1,51 @@
-## Welcome to GitHub Pages
+# Welcome to the ${ProjName} Website!!
 
-You can use the [editor on GitHub](https://github.com/osterhoutan-UofU/comport/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## system requirements
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- a unix style terminal
+  - windows users must use crywigin, or preferably WSL
+- Ruby > v2.4.0
+- git
 
-### Markdown
+## setup:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+ 1. Install Ruby (version 2.4.0 or higher) for your system.
+    - you will need to figure this step out as it varies between operating systems.
+ 2. Run the following lines of code to install all of the necessary Ruby Gems
+    ```bash
+    cd site-src
+    bundle install  # run this with sudo if you want to install globally
+    bundle update
+    ```
+## using this website builder
+For how to add and modify content 
+ please read the [`/site-content/README.md`](./site-content/README.md)
+ to learn how to add content and update the website.
 
-```markdown
-Syntax highlighted code block
+But after you have added whatever content you want, just run the `update-site.sh` script 
+ to build and push (it will push for you) the site to GitHub.
+Where it will take a few minutes (usually no more than 2) to republish your changes.
 
-# Header 1
-## Header 2
-### Header 3
+## setup GitHub Pages
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/osterhoutan-UofU/comport/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+ 1. Figure out what your GitHub Pages url is going to be.
+ 2. Go modify [`/site-scr/_config.yml`](./site-scr/_config.yml) to match this information.
+     1. Set the value of `url` to whatever the domain and protocol will be. _i.e._
+        ```
+        If your GitHub Pages url is:
+          https://<username>.github.io/<repo-name>
+        the url field should be set to:
+          https://<username>.github.io
+        ```
+     2. If you are using a project level site or using a url with a partial path 
+         set the value of `baseurl` to whatever the path is. _i.e._
+        ```
+        If your GitHub Pages url is:
+          https://<username>.github.io/<repo-name>
+        the baseurl field should be set to:
+          <repo-name>
+        ```
+ 3. Go to the settings page of this repo on GitHub.
+ 4. Navigate to the "Pages" settings pain (from the nave pain on the left)
+ 5. Select the branch you want to have the website be on.
+ 6. Set the directory to `docs`, as this is where jekyll will build your site too.

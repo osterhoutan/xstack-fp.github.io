@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
     <url>
-      <loc>/2021/01/16/test-title.html</loc>
+      <loc>https://osterhoutan-UofU.github.io/2021/01/16/test-title.html</loc>
       
         <lastmod>2021-01-16T00:00:00-07:00</lastmod>
       
@@ -12,7 +12,7 @@
   
   
     <url>
-      <loc>/404.html</loc>
+      <loc>https://osterhoutan-UofU.github.io/404.html</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -22,7 +22,7 @@
      </url>
   
     <url>
-      <loc>/about.html</loc>
+      <loc>https://osterhoutan-UofU.github.io/about.html</loc>
        <lastmod>2017-11-02T00:00:00-06:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -32,7 +32,7 @@
      </url>
   
     <url>
-      <loc>/blog.html</loc>
+      <loc>https://osterhoutan-UofU.github.io/blog.html</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -42,7 +42,7 @@
      </url>
   
     <url>
-      <loc>/contact.html</loc>
+      <loc>https://osterhoutan-UofU.github.io/contact.html</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -52,7 +52,7 @@
      </url>
   
     <url>
-      <loc>/education.html</loc>
+      <loc>https://osterhoutan-UofU.github.io/education.html</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -62,7 +62,7 @@
      </url>
   
     <url>
-      <loc>/elements.html</loc>
+      <loc>https://osterhoutan-UofU.github.io/elements.html</loc>
        <lastmod>2017-11-02T00:00:00-06:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -72,7 +72,7 @@
      </url>
   
     <url>
-      <loc>/</loc>
+      <loc>https://osterhoutan-UofU.github.io/</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -82,7 +82,7 @@
      </url>
   
     <url>
-      <loc>/people.html</loc>
+      <loc>https://osterhoutan-UofU.github.io/people.html</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -92,7 +92,7 @@
      </url>
   
     <url>
-      <loc>/publications.html</loc>
+      <loc>https://osterhoutan-UofU.github.io/publications.html</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -102,7 +102,7 @@
      </url>
   
     <url>
-      <loc>/sitemap.xml</loc>
+      <loc>https://osterhoutan-UofU.github.io/sitemap.xml</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -112,7 +112,7 @@
      </url>
   
     <url>
-      <loc>/software.html</loc>
+      <loc>https://osterhoutan-UofU.github.io/software.html</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -122,7 +122,7 @@
      </url>
   
     <url>
-      <loc>/robots.txt</loc>
+      <loc>https://osterhoutan-UofU.github.io/robots.txt</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -132,7 +132,7 @@
      </url>
   
     <url>
-      <loc>/feed.xml</loc>
+      <loc>https://osterhoutan-UofU.github.io/feed.xml</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
