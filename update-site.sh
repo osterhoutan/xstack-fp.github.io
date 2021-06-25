@@ -68,7 +68,7 @@ if [[ ${CHANGED} -eq 1 ]]; then
 	echo "updating blog output:" |& tee -a ${LOGFILE}
 	rm -rf ${SITE_SRC_DIR}/_posts
 	mkdir ${SITE_SRC_DIR}/_posts
-	cp -r ${CONTENT_DIR}/data ${SITE_SRC_DIR}/_data |& tee -a ${LOGFILE}
+	cp -Trv ${CONTENT_DIR}/data ${SITE_SRC_DIR}/_data |& tee -a ${LOGFILE}
 	find ${CONTENT_DIR}/posts/_posts -regex ".*/[0-9][0-9][0-9][0-9]-[0-9]?[0-9]-[0-9]?[0-9]-.*\.md" | xargs -I{} cp -v {} ${SITE_SRC_DIR}/_posts |& tee -a ${LOGFILE}
 	echo -e "\n\n" |& tee -a ${LOGFILE}
 

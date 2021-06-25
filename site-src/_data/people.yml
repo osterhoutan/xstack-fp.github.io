@@ -35,7 +35,7 @@
 
 
 
-bob101: 
+- bob101: 
     name      : Bobert Bently
     email     : bob101@gmail.com
     links     :
@@ -44,7 +44,7 @@ bob101:
     position  : ms student 
     title     : Coffee Grabber Extraordinaire
     pronouns  : they/them
-    pfp       : https://robertbellheadshots.com/wp-content/uploads/2019/06/actor_headshot_photography_008.jpg
+    pfp       : https://imgur.com/some-profesional-pic.png
     abstract  : | 
                   Resident expert at maze solving algorithms & fetching coffee.
                   _Feel free to tag me in any issues with the aMAZEsoft project in it's repo._
