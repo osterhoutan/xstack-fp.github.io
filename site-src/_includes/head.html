@@ -17,6 +17,7 @@
 
 <!-- CSS -->
 <link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}" />
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" /> -->
 <noscript><link rel="stylesheet" href="{{ "/assets/css/noscript.css" | absolute_url }}" /></noscript>
 
 
@@ -25,7 +26,7 @@
 <!-- ======================================================================= -->
 
 <!-- ================== Site Includes (from _config.yml) =================== -->
-{% for include in site.css_include  -%}
+{% for include in site.css_includes  -%}
 {%- if include -%}
     {%- capture href_eval -%} {{- include -}} {%- endcapture -%}
 <link rel="stylesheet" href="{{ href_eval }}"/>
@@ -33,7 +34,7 @@
 {%- endfor %}
 
 <!-- =============== Page Includes (from Page Front Matter) ================ -->
-{% for include in page.css_include  -%}
+{% for include in page.css_includes  -%}
 {%- if include -%}
     {%- capture href_eval -%} {{- include -}} {%- endcapture -%}
 <link rel="stylesheet" href="{{ href_eval }}"/>

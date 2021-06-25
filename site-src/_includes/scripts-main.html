@@ -12,7 +12,7 @@
 <!-- ======================================================================= -->
 
 <!-- ================== Site Includes (from _config.yml) =================== -->
-{% for include in site.js_include  -%}
+{% for include in site.js_includes  -%}
 {% if include.name -%}
 <!-- include `{{ include.name }}` -->
 {%- endif %}
@@ -23,7 +23,7 @@
     class="js-include {% if include.class -%} {{- include.class -}} {%- endif -%}"
     {% if include.src -%}
         {%- capture src_eval -%} {{- include.src -}} {%- endcapture -%}
-    {%- elseif include -%}
+    {%- elsif include -%}
         {%- capture src_eval -%} {{- include -}} {%- endcapture -%}
     {%- endif -%}
     src="{{ src_eval }}"
@@ -31,7 +31,7 @@
 {%- endfor %}
 
 <!-- =============== Page Includes (from Page Front Matter) ================ -->
-{% for include in page.js_include  -%}
+{% for include in page.js_includes  -%}
 {% if include.name -%}
 <!-- include `{{ include.name }}` -->
 {%- endif %}
@@ -42,7 +42,7 @@
     class="js-include {% if include.class -%} {{- include.class -}} {%- endif -%}"
     {% if include.src -%}
         {%- capture src_eval -%} {{- include.src -}} {%- endcapture -%}
-    {%- elseif include -%}
+    {%- elsif include -%}
         {%- capture src_eval -%} {{- include -}} {%- endcapture -%}
     {%- endif -%}
     src="{{ src_eval }}"
@@ -55,7 +55,7 @@
 <!-- ======================================================================= -->
 <!--                      MISC JEKYLL TEMPLATE INCLUDES                      -->
 <!-- ======================================================================= -->
-<script src="{{ "/assets/js/collapsible_bib.min.js" | absolute_url }}"></script>
+<script src="{{ "/assets/js/collapsible.js" | absolute_url }}"></script>
 <script src="{{ "/assets/js/skel.min.js" | absolute_url }}"></script>
 <script src="{{ "/assets/js/util.js" | absolute_url }}"></script>
 <script src="{{ "/assets/js/main.js" | absolute_url }}"></script>

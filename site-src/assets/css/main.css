@@ -4031,3 +4031,528 @@ div.collapsible-bib-bibtex>pre {
 div.collapsible-bib-reference {
     padding-top: 6pt;
 }
+span.colapsible-bib-refrence-style:before {
+    content: "(";
+}
+span.colapsible-bib-refrence-style:after {
+    content: ")";
+}
+span.colapsible-bib-refrence-style {
+    font-style: italic;
+    font-size: 9pt;
+}
+.collapsible-edu-entry {
+    margin-bottom: 8px;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+
+.collapsible-edu-btn {
+    background-color: #4B6C86;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    min-height: 64px;
+}
+
+.collapsible-edu-authors {
+    font-style: italic;
+    font-size: 10pt;
+    text-transform: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.collapsible-edu-title {
+    font-size: 12pt;
+    overflow-wrap: break-word;
+    text-transform: none;
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+div.collapsible-edu-content h4 {
+    margin-bottom: 2pt;
+    font-size: 11pt;
+    text-transform: none;
+}
+div.collapsible-edu-bibtex>h4 {
+    margin-bottom: 0;
+    font-style: italic;
+    font-size: 11pt;
+    text-transform: none;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.collapsible-edu-btn:hover {
+    background-color: #204765ee;
+}
+
+.collapsible-edu-active {
+    background-color: #204765;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+
+.collapsible-edu-content {
+    padding: 2px 8px;
+    overflow: hidden;
+    background-color: #5d7a9151;
+    color: black;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+}
+
+/* Add icon  */
+
+.collapsible-edu-btn>h3>img {
+    /* content: url({{ "/images/cite.img" | absolute_url }}); */
+    max-height: 48px;
+    /* min-height: 32px; */
+    max-width: 256px;
+    /* min-width: 32px; */
+    border: none;
+    /* stroke: white; */
+    float: right;
+    margin-left: 2px;
+    margin-right: 4px;
+    /* fill: none; */
+    /* -webkit-transition: -webkit-transform 1s ease-in-out; */
+    /* -ms-transition: -ms-transform 1s ease-in-out; */
+    /* transition: transform 1s ease-in-out; */
+}
+
+/* .collapsible-edu-active>h3>img, 
+.collapsible-edu-btn:hover>h3>img {
+    fill: white;
+} */
+
+/* .collapsible-edu-active>h3>img {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+} */
+
+div.collapsible-edu-bibtex {
+    padding: 6pt 2pt 2pt 2pt;
+    margin: 0pt;
+}
+
+div.collapsible-edu-note {
+    background-color: #e9b961e3;
+    border-radius: 8px;
+    padding: 6pt;
+    margin: 6pt;
+}
+
+div.collapsible-edu-note > p {
+    display: block;
+}
+div.collapsible-edu-note > h4 {
+    font-style: italic;
+    text-transform: uppercase;
+    display: run-in;
+}
+
+div.collapsible-edu-abstract > h4 {
+    margin-bottom: 4pt;
+    font-style: italic;
+}
+
+span.collapsible-edu-reference-style {
+    font-style: italic;
+}
+.collapsible-edu-reference-style:before {
+    content: "(";
+}
+.collapsible-edu-reference-style:after {
+    content: ")";
+}
+
+div.collapsible-edu-bibtex>pre {
+    border: 1px #204765;
+    padding: 2pt;
+    margin: 2pt;
+    background-color: #f7e99cb6;
+    overflow-x: auto;
+}
+
+.collapsible-edu-footer {
+    /* background-color: #80808060; */
+    margin: 0;
+    padding: 6px;
+}
+
+
+/* Style the button that is used to open and close the collapsible content */
+
+.collapsible-people-btn {
+    background-color: #4B6C86;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    /* min-height: 64px; */
+}
+
+.collapsible-people-title:after {
+    content: ", ";
+}
+.collapsible-people-title,
+.collapsible-people-subtitle,
+.collapsible-people-position {
+    font-style: italic;
+    font-size: 10pt;
+    text-transform: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.collapsible-people-name {
+    font-size: 12pt;
+    overflow-wrap: break-word;
+    text-transform: none;
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+div.collapsible-people-content h4 {
+    margin-bottom: 2pt;
+    font-size: 11pt;
+    text-transform: none;
+}
+div.collapsible-people-bibtex>h4 {
+    margin-bottom: 0;
+    font-style: italic;
+    font-size: 11pt;
+    text-transform: none;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.collapsible-people-btn:hover {
+    background-color: #204765ee;
+}
+
+.collapsible-people-active {
+    background-color: #204765;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+
+.collapsible-people-content {
+    padding: 4px 8px;
+    overflow: hidden;
+    background-color: #5d7a9151;
+    color: black;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+}
+
+/* Add pfp  */
+
+div.collapsible-people-pfp {
+    /* max-width: 512px; */
+    /* padding-left: 16px; */
+    margin-right: 16px;
+    margin-top: 8px;
+}
+img.collapsible-people-pfp {
+    max-width: 512px;
+    max-height: 512px;
+    padding-top: 2px;
+    padding-left: 4px;
+}
+
+.collapsible-people-footer {
+    float: bottom;
+}
+.collapsible-people-email .info-label {
+    font-weight: bold;
+}
+
+.collapsible-people-pronouns:before {
+    content: "(";
+}
+.collapsible-people-pronouns:after {
+    content: ")";
+}
+.collapsible-people-pronouns {
+    font-style: italic;
+    font-size: 10pt;
+    float: right;
+    padding-right: 4px;
+}
+
+/* .collapsible-people-btn>h3>img {
+    content: url({{ "/images/cite.img" | absolute_url }});
+    max-height: 48px;
+    min-height: 32px;
+    max-width: 256px;
+    min-width: 32px;
+    border: none;
+    stroke: white;
+    float: right;
+    margin-left: 2px;
+    margin-right: 4px;
+    fill: none;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    -ms-transition: -ms-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+} */
+
+/* .collapsible-people-active>h3>img, 
+.collapsible-people-btn:hover>h3>img {
+    fill: white;
+} */
+
+/* .collapsible-people-active>h3>img {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+} */
+
+div.collapsible-people-bibtex {
+    padding: 6pt 2pt 2pt 2pt;
+    margin: 0pt;
+}
+
+div.collapsible-people-note {
+    background-color: #e9b961e3;
+    border-radius: 8px;
+    padding: 6pt;
+    margin: 6pt;
+}
+
+div.collapsible-people-note > p {
+    display: block;
+}
+div.collapsible-people-note > h4 {
+    font-style: italic;
+    text-transform: uppercase;
+    display: run-in;
+}
+
+div.collapsible-people-abstract > p {
+    margin-bottom: 6pt;
+}
+div.collapsible-people-abstract > h4 {
+    margin-bottom: 4pt;
+    font-style: italic;
+}
+
+span.collapsible-people-email {
+    font-style: oblique;
+}
+
+span.collapsible-people-reference-style {
+    font-style: italic;
+}
+.collapsible-people-reference-style:before {
+    content: "(";
+}
+.collapsible-people-reference-style:after {
+    content: ")";
+}
+
+div.collapsible-people-bibtex>pre {
+    border: 1px #204765;
+    padding: 2pt;
+    margin: 2pt;
+    background-color: #f7e99cb6;
+    overflow-x: auto;
+}
+
+.collapsible-people-footer {
+    /* background-color: #80808060; */
+    margin: 0;
+    padding: 6px;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+
+.collapsible-soft-btn {
+    background-color: #4B6C86;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    /* min-height: 64px; */
+}
+
+.collapsible-soft-author {
+    font-style: italic;
+    font-size: 10pt;
+    text-transform: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.collapsible-soft-title {
+    font-size: 12pt;
+    overflow-wrap: break-word;
+    text-transform: none;
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+div.collapsible-soft-content h4 {
+    margin-bottom: 2pt;
+    font-size: 11pt;
+    text-transform: none;
+}
+div.collapsible-soft-bibtex>h4 {
+    margin-bottom: 0;
+    font-style: italic;
+    font-size: 11pt;
+    text-transform: none;
+}
+
+.collapsible-people-entry,
+.collapsible-soft-entry {
+    margin-bottom: 12pt;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.collapsible-soft-btn:hover {
+    background-color: #204765ee;
+}
+
+.collapsible-soft-active {
+    background-color: #204765;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+
+.collapsible-soft-content {
+    padding: 4px 8px;
+    overflow: hidden;
+    background-color: #5d7a9151;
+    color: black;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+}
+
+/* Add image  */
+
+div.collapsible-soft-pfp {
+    /* max-width: 512px; */
+    /* padding-left: 16px; */
+    margin-right: 16px;
+    margin-top: 8px;
+}
+img.collapsible-soft-pfp {
+    max-width: 512px;
+    max-height: 512px;
+    padding-top: 2px;
+    padding-left: 4px;
+}
+
+.collapsible-soft-footer {
+    float: bottom;
+}
+.collapsible-soft-email .info-label {
+    font-weight: bold;
+}
+
+.collapsible-soft-btn>h3>img {
+    max-height: 48px;
+    min-height: 32px;
+    max-width: 256px;
+    min-width: 32px;
+    border: none;
+    /* stroke: white; */
+    float: right;
+    margin-left: 2px;
+    margin-right: 4px;
+    /* fill: none; */
+    /* -webkit-transition: -webkit-transform 1s ease-in-out; */
+    /* -ms-transition: -ms-transform 1s ease-in-out; */
+    /* transition: transform 1s ease-in-out; */
+}
+
+/* .collapsible-soft-active>h3>img, 
+.collapsible-soft-btn:hover>h3>img {
+    fill: white;
+} */
+
+/* .collapsible-soft-active>h3>img {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+} */
+
+div.collapsible-soft-bibtex {
+    padding: 6pt 2pt 2pt 2pt;
+    margin: 0pt;
+}
+
+div.collapsible-soft-note {
+    background-color: #e9b961e3;
+    border-radius: 8px;
+    padding: 6pt;
+    margin: 6pt;
+}
+
+div.collapsible-soft-note > p {
+    display: block;
+}
+div.collapsible-soft-note > h4 {
+    font-style: italic;
+    text-transform: uppercase;
+    display: run-in;
+}
+
+div.collapsible-soft-abstract > p {
+    margin-bottom: 6pt;
+}
+div.collapsible-soft-abstract > h4 {
+    margin-bottom: 4pt;
+    font-style: italic;
+}
+
+.collapsible-soft-email {
+    margin-bottom: 4px;
+}
+span.collapsible-soft-email {
+    font-style: oblique;
+}
+
+span.collapsible-soft-reference-style {
+    font-style: italic;
+}
+.collapsible-soft-reference-style:before {
+    content: "(";
+}
+.collapsible-soft-reference-style:after {
+    content: ")";
+}
+
+div.collapsible-soft-bibtex>pre {
+    border: 1px #204765;
+    padding: 2pt;
+    margin: 2pt;
+    background-color: #f7e99cb6;
+    overflow-x: auto;
+}
+
+.collapsible-soft-footer {
+    /* background-color: #80808060; */
+    margin: 0;
+    padding: 6px;
+}

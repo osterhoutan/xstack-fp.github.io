@@ -2958,3 +2958,56 @@ Done updating Comport (XStack) ()
 
 
 
+Local Changes detected!
+
+
+Update found
+
+
+git pull output:
+From github-UofU:osterhoutan-UofU/comport
+ = [up to date]      less-bib-beta -> origin/less-bib-beta
+ = [up to date]      master        -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> less-bib-beta
+
+Local Changes detected!
+
+
+Update found
+
+
+git pull output:
+From github-UofU:osterhoutan-UofU/comport
+ = [up to date]      less-bib-beta -> origin/less-bib-beta
+ = [up to date]      master        -> origin/master
+Already up to date.
+
+
+
+
+Updating Comport (XStack) ()
+
+updating blog output:
+
+
+
+bundle exec jekyll build output:
+Configuration file: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-src/_config.yml
+            Source: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-src
+       Destination: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/docs
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 4.222 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.
+
+
+

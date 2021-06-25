@@ -27,7 +27,12 @@ This is due to use of external scripts and uncommon Jekyll plugins.
 
 This Site works by taking the information located in the `site-content` directory 
  and combining it with the nitty gritty details in the [`site-src`](../site-src) directory
- to build a  semi-static website
+ to build a semi-static website.
+
+Information you need to put in to build the site goes in `pubs.bib` 
+  and the files in the `data` directory.
+Blog posts go in the posts directory, in either `_post` or `_draft` for their namesakes.
+More information about these topics are below in their respective sections. 
 
 
  BibTeX Files    
@@ -299,7 +304,7 @@ _field names in **bold** are required to have._
 > In [`/site-content/people.bib`](./people.bib)
 > ```yml
 > # ... content before ...
-> - bob101:  # <-- This must be unique for the top level list of the file
+> bob101:  # <-- This must be unique for the top level list of the file
 >                #     I recommend using a first name, if its unique for the project,
 >                #       or screen name like your GitHub Username.  
 >     name      : Bobert Bently
@@ -343,7 +348,8 @@ _field names in **bold** are required to have._
     - can be formatted as ruby timestamp or any other common date format. 
   - `icon` (type: str/url) :: a URL to an image that will be displayed 
      as an icon for the resource, try grabbing a logo associated with the resource.
-  - `info_badges` (type :: list of str/url) :: a list of urls to info badges you can use to 
+  - `image` (type: str/url) :: a URL to an image that will be displayed 
+     in the info-box as a preview of the software.
   - `licence` (type: str) :: The licence the software has (is distributed under).
   - `licence_url` (type: str/URL) :: URL to the licence the software has (is distributed under).
   - `note` (type: str/md) :: A quick notice about the piece, like if it is a work in progress 
@@ -352,7 +358,10 @@ _field names in **bold** are required to have._
     - Try to keep it real short for best formatting outcomes, like 2 sentences max.
     - supports jekyll-liquid + markdown, just like abstract _(don't go crazy with it)_.
   - **`title`** (type: str) :: The name of the Resource.
-  - `url` (type: str/url) :: a link to the resource or reliant page about the resource.
+  - `url` (type: str/url) :: a link to the resource or relevant page about the resource.
+     _(Highly recommended but not required)_
+  - `repo` (type: str/url) :: a link to the software's repository 
+      (use if separate different from `url`).
      _(Highly recommended but not required)_
   - `version` (type: str/num) :: the version identifier for the software.
 

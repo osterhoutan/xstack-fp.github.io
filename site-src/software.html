@@ -1,0 +1,92 @@
+---
+layout: page
+title: Software
+---
+
+{% for entry in site.data.software -%}
+<!-- <p>{{entry[0]}}</p> -->
+<div class="collapsible-soft-entry">
+   <div class="collapsible-soft-btn" 
+           id="collapsible-soft-btn-{{- entry[0] -}}" 
+           onClick="collapsible_soft_btn_onClick('{{- entry[0] -}}')">
+       <h3 class="collapsible-soft-title">
+         {% if entry[1].icon %}
+         {%- capture icon_href -%} {{- entry[1].icon -}} {%- endcapture -%}
+         <img src="{{- icon_href -}}" />
+         {% endif %}
+         <!-- <svg viewBox="-1 0 17 16" class="gs_or_svg"><path d="M1.5 3.5v5h2v.375L1.75 12.5h3L6.5 8.875V3.5zM9.5 3.5v5h2v.375L9.75 12.5h3L14.5 8.875V3.5z"></path></svg>  -->
+         {{ entry[1].title | strip_html | smartify }}
+      </h3>
+      <p class="collapsible-soft-authors"> {{ entry[1].author | strip_html }} </p>
+   </div>
+   <div class="collapsible-soft-content" id="collapsible-soft-content-{{- entry[0] -}}">
+      {% if entry[1].note %}
+      <div class="collapsible-soft-note">
+         <h4>note</h4>
+         <p>{{- entry[1].note | markdownify | strip_html -}}</p>
+      </div>
+      {% endif %}
+      {% if entry[1].image -%}
+    <div style="content: ''; display: flex; clear: both;">
+      <!-- <div class="collapsible-soft-pfp" style="float: left; width: 528px;"> -->
+      <div class="collapsible-soft-pfp" style="float: left;">
+        <img class="collapsible-soft-pfp" src="{{- entry[1].image -}}" />
+      </div>
+      <div style="float: right; flex-grow: 1; margin-top: 8px; margin-right: 8px; padding-top: 8px;">
+        {%- endif %}
+        {% if entry[1].abstract %}
+        <div class="collapsible-soft-abstract">
+          <h4>about</h4>
+          {%- capture abstract_value -%} {{- entry[1].abstract -}} {%- endcapture -%}
+          {{- abstract_value | markdownify | smartify -}}
+          {%- endif %}
+        </div>
+        {% if entry[1].licence -%}
+        <div>
+          <p class="collapsible-soft-email"><span class="collapsible-soft-email info-label">licence:</span>
+                {% if entry[1].licence_url %}&nbsp; <a class="collapsible-soft-email icon fa-envelope" href="{{- entry[1].lecence_url -}}"> {% endif %}
+                  &nbsp; {{- entry[1].licence -}}
+                {% if entry[1].licence_url %}</a> {% endif %}
+          </p>
+        </div>
+        {%- endif %}
+        {% if entry[1].version -%}
+        <div>
+          <p class="collapsible-soft-email"><span class="collapsible-soft-email info-label">version:</span>
+                &nbsp; {{- entry[1].version -}}
+          </p>
+        </div>
+        {%- endif %}
+        {% if entry[1].url or entry[1].repo -%}
+        <div class="collapsible-soft-footer">
+          <ul class="icons alt">
+            {% if entry[1].url %}
+            <li><a href="{{- entry[1].links.url -}}" class="icon fa-globe" rel="nofollow"><span
+                  class="label">website</span></a></li>
+            {%- endif %}
+            {% if entry[1].repo %}
+            <li><a href="https://github.com/{{- entry[1].repo -}}" class="icon fa-github" rel="nofollow"><span
+                  class="label">GitHub</span></a></li>
+            {%- endif %}
+            <!-- {% if entry[1].links.twitter %}
+            <li><a href="https://twitter.com/{{- entry[1].links.twitter -}}" class="icon fa-twitter"
+                rel="nofollow"><span class="label">Twitter</span></a></li>
+            {%- endif %}
+            {% if entry[1].links.instagram %}
+            <li><a href="https://instagram.com/{{- entry[1].links.instagram -}}" class="icon fa-instagram"
+                rel="nofollow"><span class="label">Instagram</span></a></li>
+            {%- endif %}
+            {% if entry[1].links.facebook %}
+            <li><a href="https://facebook.com/{{- entry[1].links.facebook -}}" class="icon fa-facebook"
+                rel="nofollow"><span class="label">Facebook</span></a></li>
+            {%- endif %} -->
+          </ul>
+        </div>
+        {%- endif %}
+        {% if entry[1].image %}
+      </div>
+    </div>
+    {% endif %}
+   </div>
+</div>
+{%- endfor %}
