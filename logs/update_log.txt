@@ -3074,3 +3074,32 @@ an editor opened by 'git commit'. Please make sure all processes
 are terminated then try again. If it still fails, a git process
 may have crashed in this repository earlier:
 remove the file manually to continue.
+Local Changes detected!
+
+
+Update found
+
+
+git pull output:
+From github-UofU:osterhoutan-UofU/comport
+ = [up to date]      less-bib-beta -> origin/less-bib-beta
+ = [up to date]      master        -> origin/master
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: update_ref failed for ref 'ORIG_HEAD': cannot lock ref 'ORIG_HEAD': Unable to create '/mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/.git/ORIG_HEAD.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
