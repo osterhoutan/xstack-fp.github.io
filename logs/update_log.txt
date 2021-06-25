@@ -3103,3 +3103,37 @@ an editor opened by 'git commit'. Please make sure all processes
 are terminated then try again. If it still fails, a git process
 may have crashed in this repository earlier:
 remove the file manually to continue.
+Local Changes detected!
+
+
+Update found
+
+
+git pull output:
+From github-UofU:osterhoutan-UofU/comport
+ = [up to date]      less-bib-beta -> origin/less-bib-beta
+ = [up to date]      master        -> origin/master
+fatal: update_ref failed for ref 'ORIG_HEAD': cannot lock ref 'ORIG_HEAD': Unable to create '/mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/.git/ORIG_HEAD.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+Local Changes detected!
+
+
+Update found
+
+
+git pull output:
+From github-UofU:osterhoutan-UofU/comport
+ = [up to date]      less-bib-beta -> origin/less-bib-beta
+ = [up to date]      master        -> origin/master
+fatal: update_ref failed for ref 'ORIG_HEAD': cannot lock ref 'ORIG_HEAD': Unable to create '/mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/.git/ORIG_HEAD.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
