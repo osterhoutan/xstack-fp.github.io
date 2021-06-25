@@ -3250,3 +3250,45 @@ Configuration file: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xs
 
 
 
+
+Done updating Comport (XStack) ()
+
+
+
+Local Changes detected!
+
+
+Update found
+
+
+git pull output:
+From github-UofU:osterhoutan-UofU/comport
+ = [up to date]      less-bib-beta -> origin/less-bib-beta
+ = [up to date]      master        -> origin/master
+Already up to date.
+
+
+
+
+Updating Comport (XStack) ()
+
+updating blog output:
+'/mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-content/data/people.yml' -> '/mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-src/_data/people.yml'
+'/mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-content/data/education.yml' -> '/mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-src/_data/education.yml'
+'/mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-content/data/software.yml' -> '/mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-src/_data/software.yml'
+'/mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-content/posts/_posts/2021-01-16-test-title.md' -> '/mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-src/_posts/2021-01-16-test-title.md'
+
+
+
+bundle exec jekyll build output:
+Configuration file: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-src/_config.yml
+            Source: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/site-src
+       Destination: /mnt/d/Google-Drive/School/UofU/proj/GoDA/ganesh-websites/xstack-comport/comport-website/docs
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 3.359 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.
+
+
+

@@ -19,19 +19,19 @@ defaults:
     # permalink: /comport/blog/:year/:month/:day/:title/ #! Fix me later
 
 # Collections
-collections:
-  blog:
-    collections_dir : ../site-content/blog
-    permalink       : /:collection/:name
-  people:
-    collections_dir : ../site-content/info-pages/people
-    permalink       : /:collection/:name
-  education:
-    collections_dir : ../site-content/info-pages/education
-    permalink       : /:collection/:name
-  software:
-    collections_dir : ../site-content/info-pages/software
-    permalink       : /:collection/:name
+# collections:
+#   blog:
+#     collections_dir : ../site-content/blog
+#     permalink       : /:collection/:name
+#   people:
+#     collections_dir : ../site-content/info-pages/people
+#     permalink       : /:collection/:name
+#   education:
+#     collections_dir : ../site-content/info-pages/education
+#     permalink       : /:collection/:name
+#   software:
+#     collections_dir : ../site-content/info-pages/software
+#     permalink       : /:collection/:name
 
 
 # Jekyll
