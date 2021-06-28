@@ -57,28 +57,28 @@
 
 <script src="https://osterhoutan-uofu.github.io/comport/%20/assets/js/citations.min.jss" type="text/javascript"></script>
 <script>
-    const Cite = require('citation-js');
-    function getRemote(remote_url) {
-        return $.ajax({
-            type: "GET",
-            url: remote_url,
-            async: false
-        }).responseText;
-    }
-    var pubs_bib = null; 
-    var ref_bib = null;
-    $.get('https://raw.githubusercontent.com/osterhoutan-UofU/comweb/less-bib-beta/site-content/pubs.bib',).success(function(data) {
-        console.log("Received `pubs.bib` !!");
-        console.log(data); //Comment me out later
-        pubs_bib = Cite.input(data);
-        console.log(pubs_bib); //Comment me out later
-    });
-    $.get('https://raw.githubusercontent.com/osterhoutan-UofU/comweb/less-bib-beta/site-content/references.bib',).success(function(data) {
-        console.log("Received `reference.bib` !!");
-        console.log(data); //Comment me out later
-        refs_bib = Cite.input(data);
-        console.log(refs_bib); //Comment me out later
-    });
+    // const Cite = require('citation-js');
+    // function getRemote(remote_url) {
+    //     return $.ajax({
+    //         type: "GET",
+    //         url: remote_url,
+    //         async: false
+    //     }).responseText;
+    // }
+    // var pubs_bib = null; 
+    // var ref_bib = null;
+    // $.get('https://raw.githubusercontent.com/osterhoutan-UofU/comweb/less-bib-beta/site-content/pubs.bib',).success(function(data) {
+    //     console.log("Received `pubs.bib` !!");
+    //     console.log(data); //Comment me out later
+    //     pubs_bib = Cite.input(data);
+    //     console.log(pubs_bib); //Comment me out later
+    // });
+    // $.get('https://raw.githubusercontent.com/osterhoutan-UofU/comweb/less-bib-beta/site-content/references.bib',).success(function(data) {
+    //     console.log("Received `reference.bib` !!");
+    //     console.log(data); //Comment me out later
+    //     refs_bib = Cite.input(data);
+    //     console.log(refs_bib); //Comment me out later
+    // });
 </script>
 
   </head>

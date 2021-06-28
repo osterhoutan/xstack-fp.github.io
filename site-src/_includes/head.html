@@ -58,26 +58,26 @@
 
 <script src="{{- " /assets/js/citations.min.js" | absolute_url -}}s" type="text/javascript"></script>
 <script>
-    const Cite = require('citation-js');
-    function getRemote(remote_url) {
-        return $.ajax({
-            type: "GET",
-            url: remote_url,
-            async: false
-        }).responseText;
-    }
-    var pubs_bib = null; 
-    var ref_bib = null;
-    $.get('{{- site.pubs_bib_url -}}',).success(function(data) {
-        console.log("Received `pubs.bib` !!");
-        console.log(data); //Comment me out later
-        pubs_bib = Cite.input(data);
-        console.log(pubs_bib); //Comment me out later
-    });
-    $.get('{{- site.reference_bib_url -}}',).success(function(data) {
-        console.log("Received `reference.bib` !!");
-        console.log(data); //Comment me out later
-        refs_bib = Cite.input(data);
-        console.log(refs_bib); //Comment me out later
-    });
+    // const Cite = require('citation-js');
+    // function getRemote(remote_url) {
+    //     return $.ajax({
+    //         type: "GET",
+    //         url: remote_url,
+    //         async: false
+    //     }).responseText;
+    // }
+    // var pubs_bib = null; 
+    // var ref_bib = null;
+    // $.get('{{- site.pubs_bib_url -}}',).success(function(data) {
+    //     console.log("Received `pubs.bib` !!");
+    //     console.log(data); //Comment me out later
+    //     pubs_bib = Cite.input(data);
+    //     console.log(pubs_bib); //Comment me out later
+    // });
+    // $.get('{{- site.reference_bib_url -}}',).success(function(data) {
+    //     console.log("Received `reference.bib` !!");
+    //     console.log(data); //Comment me out later
+    //     refs_bib = Cite.input(data);
+    //     console.log(refs_bib); //Comment me out later
+    // });
 </script>
