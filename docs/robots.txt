@@ -1,1 +1,1 @@
-Sitemap: https://osterhoutan-uofu.github.io/comport/sitemap.xml
+Sitemap: https://osterhoutan-uofu.github.io/comweb/sitemap.xml

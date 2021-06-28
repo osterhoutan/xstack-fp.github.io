@@ -2,7 +2,7 @@
 title:              "${ProjName}"
 bio:                'This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the ${ProjName} project.'
 description:        "This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the Comport ${ProjName} project."
-baseurl:            "/comport" # the subpath of your site, e.g. /blog #! will likely need replace me latter too
+baseurl:            "/comweb" # the subpath of your site, e.g. /blog #! will likely need replace me latter too
 url:                "https://osterhoutan-UofU.github.io" # the base hostname & protocol for your site #! Replace me later
 reference_bib_url:  "https://raw.githubusercontent.com/osterhoutan-UofU/comweb/less-bib-beta/site-content/references.bib"
 pubs_bib_url:       "https://raw.githubusercontent.com/osterhoutan-UofU/comweb/less-bib-beta/site-content/pubs.bib"
