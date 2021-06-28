@@ -82,6 +82,16 @@
      </url>
   
     <url>
+      <loc>https://osterhoutan-UofU.github.io/publications/</loc>
+       <lastmod>2017-11-10T00:20:35+00:00</lastmod>
+      
+       <changefreq>weekly</changefreq>
+      
+       <priority>0.5</priority>
+      
+     </url>
+  
+    <url>
       <loc>https://osterhoutan-UofU.github.io/software/</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
@@ -93,16 +103,6 @@
   
     <url>
       <loc>https://osterhoutan-UofU.github.io/</loc>
-       <lastmod>2017-11-10T00:20:35+00:00</lastmod>
-      
-       <changefreq>weekly</changefreq>
-      
-       <priority>0.5</priority>
-      
-     </url>
-  
-    <url>
-      <loc>https://osterhoutan-UofU.github.io/publications.html</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
