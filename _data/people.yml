@@ -1,0 +1,50 @@
+# << ======================================================================= >
+# <<                          PEOPLE YAML DATA FILE                          >
+# << ======================================================================= >
+#  This is a data file containing the information 
+#   about contributors to the project.
+#  Entries must take the form of a key/value dict/obj structure,
+#   w/ all entries having unique keys, 
+#   that are memorable for anyone.
+#  To ensure this we recommend either using your first name or better yet
+#   your GitHub usernames, as they are guaranteed to be unique and will also
+#   match up with the git logs. 
+#  Please fill out all required fields 
+#   (indicated in the template by not being double commented out),
+#   and whatever other fields you feel comfortable doing.
+#  For more information about the fields please check out 
+#   the Section on this file in the /site-content/README.md file.
+#  You can also add your own fields if you want access to the data via liquid.
+
+# << =========================== Template Entry ============================ >
+# ${personID}:
+#     name      : ${YourName}
+#     position  : "${pick most applicable: research staff, phd student, ms student, alumni, professor, or assistant professor}"
+# #     pfp       : ${url to a profile pic}
+# #     pronouns  : ${preferred pronouns}
+# #     title     : ${job title}
+# #     degree    : ${highest collegic degree}
+# #     abstract  : |
+# #                   ${Brief about you}
+# #     links     :
+# #         github    : ${GitHub username}
+# #         website   : ${URL to personal website}
+# #         twitter   : ${twitter handle (no `@`)}
+# #         instagram : ${instagram profile-name/user-name}
+# #         facebook  : ${url to specific page or profile} # not sure why you would include this one but you could.
+
+
+
+bob101: 
+    name      : Bobert Bently
+    email     : bob101@gmail.com
+    links     :
+        website   : https://bob101.github.io
+        github    : bob101
+    position  : ms student 
+    title     : Coffee Grabber Extraordinaire
+    pronouns  : they/them
+    pfp       : http://static1.squarespace.com/static/54c85166e4b03a5492fe6e90/t/5fca828c5bd8fe559a71b0e0/1607107218301/Rob+Salmeron+Headshot.jpeg
+    abstract  : | 
+                  Resident expert at maze solving algorithms & fetching coffee.
+                  _Feel free to tag me in any issues with the aMAZEsoft project in it's repo._

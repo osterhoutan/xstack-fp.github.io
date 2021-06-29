@@ -1,0 +1,72 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+<!-- Title Header -->
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}">
+
+<!-- Fav icon stuff -->
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/icon/apple-touch-icon.png" | strip | absolute_url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/icon/favicon-32x32.png" | strip  | absolute_url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/icon/favicon-16x16.png" | strip  | absolute_url }}">
+<link rel="manifest" href="{{ "/assets/icon/manifest.json" | strip  | absolute_url }}">
+<link rel="mask-icon" href="{{ "/assets/icon/safari-pinned-tab.svg" | strip  | absolute_url }}" color="#5bbad5">
+<link rel="shortcut icon" href="{{ "/assets/icon/favicon.ico" | strip  | absolute_url }}">
+<meta name="msapplication-config" content="{{ "/assets/icon/browserconfig.xml" | strip  | absolute_url }}">
+<meta name="theme-color" content="#ffffff">
+
+<!-- CSS -->
+<link rel="stylesheet" href="{{ " /assets/css/main.css" | strip  | absolute_url }}" />
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" | strip  /> -->
+<noscript>
+    <link rel="stylesheet" href="{{ " /assets/css/noscript.css" | strip  | absolute_url }}" />
+</noscript>
+
+<!-- ======================================================================= -->
+<!--                          DYN: JQUERY INCLUDES                           -->
+<!-- ======================================================================= -->
+<script src="{{ "/assets/js/jquery.min.js" | strip  | absolute_url }}"></script>
+<script src="{{ "/assets/js/jquery.scrollex.min.js" | strip  | absolute_url }}"></script>
+<script src="{{ "/assets/js/jquery.scrolly.min.js" | strip  | absolute_url }}"></script>
+
+
+<!-- ======================================================================= -->
+<!--                       3RD PARTY LIBRARY INCLUDES                        -->
+<!-- ======================================================================= -->
+
+<!-- ================== Site Includes (from _config.yml) =================== -->
+{% for css_include in site.css_includes -%}
+{%- if css_include -%}
+{%- capture href_eval -%} {{- css_include -}} {%- endcapture -%}
+<link rel="stylesheet" href="{{ href_eval }}" />
+{%- endif -%}
+{%- endfor %}
+
+<!-- =============== Page css_includes (from Page Front Matter) ================ -->
+{% for css_include in page.css_includes -%}
+{%- if css_include -%}
+{%- capture href_eval -%} {{- css_include -}} {%- endcapture -%}
+<link rel="stylesheet" href="{{ href_eval }}" />
+{%- endif -%}
+{%- endfor %}
+
+<!-- =========================== Gmaps Includes ============================ -->
+<!-- {\% if page.use_gmap or page.gmap -%}
+<script src="{\{- "/assets/js/gmap.js" | absolute_url -}}"></script>
+{\%- endif -%} -->
+
+
+<script src="{{- "/assets/js/citation.min.js" | strip | absolute_url -}}" type="text/javascript"></script>
+<script>
+    const Cite = require('citation-js');
+    // Cite.plugins.input.addDataParser('@bibtex/object', {
+    //     async: false,
+    //     parser(data) {
+    //         for (const prop in data.properties) {
+    //             data.properties[prop.toLowerCase()] = data.properties[prop]
+    //             delete data.properties[prop]
+    //         }
+    //         return citejs.parse.bibtex.json(data)
+    //     }
+    // });
+</script>

@@ -4,8 +4,6 @@ bio:                'This is a research page for publications and software creat
 description:        "This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the Comport ${ProjName} project."
 baseurl:            "comweb" # the subpath of your site, e.g. /blog #! will likely need replace me latter too
 url:                "https://osterhoutan-UofU.github.io" # the base hostname & protocol for your site #! Replace me later
-reference_bib_url:  "https://raw.githubusercontent.com/osterhoutan-UofU/comweb/less-bib-beta/site-content/references.bib"
-pubs_bib_url:       "https://raw.githubusercontent.com/osterhoutan-UofU/comweb/less-bib-beta/site-content/pubs.bib"
 locale:             en_US
 
 
@@ -15,27 +13,37 @@ locale:             en_US
 
 
 defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    layout: post
-    author: anonymous
-    # permalink: /comport/blog/:year/:month/:day/:title/ #! Fix me later
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+      author: anonymous
+      # permalink: /comport/blog/:year/:month/:day/:title/ #! Fix me later
+  # - scope:
+  #     path: './pubs.bib'
+  #   values:
+  #     permalink: /pubs.bib
+  #     bib: true
+  # - scope:
+  #     path: './references.bib'
+  #   values:
+  #     permalink: /references.bib
+  #     bib: true
 
 # Collections
 collections:
   blog:
-    collections_dir : ../site-content/blog
+    collections_dir : site-content/blog
     permalink       : /:collection/:name
   people:
-    collections_dir : ../site-content/info-pages/people
+    collections_dir : site-content/people
     permalink       : /:collection/:name
   education:
-    collections_dir : ../site-content/info-pages/education
+    collections_dir : site-content/education
     permalink       : /:collection/:name
   software:
-    collections_dir : ../site-content/info-pages/software
+    collections_dir : site-content/software
     permalink       : /:collection/:name
 
 
@@ -79,7 +87,7 @@ plugins:
   - jekyll-feed       # YES (v0.15.1)
   - jekyll-gist       # YES (v0.15.1)
   - jekyll-paginate   # YES (v1.1.0)
-  - jekyll-scholar    # ! NO !  (this one hurts as we use it's functionality a lot)
+  # - jekyll-scholar    # ! NO !  (this one hurts as we use it's functionality a lot)
   # - jekyll-maps       # ! NO ! (but this only needs to generate one page so just move the gen content to includes)
 
 
@@ -90,7 +98,7 @@ jekyll-mentions:
   base_url: https://github.com
 
 # Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, docs, src, vendor, CNAME, LICENSE, Rakefile, old, scripts, par_site_tar.gz, fv_site_tar.gz, update_log.txt, .vscode, .mypy_cache, update_scripts]
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, docs, src, vendor, CNAME, LICENSE, Rakefile, old, scripts, par_site_tar.gz, fv_site_tar.gz, update_log.txt, .vscode, .mypy_cache, update_scripts, site-src]
 
 
 maps:

@@ -1,0 +1,37 @@
+# << ======================================================================= >> 
+# <<                        EDUCATION DATA YAML FILE                         >> 
+# << ======================================================================= >> 
+#  This is a data file containing the information 
+#   about educational resources relevant to the project.
+#  Entries must take the form of a key/value dict/obj structure,
+#   w/ all entries having unique keys, 
+#   that are memorable for anyone.
+#  Please fill out all required fields 
+#   (indicated in the template by not being double commented out),
+#   and whatever other fields you feel comfortable doing.
+#  For more information about the fields please check out 
+#   the Section on this file in the /site-content/README.md file.
+#  You can also add your own fields if you want access to the data via liquid.
+
+
+hari_sundar_classes:
+    title: Classes on Parallel Computing, Linear Algebra Scientific Computing
+    author: Hari Sundar
+    url: http://www.cs.utah.edu/~hari/teaching.html
+    date: 2018
+    cite_key: hari_sundar_classes
+    abstract: "Parallel computing classes taught by Prof. Sundar"
+
+
+
+edupar_peachy_assignments:
+    title: '"Peachy Assignments," a Poster Session at EduPar 2018'
+    author: Ganesh Gopalakrishnan
+    url: https://www.overleaf.com/read/whmzmrbwrvrw
+    date: 2018
+    icon: https://cdn.jim-nielsen.com/ios/512/peach-share-vividly-2018-09-06.png
+    cite_key: edupar_peachy_assignments
+    abstract: |
+            These were some assignments contributed to
+            EduPar 2018 which is trying to collect assignment
+            nuggets to be inserted into courses.
