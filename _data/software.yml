@@ -19,7 +19,19 @@ Dendro4:
   title: The Dendro Software System
   author: Hari Sundar
   url: https://paralab.github.io/Dendro4/
-  # crossref={hari},
+  repo:             ... # URL to other repo for the software
+  links: 
+    docs:             ... # URL to page containing documentation for one thing or another (this will also be added to the nav bar)
+    email:            ... # primary contact email address for entire proj
+    website:          ... # URL to a separate website for the proj (maybe official university page, etc.)
+    reddit:           ... # sub-reddit name (prepend "r/" for sub-reddit or "u/" for a user)
+    forum:            ... # URL to a help forum (i.e. repo issues page or an actual forum)
+    youtube:          ... # youtube channel URL
+    vimeo:            ... # vimeo channel name (who even are you?)
+    twitter:          ... # twitter handle (if you add this you're probably annoying)
+    instagram:        ... # instagram profile name (if you add this you're a bad person)
+    facebook:         ... # facebook page name (if you add this you're old
+  licence: MIT
   abstract: The Dendro Software System
 
 
@@ -28,8 +40,22 @@ uintah:
   title: The Uintah Software
   author: Alan Humphrey and Martin Berzins
   url: http://uintah.utah.edu/
+  repo:             ... # URL to other repo for the software
   icon: https://cdn.vox-cdn.com/thumbor/6C5Yi14bAf7iRHvCEWK9xlL5TYM=/0x0:3000x3000/1200x800/filters:focal(1260x1260:1740x1740)/cdn.vox-cdn.com/uploads/chorus_image/image/64978846/3b17607095.0.jpeg
   image: https://www.autoitscript.com/autoit3/docs/images/SampleGuiScreenshot.png
+  links: 
+    docs:             ... # URL to page containing documentation for one thing or another (this will also be added to the nav bar)
+    email:            ... # primary contact email address for entire proj
+    website:          ... # URL to a separate website for the proj (maybe official university page, etc.)
+    reddit:           ... # sub-reddit name (prepend "r/" for sub-reddit or "u/" for a user)
+    forum:            ... # URL to a help forum (i.e. repo issues page or an actual forum)
+    youtube:          ... # youtube channel URL
+    vimeo:            ... # vimeo channel name (who even are you?)
+    twitter:          ... # twitter handle (if you add this you're probably annoying)
+    instagram:        ... # instagram profile name (if you add this you're a bad person)
+    facebook:         ... # facebook page name (if you add this you're old
+  licence: MIT
+  licence_url: ... # url to official licence page or file.
   # crossref={mb,ahumphre},
   abstract: Uintah problem solving environment
 

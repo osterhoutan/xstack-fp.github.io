@@ -5,6 +5,24 @@ css-includes:
 - https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css
 ---
 
+<style>
+  .separator_v2 {
+    margin-top: 100px;
+    text-align: right;
+    border-top: 1px solid #000;
+    overflow: visible;
+  }
+
+  .separator_v2 a {
+    margin-top: -12px;
+    display: block;
+    font-style: italic;
+    background: #fff;
+    z-index: 10;
+    padding: 2px 20px;
+    float: right;
+  }
+</style>
 
 {% for entry in site.data.people -%}
 <div class="collapsible-people-entry">
@@ -48,6 +66,13 @@ css-includes:
           </p>
         </div>
         {%- endif %}
+        {% for person in site.people -%}
+        {%- if person.name == entry[1] -%}
+        <div class="separator_v2">
+          <a href="{{- person.url -}}">More Info...</a>
+        </div>
+        {%- endif -%}
+        {%- endfor %}
         {% if entry[1].links or entry[1].email -%}
         <div class="collapsible-people-footer">
           <ul class="icons alt">
@@ -65,23 +90,23 @@ css-includes:
             {%- endif %}
             {% if entry[1].links.gitlab_url %}
             <li><a href="{{- entry[1].links.gitlab_url -}}" class="icon fa-gitlab" rel="nofollow"><span
-              class="label">GitLab</span></a></li>
+                  class="label">GitLab</span></a></li>
             {% elsif links.gitlab %}
             <li><a href="https://gitlab.com/{{- entry[1].links.gitlab -}}" class="icon fa-gitlab" rel="nofollow"><span
-              class="label">GitLab</span></a></li>
+                  class="label">GitLab</span></a></li>
             {%- else -%}
             {%- endif %}
             {% if links.bitbucket %}
-            <li><a href="https://bitbucket.com/{{- entry[1].links.bitbucket -}}" class="icon fa-bitbucket" rel="nofollow"><span
-                  class="label">bitbucket</span></a></li>
+            <li><a href="https://bitbucket.com/{{- entry[1].links.bitbucket -}}" class="icon fa-bitbucket"
+                rel="nofollow"><span class="label">bitbucket</span></a></li>
             {%- endif %}
             {% if entry[1].links.reddit %}
-            <li><a href="https://reddit.com/{{- entry[1].links.reddit -}}" class="icon fa-twitter"
-                rel="nofollow"><span class="label">Twitter</span></a></li>
+            <li><a href="https://reddit.com/{{- entry[1].links.reddit -}}" class="icon fa-reddit" rel="nofollow"><span
+                  class="label">Twitter</span></a></li>
             {%- endif %}
             {% if entry[1].links.youtube %}
-            <li><a href="{{- entry[1].links.youtube -}}" class="icon fa-youtube"
-                rel="nofollow"><span class="label">YouTube</span></a></li>
+            <li><a href="{{- entry[1].links.youtube -}}" class="icon fa-youtube" rel="nofollow"><span
+                  class="label">YouTube</span></a></li>
             {%- endif %}
             {% if entry[1].links.vimeo %}
             <li><a href="https://vimeo.com/channels/{{- entry[1].links.vimeo -}}" class="icon fa-vimeo"
@@ -92,8 +117,8 @@ css-includes:
                 rel="nofollow"><span class="label">Twitter</span></a></li>
             {%- endif %}
             {% if entry[1].links.tiktok %}
-            <li><a href="{{- entry[1].links.tiktok -}}" class="icon fa-tiktok"
-                rel="nofollow"><span class="label">tiktok</span></a></li>
+            <li><a href="{{- entry[1].links.tiktok -}}" class="icon fa-tiktok" rel="nofollow"><span
+                  class="label">tiktok</span></a></li>
             {%- endif %}
             {% if entry[1].links.instagram %}
             <li><a href="https://instagram.com/{{- entry[1].links.instagram -}}" class="icon fa-instagram"

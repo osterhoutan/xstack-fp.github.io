@@ -3,30 +3,48 @@ layout: page
 title: Software
 ---
 
+<style>
+  .separator_v2 {
+    margin-top: 100px;
+    text-align: right;
+    border-top: 1px solid #000;
+    overflow: visible;
+  }
+
+  .separator_v2 a {
+    margin-top: -12px;
+    display: block;
+    font-style: italic;
+    background: #fff;
+    z-index: 10;
+    padding: 2px 20px;
+    float: right;
+  }
+</style>
+
 
 {% for entry in site.data.software -%}
 <div class="collapsible-soft-entry">
-   <div class="collapsible-soft-btn" 
-           id="collapsible-soft-btn-{{- entry[0] -}}" 
-           onClick="collapsible_soft_btn_onClick('{{- entry[0] -}}')">
-       <h3 class="collapsible-soft-title">
-         {% if entry[1].icon %}
-         {%- capture icon_href -%} {{- entry[1].icon -}} {%- endcapture -%}
-         <img src="{{- icon_href -}}" />
-         {% endif %}
-         <!-- <svg viewBox="-1 0 17 16" class="gs_or_svg"><path d="M1.5 3.5v5h2v.375L1.75 12.5h3L6.5 8.875V3.5zM9.5 3.5v5h2v.375L9.75 12.5h3L14.5 8.875V3.5z"></path></svg>  -->
-         {{ entry[1].title | strip_html | smartify }}
-      </h3>
-      <p class="collapsible-soft-authors"> {{ entry[1].author | strip_html }} </p>
-   </div>
-   <div class="collapsible-soft-content" id="collapsible-soft-content-{{- entry[0] -}}">
-      {% if entry[1].note %}
-      <div class="collapsible-soft-note">
-         <h4>note</h4>
-         <p>{{- entry[1].note | markdownify | strip_html -}}</p>
-      </div>
+  <div class="collapsible-soft-btn" id="collapsible-soft-btn-{{- entry[0] -}}"
+    onClick="collapsible_soft_btn_onClick('{{- entry[0] -}}')">
+    <h3 class="collapsible-soft-title">
+      {% if entry[1].icon %}
+      {%- capture icon_href -%} {{- entry[1].icon -}} {%- endcapture -%}
+      <img src="{{- icon_href -}}" />
       {% endif %}
-      {% if entry[1].image -%}
+      <!-- <svg viewBox="-1 0 17 16" class="gs_or_svg"><path d="M1.5 3.5v5h2v.375L1.75 12.5h3L6.5 8.875V3.5zM9.5 3.5v5h2v.375L9.75 12.5h3L14.5 8.875V3.5z"></path></svg>  -->
+      {{ entry[1].title | strip_html | smartify }}
+    </h3>
+    <p class="collapsible-soft-authors"> {{ entry[1].author | strip_html }} </p>
+  </div>
+  <div class="collapsible-soft-content" id="collapsible-soft-content-{{- entry[0] -}}">
+    {% if entry[1].note %}
+    <div class="collapsible-soft-note">
+      <h4>note</h4>
+      <p>{{- entry[1].note | markdownify | strip_html -}}</p>
+    </div>
+    {% endif %}
+    {% if entry[1].image -%}
     <div style="content: ''; display: flex; clear: both;">
       <!-- <div class="collapsible-soft-pfp" style="float: left; width: 528px;"> -->
       <div class="collapsible-soft-pfp" style="float: left;">
@@ -41,23 +59,40 @@ title: Software
           {{- abstract_value | markdownify | smartify -}}
           {%- endif %}
         </div>
+        {% if entry[1].repo -%}
+        <div>
+          <p class="collapsible-soft-email"><span class="collapsible-soft-email info-label">source code</span>
+            &nbsp; <a class="collapsible-soft-email icon fa-balance-scale" href="{{- entry[1].repo -}}"> {% endif %}
+              &nbsp; {{- entry[1].repo -}}
+            </a>
+          </p>
+        </div>
+        {%- endif %}
         {% if entry[1].licence -%}
         <div>
-          <p class="collapsible-soft-email"><span class="collapsible-soft-email info-label">licence:</span>
-                {% if entry[1].licence_url %}&nbsp; <a class="collapsible-soft-email icon fa-envelope" href="{{- entry[1].lecence_url -}}"> {% endif %}
-                  &nbsp; {{- entry[1].licence -}}
-                {% if entry[1].licence_url %}</a> {% endif %}
+          <p class="collapsible-soft-email"><span class="collapsible-soft-email info-label">licence</span>
+            {% if entry[1].licence_url %}&nbsp; <a class="collapsible-soft-email icon fa-balance-scale"
+              href="{{- entry[1].lecence_url -}}"> {% endif %}
+              &nbsp; {{- entry[1].licence -}}
+              {% if entry[1].licence_url %}</a> {% endif %}
           </p>
         </div>
         {%- endif %}
         {% if entry[1].version -%}
         <div>
-          <p class="collapsible-soft-email"><span class="collapsible-soft-email info-label">version:</span>
-                &nbsp; {{- entry[1].version -}}
+          <p class="collapsible-soft-email"><span class="collapsible-soft-email info-label">version</span>
+            &nbsp; {{- entry[1].version -}}
           </p>
         </div>
         {%- endif %}
-        {% if entry[1].url or entry[1].repo -%}
+        {% for soft in site.software -%}
+        {%- if soft.name == entry[1] -%}
+        <div class="separator_v2">
+          <a href="{{- soft.url -}}">More Info...</a>
+        </div>
+        {%- endif -%}
+        {%- endfor %}
+        {% if entry[1].links or entry[1].url or entry[1].repo -%}
         <div class="collapsible-soft-footer">
           <ul class="icons alt">
             {% if entry[1].url %}
@@ -65,24 +100,24 @@ title: Software
                   class="label">website</span></a></li>
             {%- endif %}
             {% if entry[1].repo %}
-            <li><a href="https://github.com/{{- entry[1].repo -}}" class="icon fa-github" rel="nofollow"><span
-                  class="label">GitHub</span></a></li>
+            <li><a href="{{- entry[1].repo -}}" class="icon fa-code" rel="nofollow"><span
+                  class="label">source</span></a></li>
             {%- endif %}
             {% if entry[1].links.docs %}
             <li><a href="{{- entry[1]links.docs -}}" class="icon fa-book" rel="nofollow"><span
                   class="label">documentation</span></a></li>
             {%- endif %}
             {% if entry[1].links.forum %}
-            <li><a href="{{- site.links.forum -}}" class="icon fa-comments"
-                rel="nofollow"><span class="label">Forum</span></a></li>
+            <li><a href="{{- site.links.forum -}}" class="icon fa-comments" rel="nofollow"><span
+                  class="label">Forum</span></a></li>
             {%- endif %}
             {% if entry[1].links.reddit %}
-            <li><a href="https://reddit.com/{{- entry[1].links.reddit -}}" class="icon fa-twitter"
-                rel="nofollow"><span class="label">Twitter</span></a></li>
+            <li><a href="https://reddit.com/{{- entry[1].links.reddit -}}" class="icon fa-reddit" rel="nofollow"><span
+                  class="label">Twitter</span></a></li>
             {%- endif %}
             {% if entry[1].links.youtube %}
-            <li><a href="{{- entry[1].links.youtube -}}" class="icon fa-youtube"
-                rel="nofollow"><span class="label">YouTube</span></a></li>
+            <li><a href="{{- entry[1].links.youtube -}}" class="icon fa-youtube" rel="nofollow"><span
+                  class="label">YouTube</span></a></li>
             {%- endif %}
             {% if entry[1].links.vimeo %}
             <li><a href="https://vimeo.com/channels/{{- entry[1].links.vimeo -}}" class="icon fa-vimeo"
@@ -92,10 +127,10 @@ title: Software
             <li><a href="https://twitter.com/{{- entry[1].links.twitter -}}" class="icon fa-twitter"
                 rel="nofollow"><span class="label">Twitter</span></a></li>
             {%- endif %}
-            {% if entry[1].links.tiktok %}
+            <!-- {% if entry[1].links.tiktok %}
             <li><a href="{{- entry[1].links.tiktok -}}" class="icon fa-tiktok"
                 rel="nofollow"><span class="label">tiktok</span></a></li>
-            {%- endif %}
+            {%- endif %} -->
             {% if entry[1].links.instagram %}
             <li><a href="https://instagram.com/{{- entry[1].links.instagram -}}" class="icon fa-instagram"
                 rel="nofollow"><span class="label">Instagram</span></a></li>
@@ -111,6 +146,6 @@ title: Software
       </div>
     </div>
     {% endif %}
-   </div>
+  </div>
 </div>
 {%- endfor %}

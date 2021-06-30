@@ -62,16 +62,16 @@
         <li><a href="https://bitbucket.com/{{- site.links.bitbucket -}}" class="icon fa-bitbucket" rel="nofollow"><span
               class="label">bitbucket</span></a></li>
       {%- endif %}
+      {% if site.links.repo %}
+        <li><a href="{{- site.links.repo -}}" class="icon fa-code" rel="nofollow"><span
+              class="label">project repo</span></a></li>
+      {%- endif %}
       {% if site.links.forum %}
       <li><a href="{{- site.links.forum -}}" class="icon fa-comments"
           rel="nofollow"><span class="label">Forum</span></a></li>
       {%- endif %}
-      {% if site.links.repo %}
-        <li><a href="{{- site.links.repo -}}" class="icon fa-code-branch" rel="nofollow"><span
-              class="label">project repo</span></a></li>
-      {%- endif %}
       {% if site.links.reddit %}
-      <li><a href="https://reddit.com/{{- site.links.reddit -}}" class="icon fa-twitter"
+      <li><a href="https://reddit.com/{{- site.links.reddit -}}" class="icon fa-reddit"
           rel="nofollow"><span class="label">Twitter</span></a></li>
       {%- endif %}
       {% if site.links.youtube %}

@@ -4,14 +4,33 @@ title: Education/Talks
 
 ---
 
+<style>
+   .separator_v2 {
+      margin-top: 100px;
+      text-align: right;
+      border-top: 1px solid #000;
+      overflow: visible;
+   }
+
+   .separator_v2 a {
+      margin-top: -12px;
+      display: block;
+      font-style: italic;
+      background: #fff;
+      z-index: 10;
+      padding: 2px 20px;
+      float: right;
+   }
+</style>
+
+
 <!-- Build a sorted array (sorted by date then title) -->
 {% for entry in site.data.education -%}
 <!-- <p>{{entry[0]}}</p> -->
 <div class="collapsible-edu-entry">
-   <div class="collapsible-edu-btn" 
-           id="collapsible-edu-btn-{{- entry[0] -}}" 
-           onClick="collapsible_edu_btn_onClick('{{- entry[0] -}}')">
-       <h3 class="collapsible-edu-title">
+   <div class="collapsible-edu-btn" id="collapsible-edu-btn-{{- entry[0] -}}"
+      onClick="collapsible_edu_btn_onClick('{{- entry[0] -}}')">
+      <h3 class="collapsible-edu-title">
          {% if entry[1].icon %}
          {%- capture icon_href -%} {{- entry[1].icon -}} {%- endcapture -%}
          <img src="{{- icon_href -}}" />
@@ -39,8 +58,15 @@ title: Education/Talks
       {\% bibliography -q entry[1].cite_key %}
       {%- endif %} -->
       <div class="collapsible-edu-footer">
-         <p>Go to resource: <a href="{{- entry[1].url -}}"> {{- entry[1].url -}} </a></p>
+         <p>Go to resource: <a class="icon fa-globe" href="{{- entry[1].url -}}">&nbsp; {{- entry[1].url -}} </a></p>
       </div>
+      {% for soft in site.software -%}
+      {%- if soft.name == entry[1] -%}
+      <div class="separator_v2">
+         <a href="{{- edu.url -}}">More Info...</a>
+      </div>
+      {%- endif -%}
+      {%- endfor %}
    </div>
 </div>
 <!-- <div class="panel-group collapse-edu">

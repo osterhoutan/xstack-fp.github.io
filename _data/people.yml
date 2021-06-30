@@ -39,8 +39,18 @@ bob101:
     name      : Bobert Bently
     email     : bob101@gmail.com
     links     :
-        website   : https://bob101.github.io
-        github    : bob101
+        website     : ...   # URL your personal webpage and/or portfolio
+        github      : ...   # bitbucket username
+        gitlab      : ...   # gitlab username
+        gitlab_url  : ...   # URL to self hosted gitlab user profile (this will supersede the normal gitlab)
+        bitbucket   : ...   # bitbucket username
+        reddit      : ...   # sub-reddit name (prepend "r/" for sub-reddit or "u/" for a user)
+        forum       : ...   # URL to user profile on the proj help forum
+        youtube     : ...   # youtube channel URL (harmless self promotion)
+        vimeo       : ...   # vimeo channel name (who even are you?)
+        twitter     : ...   # twitter handle (if you add this you're probably annoying)
+        instagram   : ...   # instagram profile name (if you add this you're a bad person)
+        facebook    : ...   # facebook page name (if you add this you're old)
     position  : ms student 
     title     : Coffee Grabber Extraordinaire
     pronouns  : they/them

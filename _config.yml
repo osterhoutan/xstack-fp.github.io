@@ -44,7 +44,6 @@ links:
   youtube:          ... # youtube channel URL
   vimeo:            ... # vimeo channel name (who even are you?)
   twitter:          ... # twitter handle (if you add this you're probably annoying)
-  tiktok:           ... # tiktok channel SHARE LINK (if you add this you're probably annoying & ADHD)
   instagram:        ... # instagram profile name (if you add this you're a bad person)
   facebook:         ... # facebook page name (if you add this you're old)
 
@@ -56,6 +55,31 @@ links:
 # <<                             EXPERT SECTION                              >> 
 # << ======================================================================= >> 
 # This is the section that you should only tough if you know what you are doing !!
+
+# Collections
+collections:
+  blog:
+    output          : true
+    future          : true
+    blog            : true
+    collections_dir : site-content/blog
+    permalink       : /:collection/:name
+  people:
+    output          : true
+    people          : true
+    collections_dir : site-content/people
+    permalink       : /:collection/:name
+  education:
+    output          : true
+    education       : true
+    collections_dir : site-content/education
+    permalink       : /:collection/:name
+  software:
+    output          : true
+    software        : true
+    collections_dir : site-content/software
+    permalink       : /:collection/:name
+
 defaults:
   - scope:
       path: ''
@@ -75,20 +99,6 @@ defaults:
   #     permalink: /references.bib
   #     bib: true
 
-# Collections
-collections:
-  blog:
-    collections_dir : site-content/blog
-    permalink       : /:collection/:name
-  people:
-    collections_dir : site-content/people
-    permalink       : /:collection/:name
-  education:
-    collections_dir : site-content/education
-    permalink       : /:collection/:name
-  software:
-    collections_dir : site-content/software
-    permalink       : /:collection/:name
 
 
 # Jekyll
