@@ -4453,6 +4453,13 @@ div.collapsible-soft-bibtex>pre {
     padding-bottom: 0;
 }
 
+div.collapsible-bib-abstract {
+    margin: 8px;
+}
+
+div.collapsible-bib-content .collapsible-bib-active {
+    padding: 16px;
+}
 div.collapsible-bib-content h4 {
     margin-bottom: 2pt;
     font-size: 11pt;
@@ -4512,8 +4519,12 @@ div.collapsible-bib-bibtex>h4 {
     -webkit-transform: rotate(180deg);
 }
 
+div.collapsible-bib-bibtex>pre {
+    padding: 8pt;
+    margin: 4px;
+}
 div.collapsible-bib-bibtex {
-    padding: 6pt 2pt 2pt 2pt;
+    padding: 6pt 4pt 8pt 4pt;
     margin: 0pt;
 }
 
