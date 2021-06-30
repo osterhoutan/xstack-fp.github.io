@@ -62,22 +62,26 @@ collections:
     output          : true
     future          : true
     blog            : true
-    collections_dir : site-content/blog
+    collections_dir : blog
+    # collections_dir : site-content/blog
     permalink       : /:collection/:name
   people:
     output          : true
     people          : true
-    collections_dir : site-content/people
+    collections_dir : people
+    # collections_dir : site-content/people
     permalink       : /:collection/:name
   education:
     output          : true
     education       : true
-    collections_dir : site-content/education
+    collections_dir : education
+    # collections_dir : site-content/education
     permalink       : /:collection/:name
   software:
     output          : true
     software        : true
-    collections_dir : site-content/software
+    collections_dir : software
+    # collections_dir : site-content/software
     permalink       : /:collection/:name
 
 defaults:
