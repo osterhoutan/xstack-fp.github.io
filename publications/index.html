@@ -75,6 +75,12 @@ bibliography: 'pubs.bib'
               <p><span class="note"></span></p>
             </div>
           </div>
+          <div class="if abstract">
+            <div class="collapsible-bib-abstract">
+              <h4><i>abstract</i></h4>
+              <p><span class="abstract"></span></p>
+            </div>
+          </div>
           <div class="colllapsible-bib-info">
             <table class="tg">
               <thead>
@@ -196,14 +202,14 @@ bibliography: 'pubs.bib'
                     </a>
                   </td>
                 </tr>
+                <tr class="if tags">
+                  <td class="tg-label">tags</td>
+                  <td class="tg-value">
+                    <span class="tags"></span>
+                  </td>
+                </tr>
               </tbody>
             </table>
-            <div class="if abstract">
-              <div class="collapsible-bib-abstract">
-                <h4><i>abstract</i></h4>
-                <p><span class="abstract"></span></p>
-              </div>
-            </div>
           </div>
           <!-- <div class="bibtexVar collapsible-bib-reference" 
             id="collapsible-bib-refrence-+BIBTEXKEY+" 
@@ -246,7 +252,8 @@ bibliography: 'pubs.bib'
 </div>
 
 
-
+<script type="text/javascript" src="{{- '/assets/js/bibtex_js.js' | absolute_url -}}"></script>
+<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.min.js"></script> -->
 
 <!-- <script src="{{- "/assets/js/comp_pubs.js" | absolute_url -}}"></script>
 <script>generate_publications("{{- "/pubs.bib" | absolute_url  -}}")</script> -->

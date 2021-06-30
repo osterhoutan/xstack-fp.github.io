@@ -6,5 +6,24 @@
   <li class="{% if page.url contains '/publications/' %} active {% endif %}"><a href="{{ "/publications/" | absolute_url }}">Publications</a></li>
   <li class="{% if page.url contains '/education/' %} active {% endif %}"><a href="{{ "/education/" | absolute_url }}">Education/Talks</a></li>
   <li class="{% if page.url contains '/contact/' %} active {% endif %}"><a href="{{ "/contact/" | absolute_url }}">Contact</a></li>
-  <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow">&nbsp; GitHub</a></li>
+  <!-- <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow">&nbsp; GitHub</a></li> -->
+  {% if site.links.docs %}
+  <li><a href="{{- site.links.docs -}}" class="icon fa-book" rel="nofollow">&nbsp; Docs</a></li>
+  {%- endif %}
+  {% if site.links.forum %}
+  <li><a href="{{- site.links.forum -}}" class="icon fa-comments" rel="nofollow">&nbsp; Forum</a></li>
+  {%- endif %}
+  {% if site.links.repo %}
+    <li><a href="{{- site.links.repo -}}" class="icon fa-code-branch" rel="nofollow">&nbsp; source</a></li>
+  {% elsif site.links.github %}
+  <li><a href="https://github.com/{{- site.links.github -}}" class="icon fa-github" rel="nofollow">&nbsp; GitHub</a></li>
+  {% elsif site.links.gitlab_url %}
+  <li><a href="{{- site.links.gitlab_url -}}" class="icon fa-gitlab" rel="nofollow"><span
+    class="label">GitLab</span></a></li>
+  {% elsif site.links.gitlab %}
+    <li><a href="https://gitlab.com/{{- site.links.gitlab -}}" class="icon fa-gitlab" rel="nofollow">&nbsp; GitLab</a></li>
+  {% elsif site.links.bitbucket %}
+    <li><a href="https://bitbucket.com/{{- site.links.bitbucket -}}" class="icon fa-bitbucket" rel="nofollow">&nbsp; BitBucket</a></li>
+  {%- else -%}
+  {%- endif %}
 </ul>

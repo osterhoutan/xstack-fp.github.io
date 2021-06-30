@@ -68,9 +68,33 @@ title: Software
             <li><a href="https://github.com/{{- entry[1].repo -}}" class="icon fa-github" rel="nofollow"><span
                   class="label">GitHub</span></a></li>
             {%- endif %}
-            <!-- {% if entry[1].links.twitter %}
+            {% if entry[1].links.docs %}
+            <li><a href="{{- entry[1]links.docs -}}" class="icon fa-book" rel="nofollow"><span
+                  class="label">documentation</span></a></li>
+            {%- endif %}
+            {% if entry[1].links.forum %}
+            <li><a href="{{- site.links.forum -}}" class="icon fa-comments"
+                rel="nofollow"><span class="label">Forum</span></a></li>
+            {%- endif %}
+            {% if entry[1].links.reddit %}
+            <li><a href="https://reddit.com/{{- entry[1].links.reddit -}}" class="icon fa-twitter"
+                rel="nofollow"><span class="label">Twitter</span></a></li>
+            {%- endif %}
+            {% if entry[1].links.youtube %}
+            <li><a href="{{- entry[1].links.youtube -}}" class="icon fa-youtube"
+                rel="nofollow"><span class="label">YouTube</span></a></li>
+            {%- endif %}
+            {% if entry[1].links.vimeo %}
+            <li><a href="https://vimeo.com/channels/{{- entry[1].links.vimeo -}}" class="icon fa-vimeo"
+                rel="nofollow"><span class="label">YouTube</span></a></li>
+            {%- endif %}
+            {% if entry[1].links.twitter %}
             <li><a href="https://twitter.com/{{- entry[1].links.twitter -}}" class="icon fa-twitter"
                 rel="nofollow"><span class="label">Twitter</span></a></li>
+            {%- endif %}
+            {% if entry[1].links.tiktok %}
+            <li><a href="{{- entry[1].links.tiktok -}}" class="icon fa-tiktok"
+                rel="nofollow"><span class="label">tiktok</span></a></li>
             {%- endif %}
             {% if entry[1].links.instagram %}
             <li><a href="https://instagram.com/{{- entry[1].links.instagram -}}" class="icon fa-instagram"
@@ -79,7 +103,7 @@ title: Software
             {% if entry[1].links.facebook %}
             <li><a href="https://facebook.com/{{- entry[1].links.facebook -}}" class="icon fa-facebook"
                 rel="nofollow"><span class="label">Facebook</span></a></li>
-            {%- endif %} -->
+            {%- endif %}
           </ul>
         </div>
         {%- endif %}

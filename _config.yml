@@ -1,17 +1,61 @@
-# Site
+# << ======================================================================= >> 
+# <<                            TEMPLATE CONFIG                              >> 
+# << ======================================================================= >> 
+# This is the Jekyll build config file.
+# Much of this should only be touched if you know what you are doing !!
+# That being said the first two sections are set up for you to be able to fill out easily,
+#  and you will need to fill out at least the first section to get this to work !!
+
+# << ========================== Required Section =========================== >> 
+# this is displayed on the page header of every page & in the page metadata.
 title:              "${ProjName}"
+# this is displayed on the about page
 bio:                'This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the ${ProjName} project.'
+# this is displayed on the about page & in the page metadata
 description:        "This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the Comport ${ProjName} project."
-baseurl:            "comweb" # the subpath of your site, e.g. /blog #! will likely need replace me latter too
+# these next two fields will depend on how you are hosting the webpage.
+#  if you plan to hos ton github pages you will need to fill them in whit the proper info.
+#  see https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#types-of-github-pages-sites
 url:                "https://osterhoutan-UofU.github.io" # the base hostname & protocol for your site #! Replace me later
+baseurl:            "comweb" # the subpath of your site, e.g. /blog #! will likely need replace me latter too
+# The location & language information for the site (part of the site metadata)
 locale:             en_US
 
 
-# destination:        "../docs" #? necessary for github pages to know where to find the site root.
-# data_dir:           "../site-content/data" #/site-content/data
+# << ========================== Optional Section =========================== >> 
+# This section has information that will add to the website 
+#  and make it seem more professional.
+# Sections of importance will have descriptions,
+#  but most should be self explanatory.
+# To activate a section uncomment it, and the relevant subsections.
+
+# This section will display useful links at the bottom of the page to useful resources.
+links: 
+  docs:             ... # URL to page containing documentation for one thing or another (this will also be added to the nav bar)
+  email:            ... # primary contact email address for entire proj
+  website:          ... # URL to a separate website for the proj (maybe official university page, etc.)
+  github:           ... # bitbucket user or org name
+  gitlab:           ... # gitlab user or org name
+  gitlab_url:       ... # URL to self hosted gitlab org (this will supersede the normal gitlab)
+  bitbucket:        ... # bitbucket user or org name
+  repo:             ... # URL to other repo system that you use (this is a catch all)
+  reddit:           ... # sub-reddit name (prepend "r/" for sub-reddit or "u/" for a user)
+  forum:            ... # URL to a help forum (i.e. repo issues page or an actual forum)
+  youtube:          ... # youtube channel URL
+  vimeo:            ... # vimeo channel name (who even are you?)
+  twitter:          ... # twitter handle (if you add this you're probably annoying)
+  tiktok:           ... # tiktok channel SHARE LINK (if you add this you're probably annoying & ADHD)
+  instagram:        ... # instagram profile name (if you add this you're a bad person)
+  facebook:         ... # facebook page name (if you add this you're old)
 
 
 
+
+
+# << ======================================================================= >> 
+# <<                             EXPERT SECTION                              >> 
+# << ======================================================================= >> 
+# This is the section that you should only tough if you know what you are doing !!
 defaults:
   - scope:
       path: ''
@@ -68,11 +112,6 @@ disqus_shortname:   default
 
 # Social
 analytics-id:       "default"
-twitter:            default
-facebook:           default
-instagram:          default
-# Probs replace this one with the org/project repo url
-github:             default #! replace me with repo or org github url
 
 # personal
 location:           Salt Lake City, UT
@@ -99,20 +138,3 @@ jekyll-mentions:
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, docs, src, vendor, CNAME, LICENSE, Rakefile, old, scripts, par_site_tar.gz, fv_site_tar.gz, update_log.txt, .vscode, .mypy_cache, update_scripts, site-src]
-
-
-maps:
-  google:
-      api_key: AIzaSyCUws1pOq7EnOvKS3niZxdzi3gVQajQhws
-
-scholar:
-  source: ../site-content
-  bibliography: '**/*.bib'
-  style: chicago-annotated-bibliography
-  sort_by: year, month
-  order: descending
-  group_by: year
-  group_order: descending
-  bibliography_template: bib
-  reference_tagname: div
-  # bibliography_template: {{reference}}
