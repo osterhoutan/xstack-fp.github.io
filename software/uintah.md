@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "test blog post 00"
+title: The Uintah Software
 author: "Andrew the dev/tester"
-date: 2021-01-16
+published: true
+date: 2020-01-01
 ---
 
 ### Test Title

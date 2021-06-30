@@ -57,30 +57,31 @@ links:
 # This is the section that you should only tough if you know what you are doing !!
 
 # Collections
+# collections_dir: site-contents
 collections:
   blog:
     output          : true
     future          : true
     blog            : true
-    collections_dir : blog
+    # collections_dir : blog
     # collections_dir : site-content/blog
     permalink       : /:collection/:name
   people:
     output          : true
     people          : true
-    collections_dir : people
+    # collections_dir : people
     # collections_dir : site-content/people
     permalink       : /:collection/:name
   education:
     output          : true
     education       : true
-    collections_dir : education
+    # collections_dir : site
     # collections_dir : site-content/education
     permalink       : /:collection/:name
   software:
     output          : true
     software        : true
-    collections_dir : software
+    # collections_dir : software
     # collections_dir : site-content/software
     permalink       : /:collection/:name
 
@@ -152,3 +153,4 @@ jekyll-mentions:
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, docs, src, vendor, CNAME, LICENSE, Rakefile, old, scripts, par_site_tar.gz, fv_site_tar.gz, update_log.txt, .vscode, .mypy_cache, update_scripts, site-src]
+# include: [site-content/_posts, site-content/_people, site-content/_software, site-content/_education, _posts, _people, _software, _education]

@@ -18,6 +18,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
 }
 
+/* IF YOU HAVE ISSUES W? IMAGE SIZING THIS MIGHT BE YOUR ISSUE */
+img {
+    max-width: 95%;
+}
+
 a {
     color: #0645AD;
 }

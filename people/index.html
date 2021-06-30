@@ -45,184 +45,120 @@ css-includes:
     {% if entry[1].pfp -%}
     <div style="content: ''; display: flex; clear: both;">
       <!-- <div class="collapsible-people-pfp" style="float: left; width: 528px;"> -->
-      <div class="collapsible-people-pfp" style="float: left;">
+      <div class="collapsible-people-pfp" style="float: left; margin-bottom: 8px; margin-left: 8px;">
         <img class="collapsible-people-pfp" src="{{- entry[1].pfp -}}" />
       </div>
-      <div style="float: right; flex-grow: 1; margin-top: 8px; margin-right: 8px; padding-top: 8px;">
-        {%- endif %}
-        {% if entry[1].abstract %}
-        <div class="collapsible-people-abstract">
-          <h4>about</h4>
-          {%- capture abstract_value -%} {{- entry[1].abstract -}} {%- endcapture -%}
-          {{- abstract_value | markdownify | smartify -}}
+      <div style="float: right; flex-grow: 1; margin-top: 8px; margin-right: 8px; padding-top: 8px; margin-left: 4px; padding-left: 8px;">
+        {%- else %}
+        <div style="margin-left: 8px; margin-top: 8px;">
+          {%- endif %}
+          {% if entry[1].abstract %}
+          <div class="collapsible-people-abstract" style="margin-bottom: 16pt;">
+            <h4>about</h4>
+            {%- capture abstract_value -%} {{- entry[1].abstract -}} {%- endcapture -%}
+            {{- abstract_value | markdownify | smartify -}}
+            {%- endif %}
+          </div>
+          {% if entry[1].email -%}
+          <div>
+            <p class="collapsible-people-email"><span class="collapsible-people-email info-label">email</span>
+              &nbsp; <a class="collapsible-people-email icon fa-envelope" href="mailto://{{- entry[1].email -}}">
+                &nbsp; {{- entry[1].email -}}
+              </a>
+            </p>
+          </div>
+          {%- endif %}
+          {% if entry[1].links.website -%}
+          <div>
+            <p class="collapsible-people-email"><span class="collapsible-people-email info-label">website</span>
+              &nbsp; <a class="collapsible-people-email icon fa-globe" href="{{- entry[1].links.website -}}">
+                &nbsp; {{- entry[1].links.website | remove: 'https://www.' | remove: 'https://' | remove: 'http://www.'
+                | remove: 'http://' -}}
+              </a>
+            </p>
+          </div>
+          {%- endif %}
+          <div id="collapsible-people-readMore-{{-entry[0]-}}" style="margin-bottom: 8pt; padding-bottom: 8pt;">
+            <a href="{{- '/people/' | append: entry[0] | append: '.html' | absolute_url -}}"
+              id="collapsible-people-readMore-{{-entry[0]-}}-a">More Info...</a>
+            <script>
+              var readMore_div_{{-entry[0]}} = document.getElementById("collapsible-people-readMore-{{-entry[0]-}}");
+              var readMore_a_{{-entry[0]}} = document.getElementById("collapsible-people-readMore-{{-entry[0]-}}-a");
+              var readMore_url_{{-entry[0]}} = readMore_a_{{-entry[0]}}.getAttribute('href');
+              $.ajax({
+                type: 'HEAD',
+                url: readMore_url_{{- entry[0] }},
+                success: function () {
+                  readMore_div_{{- entry[0] }}.setAttribute('style', 'display: block; margin-bottom: 16pt; margin-top: 16pt;');
+                },
+                error: function () {
+                  readMore_div_{{- entry[0] }}.setAttribute('style', 'display: none;');
+                }
+            });
+            </script>
+          </div>
+          {% if entry[1].links or entry[1].email -%}
+          <div class="collapsible-people-footer">
+            <ul class="icons alt">
+              {% if entry[1].email %}
+              <li><a href="mailto://{{- entry[1].email -}}" class="icon fa-envelope" rel="nofollow"><span
+                    class="label">email</span></a></li>
+              {%- endif %}
+              {% if entry[1].links.website %}
+              <li><a href="{{- entry[1].links.website -}}" class="icon fa-globe" rel="nofollow"><span
+                    class="label">website</span></a></li>
+              {%- endif %}
+              {% if entry[1].links.github %}
+              <li><a href="https://github.com/{{- entry[1].links.github -}}" class="icon fa-github" rel="nofollow"><span
+                    class="label">GitHub</span></a></li>
+              {%- endif %}
+              {% if entry[1].links.gitlab_url %}
+              <li><a href="{{- entry[1].links.gitlab_url -}}" class="icon fa-gitlab" rel="nofollow"><span
+                    class="label">GitLab</span></a></li>
+              {% elsif links.gitlab %}
+              <li><a href="https://gitlab.com/{{- entry[1].links.gitlab -}}" class="icon fa-gitlab" rel="nofollow"><span
+                    class="label">GitLab</span></a></li>
+              {%- else -%}
+              {%- endif %}
+              {% if links.bitbucket %}
+              <li><a href="https://bitbucket.com/{{- entry[1].links.bitbucket -}}" class="icon fa-bitbucket"
+                  rel="nofollow"><span class="label">bitbucket</span></a></li>
+              {%- endif %}
+              {% if entry[1].links.reddit %}
+              <li><a href="https://reddit.com/{{- entry[1].links.reddit -}}" class="icon fa-reddit" rel="nofollow"><span
+                    class="label">Twitter</span></a></li>
+              {%- endif %}
+              {% if entry[1].links.youtube %}
+              <li><a href="{{- entry[1].links.youtube -}}" class="icon fa-youtube" rel="nofollow"><span
+                    class="label">YouTube</span></a></li>
+              {%- endif %}
+              {% if entry[1].links.vimeo %}
+              <li><a href="https://vimeo.com/channels/{{- entry[1].links.vimeo -}}" class="icon fa-vimeo"
+                  rel="nofollow"><span class="label">YouTube</span></a></li>
+              {%- endif %}
+              {% if entry[1].links.twitter %}
+              <li><a href="https://twitter.com/{{- entry[1].links.twitter -}}" class="icon fa-twitter"
+                  rel="nofollow"><span class="label">Twitter</span></a></li>
+              {%- endif %}
+              {% if entry[1].links.tiktok %}
+              <li><a href="{{- entry[1].links.tiktok -}}" class="icon fa-tiktok" rel="nofollow"><span
+                    class="label">tiktok</span></a></li>
+              {%- endif %}
+              {% if entry[1].links.instagram %}
+              <li><a href="https://instagram.com/{{- entry[1].links.instagram -}}" class="icon fa-instagram"
+                  rel="nofollow"><span class="label">Instagram</span></a></li>
+              {%- endif %}
+              {% if entry[1].links.facebook %}
+              <li><a href="https://facebook.com/{{- entry[1].links.facebook -}}" class="icon fa-facebook"
+                  rel="nofollow"><span class="label">Facebook</span></a></li>
+              {%- endif %}
+            </ul>
+          </div>
           {%- endif %}
         </div>
-        {% if entry[1].email -%}
-        <div>
-          <p class="collapsible-people-email"><span class="collapsible-people-email info-label">email:</span>
-            &nbsp; <a class="collapsible-people-email icon fa-envelope" href="mailto://{{- entry[1].email -}}">
-              &nbsp; {{- entry[1].email -}}
-            </a>
-          </p>
-        </div>
-        {%- endif %}
-        {% for person in site.people -%}
-        {%- if person.name == entry[1] -%}
-        <div class="separator_v2">
-          <a href="{{- person.url -}}">More Info...</a>
-        </div>
-        {%- endif -%}
-        {%- endfor %}
-        {% if entry[1].links or entry[1].email -%}
-        <div class="collapsible-people-footer">
-          <ul class="icons alt">
-            {% if entry[1].email %}
-            <li><a href="mailto://{{- entry[1].email -}}" class="icon fa-envelope" rel="nofollow"><span
-                  class="label">email</span></a></li>
-            {%- endif %}
-            {% if entry[1].links.website %}
-            <li><a href="{{- entry[1].links.website -}}" class="icon fa-globe" rel="nofollow"><span
-                  class="label">website</span></a></li>
-            {%- endif %}
-            {% if entry[1].links.github %}
-            <li><a href="https://github.com/{{- entry[1].links.github -}}" class="icon fa-github" rel="nofollow"><span
-                  class="label">GitHub</span></a></li>
-            {%- endif %}
-            {% if entry[1].links.gitlab_url %}
-            <li><a href="{{- entry[1].links.gitlab_url -}}" class="icon fa-gitlab" rel="nofollow"><span
-                  class="label">GitLab</span></a></li>
-            {% elsif links.gitlab %}
-            <li><a href="https://gitlab.com/{{- entry[1].links.gitlab -}}" class="icon fa-gitlab" rel="nofollow"><span
-                  class="label">GitLab</span></a></li>
-            {%- else -%}
-            {%- endif %}
-            {% if links.bitbucket %}
-            <li><a href="https://bitbucket.com/{{- entry[1].links.bitbucket -}}" class="icon fa-bitbucket"
-                rel="nofollow"><span class="label">bitbucket</span></a></li>
-            {%- endif %}
-            {% if entry[1].links.reddit %}
-            <li><a href="https://reddit.com/{{- entry[1].links.reddit -}}" class="icon fa-reddit" rel="nofollow"><span
-                  class="label">Twitter</span></a></li>
-            {%- endif %}
-            {% if entry[1].links.youtube %}
-            <li><a href="{{- entry[1].links.youtube -}}" class="icon fa-youtube" rel="nofollow"><span
-                  class="label">YouTube</span></a></li>
-            {%- endif %}
-            {% if entry[1].links.vimeo %}
-            <li><a href="https://vimeo.com/channels/{{- entry[1].links.vimeo -}}" class="icon fa-vimeo"
-                rel="nofollow"><span class="label">YouTube</span></a></li>
-            {%- endif %}
-            {% if entry[1].links.twitter %}
-            <li><a href="https://twitter.com/{{- entry[1].links.twitter -}}" class="icon fa-twitter"
-                rel="nofollow"><span class="label">Twitter</span></a></li>
-            {%- endif %}
-            {% if entry[1].links.tiktok %}
-            <li><a href="{{- entry[1].links.tiktok -}}" class="icon fa-tiktok" rel="nofollow"><span
-                  class="label">tiktok</span></a></li>
-            {%- endif %}
-            {% if entry[1].links.instagram %}
-            <li><a href="https://instagram.com/{{- entry[1].links.instagram -}}" class="icon fa-instagram"
-                rel="nofollow"><span class="label">Instagram</span></a></li>
-            {%- endif %}
-            {% if entry[1].links.facebook %}
-            <li><a href="https://facebook.com/{{- entry[1].links.facebook -}}" class="icon fa-facebook"
-                rel="nofollow"><span class="label">Facebook</span></a></li>
-            {%- endif %}
-          </ul>
-        </div>
-
-        {%- endif %}
         {% if entry[1].pfp %}
       </div>
-    </div>
-    {% endif %}
-    <!-- {% if entry[1].links or entry[1].email -%}
-    <div class="collapsible-people-footer">
-      <ul class="icons alt">
-        {% if entry[1].email %}
-        <li><a href="{{- entry[1].email -}}" class="icon fa-envelope" rel="nofollow"><span
-              class="label">email</span></a></li>
-        {%- endif %}
-        {% if entry[1].links.website %}
-        <li><a href="{{- entry[1].links.website -}}" class="icon fa-globe" rel="nofollow"><span
-              class="label">website</span></a></li>
-        {%- endif %}
-        {% if entry[1].links.github %}
-        <li><a href="https://github.com/{{- entry[1].links.github -}}" class="icon fa-github" rel="nofollow"><span
-              class="label">GitHub</span></a></li>
-        {%- endif %}
-        {% if entry[1].links.twitter %}
-        <li><a href="https://twitter.com/{{- entry[1].links.twitter -}}" class="icon fa-twitter" rel="nofollow"><span
-              class="label">Twitter</span></a></li>
-        {%- endif %}
-        {% if entry[1].links.instagram %}
-        <li><a href="https://instagram.com/{{- entry[1].links.instagram -}}" class="icon fa-instagram"
-            rel="nofollow"><span class="label">Instagram</span></a></li>
-        {%- endif %}
-        {% if entry[1].links.facebook %}
-        <li><a href="https://facebook.com/{{- entry[1].links.facebook -}}" class="icon fa-facebook" rel="nofollow"><span
-              class="label">Facebook</span></a></li>
-        {%- endif %}
-      </ul>
-    </div>
-    {%- endif %} -->
-  </div>
-</div>
-<!-- <div class="panel-group collapse-people">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h3 class="panel-title">
-         <a data-toggle="collapse" href="collapse-people-{{- entry[0] -}}">
-            {{ entry[1].name | markdownify | strip_html }}
-         </a>
-      </h3>
-      <p class="panel-subtitle"> 
-         {{ entry[1].author | markdownify | strip_html }}
-      </p>
-    </div>
-    <div id="collapse-people-{{- entry[0] -}}" class="panel-collapse collapse">
-      <div class="panel-body">
-        {% if entry[1].abstract -%}
-        <div class="panel-subsection abstract">
-            <h4 class="subsection-title">
-               about
-            </h4>
-            <div class="subsection-body">
-               {%- capture abstract_value -%} {{- entry[1].abstract -}} {%- endcapture -%}
-               <p>{{- abstract_value | markdownify -}}</p>
-            </div>
-        </div>
-        {%- endif %}
-        {% if entry[1].email -%}
-        <p class="info-email"><span class="info-label">email:<span> 
-          <a class="info-email icon fa-letter" href="mailto://{{- entry[1].email -}}">
-            {{- entry[1].email -}}
-          </a>
-        </p>
-        {%- endif %}
-      </div>
-      {% if entry[1].links -%}
-      <div class="panel-footer">
-        <ul class="icons alt">
-        {% if entry[1].links.website %}
-          <li><a href="{{- entry[1].links.website -}}" class="icon fa-globe" rel="nofollow"><span class="label">website</span></a></li>
-        {%- endif %}
-        {% if entry[1].links.github %}
-          <li><a href="https://github.com/{{- entry[1].links.github -}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
-        {%- endif %}
-        {% if entry[1].links.twitter %}
-          <li><a href="https://twitter.com/{{- entry[1].links.twitter -}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
-        {%- endif %}
-        {% if entry[1].links.instagram %}
-          <li><a href="https://instagram.com/{{- entry[1].links.instagram -}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
-        {%- endif %}
-        {% if entry[1].links.facebook %}
-          <li><a href="https://facebook.com/{{- entry[1].links.facebook -}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
-        {%- endif %}
-        </ul>
-      </div>
-      {%- endif %}
+      {% endif %}
     </div>
   </div>
-</div> -->
-{% endfor %}
+  {% endfor %}

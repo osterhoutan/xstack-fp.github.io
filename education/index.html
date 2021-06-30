@@ -60,13 +60,25 @@ title: Education/Talks
       <div class="collapsible-edu-footer">
          <p>Go to resource: <a class="icon fa-globe" href="{{- entry[1].url -}}">&nbsp; {{- entry[1].url -}} </a></p>
       </div>
-      {% for soft in site.software -%}
-      {%- if soft.name == entry[1] -%}
-      <div class="separator_v2">
-         <a href="{{- edu.url -}}">More Info...</a>
+      <div id="collapsible-edu-readMore-{{-entry[0]-}}" style="margin-bottom: 8pt; padding-bottom: 8pt;">
+         <a href="{{- '/education/' | append: entry[0] | append: '.html' | absolute_url -}}"
+           id="collapsible-edu-readMore-{{-entry[0]-}}-a">More Info...</a>
+         <script>
+           var readMore_div_{{-entry[0]}} = document.getElementById("collapsible-edu-readMore-{{-entry[0]-}}");
+           var readMore_a_{{-entry[0]}} = document.getElementById("collapsible-edu-readMore-{{-entry[0]-}}-a");
+           var readMore_url_{{-entry[0]}} = readMore_a_{{-entry[0]}}.getAttribute('href');
+           $.ajax({
+             type: 'HEAD',
+             url: readMore_url_{{-entry[0]}},
+             success: function () {
+               readMore_div_{{-entry[0]}}.setAttribute('style', 'display: block; margin-bottom: 16pt; margin-top: 16pt;');
+             },
+             error: function () {
+               readMore_div_{{-entry[0]}}.setAttribute('style', 'display: none;');
+             }
+           });
+         </script>
       </div>
-      {%- endif -%}
-      {%- endfor %}
    </div>
 </div>
 <!-- <div class="panel-group collapse-edu">
