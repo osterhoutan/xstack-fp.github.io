@@ -8,11 +8,11 @@
 
 # << ========================== Required Section =========================== >> 
 # this is displayed on the page header of every page & in the page metadata.
-title:              "${ProjName}"
+title:              "XStack-FP: Comport"
 # this is displayed on the about page
-bio:                'This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the ${ProjName} project.'
+bio:                'This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the XStack-FP: Comport project.'
 # this is displayed on the about page & in the page metadata
-description:        "This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the Comport ${ProjName} project."
+description:        "This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the Comport XStack-FP: Comport project."
 # The location & language information for the site (part of the site metadata)
 locale:             en_US
 
