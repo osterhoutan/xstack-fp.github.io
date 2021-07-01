@@ -3,10 +3,10 @@
  * and therefore must be included in any file where you want them to work in.
  */
 function collapsible_soft_btn_onClick(key) {
-    var btn = document.getElementById("collapsible-soft-btn-"+key);
+    var btn = document.getElementById("collapsible-soft-btn-" + key);
     btn.classList.toggle("collapsible-soft-active");
     // var content = btn.nextElementSibling;
-    var content = document.getElementById("collapsible-soft-content-"+key);
+    var content = document.getElementById("collapsible-soft-content-" + key);
     if (content.style.maxHeight) {
         content.style.maxHeight = null;
     } else {
@@ -14,10 +14,10 @@ function collapsible_soft_btn_onClick(key) {
     }
 }
 function collapsible_people_btn_onClick(key) {
-    var btn = document.getElementById("collapsible-people-btn-"+key);
+    var btn = document.getElementById("collapsible-people-btn-" + key);
     btn.classList.toggle("collapsible-active");
     // var content = btn.nextElementSibling;
-    var content = document.getElementById("collapsible-people-content-"+key);
+    var content = document.getElementById("collapsible-people-content-" + key);
     if (content.style.maxHeight) {
         content.style.maxHeight = null;
     } else {
@@ -25,10 +25,10 @@ function collapsible_people_btn_onClick(key) {
     }
 }
 function collapsible_edu_btn_onClick(key) {
-    var btn = document.getElementById("collapsible-edu-btn-"+key);
+    var btn = document.getElementById("collapsible-edu-btn-" + key);
     btn.classList.toggle("collapsible-active");
     // var content = btn.nextElementSibling;
-    var content = document.getElementById("collapsible-edu-content-"+key);
+    var content = document.getElementById("collapsible-edu-content-" + key);
     if (content.style.maxHeight) {
         content.style.maxHeight = null;
     } else {
@@ -42,10 +42,10 @@ function collapsible_edu_btn_onClick(key) {
  * @param {*} key The reference key generated for the entry 
  */
 function collapsible_bib_btn_onClick(key) {
-    var btn = document.getElementById("collapsible-bib-btn-"+key);
+    var btn = document.getElementById("collapsible-bib-btn-" + key);
     btn.classList.toggle("collapsible-bib-active");
     // var content = btn.nextElementSibling;
-    var content = document.getElementById("collapsible-bib-content-"+key);
+    var content = document.getElementById("collapsible-bib-content-" + key);
     if (content.style.maxHeight) {
         content.style.maxHeight = null;
     } else {
@@ -56,3 +56,20 @@ function collapsible_bib_btn_onClick(key) {
         content.style.maxHeight = content.scrollHeight + "px";
     }
 }
+
+
+$(function () {
+    var key = location.hash;
+    if (key) {
+        key = key.slice(1,key.length);
+        var path = window.location.pathname;
+        if (path.endsWith('publications/'))
+            collapsible_bib_btn_onClick(key);
+        else if (path.endsWith('education/'))
+            collapsible_edu_btn_onClick(key);
+        else if (path.endsWith('software/'))
+            collapsible_soft_btn_onClick(key);
+        else if (path.endsWith('people/'))
+            collapsible_people_btn_onClick(key);
+    }
+});

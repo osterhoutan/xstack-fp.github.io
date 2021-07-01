@@ -1,21 +1,19 @@
 ---
-#(don't forget to change file name to software id)
-# Modify these:
-id: uintah
-title: The Uintah Software
-author: "Andrew the dev/tester"
-date: 2020-01-01
-published: true   # toggle between true and false if you want to hide post
-tags: [software, uintah, test-tag, bob101]
+#(don't forget to change file name to id of the resource in question)
+# You MUST Modify these:
+id: ${resource id} # this should be the entry key in the _data/education.yml
+title: ${the full title of the software}
+author: ${author name}
+date: ${date}
+published: false   # set to true to make it public
+tags: [software, '${software id}'] #, ${additional tags -optional-}]
+# modify these if you want to:
+categories: [software ] #, ${additional catagories}]
+# image: ${image url}
 # Don't modify these:
 layout: info-post
-permalink: software/:basename #:output_ext
-category: software
+permalink: education/:basename
 ---
-
-{{ site.pages | inspect }}
-
-{{ page.url }}
 
 ### Test Title
 

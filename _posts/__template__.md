@@ -1,9 +1,16 @@
 ---
-layout: info-post
-title: '"Peachy Assignments," a Poster Session at EduPar 2018'
-author: "Andrew the dev/tester"
-id: peachy_assignments
-tags: [education, talks, uintah, bob101]
+#(don't forget to change file name to yyyy-mm-dd-title.md)
+# You MUST Modify these:
+title: ${the full title of the software}
+author: ${author name}
+date: ${date}
+published: false   # set to true to make it public
+tags: [software, '${software id}'] #, ${additional tags -optional-}]
+# modify these if you want to:
+categories: [software ] #, ${additional catagories}]
+# image: ${image url} # adds an image to the thumb nail used to link to this post. 
+# Don't modify these:
+layout: post
 ---
 
 ### Test Title
@@ -17,7 +24,7 @@ gobldey gook
 
 test image w/ jekyll liquid comments (image is in the `/site-src/images` directory already)
 
-![test-image]({{ "/images/CPULogo.png" | absolute_url }})
+![test-image]({{ "/images/DecidabilityDiagram.png" | absolute_url }})
 
 
 test image w/ external media:
@@ -26,3 +33,4 @@ test image w/ external media:
 
 
 that is all for now
+

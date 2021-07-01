@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: info-page
 title: Education/Talks
-
+id: education
 ---
 
 <style>
@@ -60,25 +60,18 @@ title: Education/Talks
       <div class="collapsible-edu-footer">
          <p>Go to resource: <a class="icon fa-globe" href="{{- entry[1].url -}}">&nbsp; {{- entry[1].url -}} </a></p>
       </div>
-      <div id="collapsible-edu-readMore-{{-entry[0]-}}" style="margin-bottom: 8pt; padding-bottom: 8pt;">
-         <a href="{{- '/education/' | append: entry[0] | append: '.html' | absolute_url -}}"
-           id="collapsible-edu-readMore-{{-entry[0]-}}-a">More Info...</a>
-         <script>
-           var readMore_div_{{-entry[0]}} = document.getElementById("collapsible-edu-readMore-{{-entry[0]-}}");
-           var readMore_a_{{-entry[0]}} = document.getElementById("collapsible-edu-readMore-{{-entry[0]-}}-a");
-           var readMore_url_{{-entry[0]}} = readMore_a_{{-entry[0]}}.getAttribute('href');
-           $.ajax({
-             type: 'HEAD',
-             url: readMore_url_{{-entry[0]}},
-             success: function () {
-               readMore_div_{{-entry[0]}}.setAttribute('style', 'display: block; margin-bottom: 16pt; margin-top: 16pt;');
-             },
-             error: function () {
-               readMore_div_{{-entry[0]}}.setAttribute('style', 'display: none;');
-             }
-           });
-         </script>
-      </div>
+      {%- assign page_url = page.url | append: entry[0] -%}
+        {%- assign page_url_1 = page_url | append: '/' -%}
+        {%- assign page_url_2 = page_url | append: '.html' -%}
+        {%- assign result = site.pages | where_exp: 'page', " page.url == page_url" | size -%}
+        {%- assign result_1 = site.pages | where_exp: 'page', " page.url == page_url_1" | size -%}
+        {%- assign result_2 = site.pages | where_exp: 'page', " page.url == page_url_2" | size -%}
+          {% if result > 0 or result_1 > 0 or result_2 > 0 -%}
+          <div id="collapsible-edu-readMore-{{-entry[0]-}}" style="margin-bottom: 8pt; padding-bottom: 8pt;">
+            <a href="{{- '/education/' | append: entry[0] | append: '.html' | absolute_url -}}"
+              id="collapsible-edu-readMore-{{-entry[0]-}}-a">More Info...</a>
+          </div>
+        {%- endif %}
    </div>
 </div>
 <!-- <div class="panel-group collapse-edu">

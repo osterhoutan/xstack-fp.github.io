@@ -1,11 +1,64 @@
-# Welcome to the ${ProjName} Website!!
+  Welcome to the ${ProjName} Website!!
+==========================================
+This is a website system system that utilizes jekyll 
+ to build a static website from provided data.
+As well as be compatible with GitHub Pages for easy hosting.
 
-## system requirements
+It utilizes a website template by [&copy;HTML5 UP&trade;](https://html5up.net/), 
+  that was modified by [soundgrail](https://soundgrail.com/) to be compatible with jekyll.
+Then I [@osterhoutan-UofU](https://github.com/osterhoutan-UofU) modified it further to make
+ a website system that accompanied by the proper documentation (provided) 
+ would allow anyone<sup>&dagger;</sup> to add content to the website, 
+ as well as generate content based upon data provided.
 
-- a unix style terminal
-  - windows users must use crywigin, or preferably WSL
-- Ruby > v2.4.0
+This website system is primarily designed for scholarly work 
+ in the many fields of computer science.
+ specifically to be used as a landing page for a single research project, 
+ or even a research center or department.
+But overall it is not very flexible and would require modification to use for other applications.
+
+<sup>&dagger;</sup> - As this website system has specific clientele in mind,
+ who focus in computer science, 
+ the instructions and other documentation is geared to them.
+So while you do not need to know much about web technologies to use it,
+ knowledge of TOML, markdown (enough to get by with github README files should suffice), 
+ and some jekyll+liquid syntax if you want to get crazy.
+Other than that though it is presumed that users have experience with git, 
+ and basic computer skills should suffice.
+
+## directory
+- [setup](#setup)
+  - [host on GitHub Pages](#github-pages)
+  - [host locally](#locally)
+- [documentation](docs)
+  - [Use](docs)
+  - [Jekyll & Liquid](docs/jekyll)
+
+## setup
+You can host this system yourself, 
+  though this is more advanced, or just use GitHub Pages.
+For most people using GitHub Pages will be the way to go,
+ but even with this if you want to be able to do more advanced things 
+ you might want to 
+### GitHub Pages
+
+#### system requirements<sup>&ddagger;</sup>
 - git
+- a text editor
+
+<sub><sup>&ddagger;</sup>- you technically could just do everything from GitHub web client,
+ as you can create and edit files to an sufficient extent to do most tasks from there.</sub>
+
+### Locally
+#### system requirements
+- a unix style terminal
+  - for windows users it is recommended to use WSL (v1 or v2),
+     as ruby and jekyll on windows is sometimes buggy especially when using crywigyn and the like.
+- Ruby > v2.4.0
+  - bundler
+  - jekyll
+- git
+- a text editor
 
 ## setup:
 

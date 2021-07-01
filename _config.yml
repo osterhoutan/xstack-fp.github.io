@@ -16,8 +16,8 @@ description:        "This is a research page for publications and software creat
 # these next two fields will depend on how you are hosting the webpage.
 #  if you plan to hos ton github pages you will need to fill them in whit the proper info.
 #  see https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#types-of-github-pages-sites
-url:                "https://osterhoutan-UofU.github.io" # the base hostname & protocol for your site #! Replace me later
-baseurl:            "comweb" # the subpath of your site, e.g. /blog #! will likely need replace me latter too
+# url:                "https://osterhoutan-UofU.github.io" # the base hostname & protocol for your site #! Replace me later
+# baseurl:            "comweb" # the subpath of your site, e.g. /blog #! will likely need replace me latter too
 # The location & language information for the site (part of the site metadata)
 locale:             en_US
 
@@ -28,6 +28,7 @@ locale:             en_US
 # Sections of importance will have descriptions,
 #  but most should be self explanatory.
 # To activate a section uncomment it, and the relevant subsections.
+# To de-activate a section comment it out, and the relevant subsections.
 
 # This section will display useful links at the bottom of the page to useful resources.
 links: 
@@ -87,11 +88,32 @@ collections:
 
 defaults:
   - scope:
-      path: ''
-      type: posts
+      path        : publications/downloads
     values:
-      layout: post
-      author: anonymous
+      type        : download
+      publication : true
+      tags        : [publication, download, document, pdf, scholarship]
+  - scope:
+      path        : software/downloads
+    values:
+      type        : download
+      software    : true
+      tags        : [software, download]
+  - scope:
+      path        : education/downloads
+    values:
+      type        : download
+      education   : true
+      tags        : [education, talk, resource, download]
+  - scope:
+      path        : education/downloads
+    values:
+      type        : download
+      education   : true
+      tags        : [education, talk, resource, download]
+
+
+
       # permalink: /comport/blog/:year/:month/:day/:title/ #! Fix me later
   # - scope:
   #     path: './pubs.bib'
@@ -108,7 +130,7 @@ defaults:
 
 # Jekyll
 # theme:              jekyll-theme-slate
-# permalink:          /comport/blog/:year/:month/:day/:title/  #! Fix me later
+# permalink:          /blog/:catagories/:year/:month/:day/:title/  #! Fix me later
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
@@ -140,17 +162,17 @@ plugins:
   - jekyll-sitemap    # YES (v1.4.0)
   - jekyll-feed       # YES (v0.15.1)
   - jekyll-gist       # YES (v0.15.1)
-  - jekyll-paginate   # YES (v1.1.0)
+  # - jekyll-paginate   # YES (v1.1.0)
   # - jekyll-scholar    # ! NO !  (this one hurts as we use it's functionality a lot)
   # - jekyll-maps       # ! NO ! (but this only needs to generate one page so just move the gen content to includes)
 
 
-paginate: 6
-paginate_path: "/comport/blog/page:num/" #! Fix me later
+# paginate: 6
+# paginate_path: "/blog/page:num/" #! Fix me later
 
 jekyll-mentions:
   base_url: https://github.com
 
 # Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, docs, src, vendor, CNAME, LICENSE, Rakefile, old, scripts, par_site_tar.gz, fv_site_tar.gz, update_log.txt, .vscode, .mypy_cache, update_scripts, site-src]
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, docs, src, vendor, CNAME, LICENSE, Rakefile, old, .old, scripts, par_site_tar.gz, fv_site_tar.gz, update_log.txt, .vscode, .mypy_cache, update_scripts, site-src]
 # include: [site-content/_posts, site-content/_people, site-content/_software, site-content/_education, _posts, _people, _software, _education]

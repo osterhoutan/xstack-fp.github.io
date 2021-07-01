@@ -38,13 +38,86 @@
     	  <header class="major">
       	    <span class="date">{{page.date | date_to_string}}</span>
       	    <h2>{{page.title}}</h2>
-	    <h3>{{page.author}}</h3>
+	          {%- if page.author -%}<h3>{{page.author}}</h3>{%- endif -%}
       	   <!-- <p>{{page.excerpt}}</p> -->
       	  </header>
       	  <div class="image main"><img src="{{page.image}}" alt=""></div>
       	  <p>{{content}}</p>
       	</section>
 
+
+        <!-- <h3 class="info-header">related pages</h3>
+        <section class="posts">
+          {% for post in site.pages -%}
+          {%- if post.tags contains page.id and post.id != page.id -%}
+          <article>
+            <header>
+              <span class="date">{{ post.date | date_to_string }}</span>
+              <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+            </header>
+            <a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}"
+                alt="" /></a>
+            <p>{{ post.excerpt }}</p>
+            <ul class="actions">
+              <li><a href="{{ post.url | absolute_url }}" class="button">Read More</a></li>
+            </ul>
+          </article>
+          {% endif %}
+          {% endfor %}
+        </section> -->
+      
+        <div class="related-content-box">
+      <section>
+          <div class="related-pages">
+            <h2 class="info-header">related pages</h2>
+            <ul>
+              {% for post in site.pages -%}
+              {%- if post.tags contains page.id and post.id != page.id -%}
+                <li>
+                  <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                </li>
+              {%- endif -%}
+              {%- endfor %}
+            </ul>
+          </div>
+          <!-- <div class="related-posts">
+            <h3 class="info-header">related blog posts</h3>
+            <ul>
+              {% for post in site.posts -%}
+              {%- if post.tags contains page.id and post.id != page.id -%}
+                <li>
+                  <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                </li>
+              {%- endif -%}
+              {%- endfor %}
+            </ul>
+          </div> -->
+        </div>
+        </section>
+        
+        <!-- <div class="related-posts"> -->
+        <h2 class="info-header">related posts</h2>
+        <section class="posts">
+          {% for post in site.posts -%}
+          {%- if post.tags contains page.id -%}
+          <article>
+            <header>
+              <span class="date">{{ post.date | date_to_string }}</span>
+              <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+            </header>
+            <a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}"
+              alt="" /></a>
+              <p>{{ post.excerpt }}</p>
+              <ul class="actions">
+                <li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
+              </ul>
+            </article>
+            {% endif %}
+            {% endfor %}
+          </section>
+        <!-- </div> -->
+        <!-- </div>  -->
+          
         <!-- <div class="comments-wrapper"> -->
         <!--   <div id="disqus_thread"></div> -->
         <!--   <script> -->
@@ -70,36 +143,6 @@
         <!--   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript> -->
         <!-- </div><\!-- /.comments-wrapper -\-> -->
 
-        <section>
-          <div class="related-content-box">
-            <div class="related-pages">
-              <h3 class="info-header">related pages</h3>
-              <ul>
-                {% for post in site.pages -%}
-                {%- if page.tags contains post.id -%}
-                  <li>
-                    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-                  </li>
-                {%- endif -%}
-                {%- endfor %}
-              </ul>
-            </div>
-            <div class="related-posts">
-              <h3 class="info-header">related blog posts</h3>
-              <ul>
-                {% for tag in page.tags %}
-                {% for post in site.posts -%}
-                {%- if post.url != page.url and post.tags contains tag -%}
-                  <li>
-                    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-                  </li>
-                {%- endif -%}
-                {%- endfor %}
-                {%- endfor %}
-              </ul>
-            </div>
-          </div>
-        </section>
 
 	<!-- Footer -->
 	<footer>
