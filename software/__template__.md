@@ -13,6 +13,7 @@ categories: [software ] #, ${additional catagories}]
 # Don't modify these:
 layout: info-post
 permalink: software/:basename
+info_type: software
 ---
 
 ### Test Title

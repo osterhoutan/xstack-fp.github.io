@@ -34,7 +34,10 @@
         <article class="post featured">
           <header class="major">
             <h2><a href="#">{{- page.title -}}</a></h2>
-          
+            <center>
+              <i>{{- page.description | markdownify | strip_html -}}</i>
+            </center>
+          </header>
             {{ content }}
 
         </article>

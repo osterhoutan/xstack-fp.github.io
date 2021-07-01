@@ -13,6 +13,7 @@ categories: [software ] #, ${additional catagories}]
 # Don't modify these:
 layout: info-post
 permalink: education/:basename
+info_type: education
 ---
 
 ### Test Title

@@ -11,9 +11,10 @@ tags: [software, uintah, test-tag, bob101]
 layout: info-post
 permalink: software/:basename #:output_ext
 category: software
+info_type: software
 ---
 
-{{ site.pages | inspect }}
+{{ site["pages"] | inspect }}
 
 {{ page.url }}
 

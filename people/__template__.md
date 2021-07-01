@@ -11,6 +11,7 @@ categories: [people ] #, ${additional catagories}]
 # Don't modify these:
 layout: info-post
 permalink: people/:basename
+info_type: people
 ---
 
 ### Test Title

@@ -19,7 +19,7 @@
 
     <!-- Header -->
     <header id="header">
-      <a href="{{ " /" | absolute_url }}" class="logo">{{site.title}}</a>
+      <a href="{{ '/' | absolute_url }}" class="logo">{{site.title}}</a>
     </header>
 
 
@@ -36,9 +36,24 @@
       <article class="post featured">
         <header class="major">
           <h2><a href="#">{{- page.title -}}</a></h2>
-          
+          <center>
+            <i>{{- page.description | markdownify | strip_html -}}</i>
+          </center>
+        </header>
           {{ content }}
 
+      </article>
+      <article>
+        {% if page.id == 'education' -%}
+        {% include education_list.html %}
+        {%- elsif page.id == 'people' -%}
+        {% include people_list.html %}
+        {%- elsif page.id == 'software' -%}
+        {% include software_list.html %}
+        {%- elsif page.id == 'publications' -%}
+        {% include publications_list.html %}
+        {%- else -%}
+        {%- endif %}
       </article>
       <!-- Post -->
       <h2 class="info-header">related pages</h2>

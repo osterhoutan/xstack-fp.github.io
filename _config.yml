@@ -13,13 +13,17 @@ title:              "${ProjName}"
 bio:                'This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the ${ProjName} project.'
 # this is displayed on the about page & in the page metadata
 description:        "This is a research page for publications and software created under Prof. Ganesh Gopalakrishnan’s guidance, for the Comport ${ProjName} project."
-# these next two fields will depend on how you are hosting the webpage.
-#  if you plan to hos ton github pages you will need to fill them in whit the proper info.
-#  see https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#types-of-github-pages-sites
-# url:                "https://osterhoutan-UofU.github.io" # the base hostname & protocol for your site #! Replace me later
-# baseurl:            "comweb" # the subpath of your site, e.g. /blog #! will likely need replace me latter too
 # The location & language information for the site (part of the site metadata)
 locale:             en_US
+
+# These next two fields will depend on how you are hosting the webpage.
+# If you plan to build locally you might need to fill them in with the proper info 
+#  to get links ot build correctly, across the entire site.
+# This is also true if you want to build locally but still host on GitHub Pages. 
+#  see https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#types-of-github-pages-sites
+# However if you plan to build and host on GitHub Pages you are fine to leave these commented out as GitHub compensates.
+# url:                "https://osterhoutan-UofU.github.io" # the base hostname & protocol for your site #! Replace me later
+# baseurl:            "comweb" # the subpath of your site, e.g. /blog #! will likely need replace me latter too
 
 
 # << ========================== Optional Section =========================== >> 
@@ -47,8 +51,6 @@ links:
   twitter:          ... # twitter handle (if you add this you're probably annoying)
   instagram:        ... # instagram profile name (if you add this you're a bad person)
   facebook:         ... # facebook page name (if you add this you're old)
-
-
 
 
 

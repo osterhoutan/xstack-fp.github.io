@@ -27,19 +27,39 @@ Other than that though it is presumed that users have experience with git,
  and basic computer skills should suffice.
 
 ## directory
-- [setup](#setup)
-  - [host on GitHub Pages](#github-pages)
-  - [host locally](#locally)
-- [documentation](docs)
-  - [Use](docs)
-  - [Jekyll & Liquid](docs/jekyll)
+- [Welcome to the ${ProjName} Website!!](#welcome-to-the-projname-website)
+  - [directory](#directory)
+  - [Setup](#setup)
+    - [GitHub Pages](#github-pages)
+      - [system requirements<sup>&ddagger;</sup>](#system-requirementssupsup)
+      - [Setup - Client](#setup---client)
+      - [Setup - Repo](#setup---repo)
+    - [Locally](#locally)
+      - [system requirements](#system-requirements)
+      - [instructions](#instructions)
+    - [General Admin Setup](#general-admin-setup)
 
-## setup
+- [How To Use](./docs/README.md)
+
+Most instructions to use this website system are contained in the [`/docs/`](docs) directory
+ of the repo.
+In the directory above are some basic links to the major sections of information,
+ with their own directory sections to guide you from there.
+
+I, one day, might bother to import and set up all the info in these documentation pages 
+ in the wiki of the website systems repo, but that day is not today. 
+
+## Setup
 You can host this system yourself, 
   though this is more advanced, or just use GitHub Pages.
 For most people using GitHub Pages will be the way to go,
- but even with this if you want to be able to do more advanced things 
- you might want to 
+ but even with this if you want to be able to do more advanced things,
+ you might want to get set up to build and "host" locally. 
+As this allows you to see the webpage in a local staging ground for testing, _etc._ 
+In this case, however, you are likely an advanced user and should be able to figure that out.
+But for most I recommend Building and hosting on GitHub Pages.
+
+
 ### GitHub Pages
 
 #### system requirements<sup>&ddagger;</sup>
@@ -48,6 +68,38 @@ For most people using GitHub Pages will be the way to go,
 
 <sub><sup>&ddagger;</sup>- you technically could just do everything from GitHub web client,
  as you can create and edit files to an sufficient extent to do most tasks from there.</sub>
+
+#### Setup - Client
+
+For clients just copy the repo for the GitHib Pages that your, website admin has setup.
+Make sure they have granted you permission on GitHub to make commits/changes to the website repo.
+
+Then to make changes to the website just do it on your own machine, commit & push the changes.
+The changes should take effect on the website within 2 minutes of the push 
+ (max I've sene is 5 min).
+ 
+You can also just make changes via the GitHub Web Client for the repo.
+Where you can create new files, and edit existing files. 
+Which is all it takes to edit files on the website.
+
+
+#### Setup - Repo
+This section is primarily for the website administrator, and/or advanced users.
+
+To Host on GitHub Pages you will need to either clone and/or for the systems repo.
+You will only really need the master branch as other branches are wither dead 
+ or used for active dev and therefore not stable.
+
+I recommend,
+ for the site administrators,
+ making sure that you are able to merge with the master branch down the line
+ if you ever want to update your copy of the site, to fix bugs or get new features.<sup>&dagger;</sup>
+But be ready and capable to deal with merge conflicts 
+ or the occasional test data file slipping through.
+
+<sub><sup>&dagger;</sup>- new features are not likely to come fast if at all.</sub>
+
+
 
 ### Locally
 #### system requirements
@@ -60,45 +112,31 @@ For most people using GitHub Pages will be the way to go,
 - git
 - a text editor
 
-## setup:
+#### instructions
+Use cases can vary to much between machines I recomend you look up the installation guide on 
+ Jekyll's website \[[link](https://jekyllrb.com/docs/)\] for setup instructions,
+ and how to use jekyll in a basic sense.
 
- 1. Install Ruby (version 2.4.0 or higher) for your system.
-    - you will need to figure this step out as it varies between operating systems.
- 2. Run the following lines of code to install all of the necessary Ruby Gems
-    ```bash
-    cd site-src
-    bundle install  # run this with sudo if you want to install globally
-    bundle update
-    ```
-## using this website builder
-For how to add and modify content 
- please read the [`/site-content/README.md`](./site-content/README.md)
- to learn how to add content and update the website.
+Then if you chose this option you probably know better than I do how to set up and host a website,
+ from you own machine.
 
-But after you have added whatever content you want, just run the `update-site.sh` script 
- to build and push (it will push for you) the site to GitHub.
-Where it will take a few minutes (usually no more than 2) to republish your changes.
+If you choose this option solely for the purpose of being able to see your changes
+ without updating the official site, or debugging, 
+ just follow jekyll's quick-start guide linked above, 
+ and use the following command to launch a local test server.
+```bash
+bundle exec jekyll serve --trace
+```  
 
-## setup GitHub Pages
 
- 1. Figure out what your GitHub Pages url is going to be.
- 2. Go modify [`/site-scr/_config.yml`](./site-scr/_config.yml) to match this information.
-     1. Set the value of `url` to whatever the domain and protocol will be. _i.e._
-        ```
-        If your GitHub Pages url is:
-          https://<username>.github.io/<repo-name>
-        the url field should be set to:
-          https://<username>.github.io
-        ```
-     2. If you are using a project level site or using a url with a partial path 
-         set the value of `baseurl` to whatever the path is. _i.e._
-        ```
-        If your GitHub Pages url is:
-          https://<username>.github.io/<repo-name>
-        the baseurl field should be set to:
-          <repo-name>
-        ```
- 3. Go to the settings page of this repo on GitHub.
- 4. Navigate to the "Pages" settings pain (from the nave pain on the left)
- 5. Select the branch you want to have the website be on.
- 6. Set the directory to `docs`, as this is where jekyll will build your site too.
+### General Admin Setup
+These instructions are for the website administrator.
+
+After you have done whatever it si you need to do to set up and install this website system.
+You will need to go and edit the top few fields in the [`_config.yml`](./_config.yml)
+ in order to set up some values for the website.
+MOst of teh felids are either self explanatory or there are instructions in the file to guide you.
+
+In addition it would be prudent to perform a find and replace all across the entire repo
+ for the string (non-regex, and match case off for best results) `${ProjName}`,
+ with whatever you want the title of the site to be. 

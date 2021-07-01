@@ -4463,11 +4463,13 @@ div.collapsible-bib-content .collapsible-bib-active {
 div.collapsible-bib-content h4 {
     margin-bottom: 2pt;
     font-size: 11pt;
+    text-align: left;
     text-transform: none;
 }
 div.collapsible-bib-bibtex>h4 {
     margin-bottom: 0;
     font-style: italic;
+    text-align: left;
     font-size: 11pt;
     text-transform: none;
 }
@@ -4522,6 +4524,7 @@ div.collapsible-bib-bibtex>h4 {
 div.collapsible-bib-bibtex>pre {
     padding: 8pt;
     margin: 4px;
+    text-align: left;
 }
 div.collapsible-bib-bibtex {
     padding: 6pt 4pt 8pt 4pt;
@@ -4541,6 +4544,7 @@ div.collapsible-bib-note > p {
 div.collapsible-bib-note > h4 {
     font-style: italic;
     text-transform: uppercase;
+    text-align: left;
     display: run-in;
 }
 
