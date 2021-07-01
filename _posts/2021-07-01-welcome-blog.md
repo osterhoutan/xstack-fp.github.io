@@ -1,7 +1,7 @@
 ---
 #(don't forget to change file name to yyyy-mm-dd-title.md)
 # You MUST Modify these:
-title: ${the full title of the software}
+title: Welcome Blog
 author: Ganesh Gopalakrishnan
 date: 2021-07-01
 published: true   # set to true to make it public
