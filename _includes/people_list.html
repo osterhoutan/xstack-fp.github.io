@@ -60,7 +60,7 @@
                         </p>
                     </div>
                     {%- endif %}
-                    {%- assign page_url = page.url | append: entry[0] -%}
+                    {%- assign page_url = "/people/" | append: entry[0] -%}
                     {%- assign page_url_1 = page_url | append: '/' -%}
                     {%- assign page_url_2 = page_url | append: '.html' -%}
                     {%- assign result = site.pages | where_exp: 'page', " page.url == page_url" | size -%}

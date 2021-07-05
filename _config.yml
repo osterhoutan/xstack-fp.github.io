@@ -36,21 +36,21 @@ locale:             en_US
 
 # This section will display useful links at the bottom of the page to useful resources.
 links: 
-  docs:             ... # URL to page containing documentation for one thing or another (this will also be added to the nav bar)
-  email:            ... # primary contact email address for entire proj
-  website:          ... # URL to a separate website for the proj (maybe official university page, etc.)
-  github:           ... # bitbucket user or org name
-  gitlab:           ... # gitlab user or org name
-  gitlab_url:       ... # URL to self hosted gitlab org (this will supersede the normal gitlab)
-  bitbucket:        ... # bitbucket user or org name
-  repo:             ... # URL to other repo system that you use (this is a catch all)
-  reddit:           ... # sub-reddit name (prepend "r/" for sub-reddit or "u/" for a user)
-  forum:            ... # URL to a help forum (i.e. repo issues page or an actual forum)
-  youtube:          ... # youtube channel URL
-  vimeo:            ... # vimeo channel name (who even are you?)
-  twitter:          ... # twitter handle (if you add this you're probably annoying)
-  instagram:        ... # instagram profile name (if you add this you're a bad person)
-  facebook:         ... # facebook page name (if you add this you're old)
+  docs:             false # URL to page containing documentation for one thing or another (this will also be added to the nav bar)
+  email:            false # primary contact email address for entire proj
+  website:          false # URL to a separate website for the proj (maybe official university page, etc.)
+  github:           false # bitbucket user or org name
+  gitlab:           false # gitlab user or org name
+  gitlab_url:       false # URL to self hosted gitlab org (this will supersede the normal gitlab)
+  bitbucket:        false # bitbucket user or org name
+  repo:             false # URL to other repo system that you use (this is a catch all)
+  reddit:           false # sub-reddit name (prepend "r/" for sub-reddit or "u/" for a user)
+  forum:            false # URL to a help forum (i.e. repo issues page or an actual forum)
+  youtube:          false # youtube channel URL
+  vimeo:            false # vimeo channel name (who even are you?)
+  twitter:          false # twitter handle (if you add this you're probably annoying)
+  instagram:        false # instagram profile name (if you add this you're a bad person)
+  facebook:         false # facebook page name (if you add this you're old)
 
 
 
