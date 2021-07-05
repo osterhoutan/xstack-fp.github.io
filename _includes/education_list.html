@@ -34,7 +34,7 @@
       {\% bibliography -q entry[1].cite_key %}
       {%- endif %} -->
       <div class="collapsible-edu-footer">
-         <p>Go to resource: <a class="icon fa-globe" href="{{- entry[1].url -}}">&nbsp; {{- entry[1].url | remove: 'https://www.' | remove: 'https://' | remove: 'http://www.' | remove: 'http://' -}} </a></p>
+         <p>Go to resource: <a class="icon fa-globe" href="{{- entry[1].url -}}" title="{{- entry[1].url -}}">&nbsp; {{- entry[1].url | remove: 'https://www.' | remove: 'https://' | remove: 'http://www.' | remove: 'http://' -}} </a></p>
       </div>
       {%- assign page_url = '/education/' | append: entry[0] -%}
         {%- assign page_url_1 = page_url | append: '/' -%}

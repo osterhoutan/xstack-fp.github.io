@@ -26,9 +26,9 @@ So while you do not need to know much about web technologies to use it,
 Other than that though it is presumed that users have experience with git, 
  and basic computer skills should suffice.
 
-## directory
+## Table of Contents
 - [Welcome to the ${ProjName} Website!!](#welcome-to-the-projname-website)
-  - [directory](#directory)
+  - [Table of Contents](#table-of-contents)
   - [Setup](#setup)
     - [GitHub Pages](#github-pages)
       - [system requirements<sup>&ddagger;</sup>](#system-requirementssupsup)
@@ -39,7 +39,10 @@ Other than that though it is presumed that users have experience with git,
       - [instructions](#instructions)
     - [General Admin Setup](#general-admin-setup)
 
-- [How To Use](./docs/README.md)
+  - [How To Use](./docs/README.md)
+    - [ADMIN Documentation](./docs/ADMIN-ONLY.md)
+    - [Directory Structure](./docs/directory_structure.md)
+    - [Jekyll + Liquid Basics](./docs/jekyll-liquid.md)
 
 Most instructions to use this website system are contained in the [`/docs/`](docs) directory
  of the repo.
@@ -92,7 +95,7 @@ You will only really need the master branch as other branches are wither dead
 
 I recommend,
  for the site administrators,
- making sure that you are able to merge with the master branch down the line
+ making sure that you are able to merge with the master branch of the template repo down the line
  if you ever want to update your copy of the site, to fix bugs or get new features.<sup>&dagger;</sup>
 But be ready and capable to deal with merge conflicts 
  or the occasional test data file slipping through.
@@ -100,6 +103,16 @@ But be ready and capable to deal with merge conflicts
 <sub><sup>&dagger;</sup>- new features are not likely to come fast if at all.</sub>
 
 
+**For this purpose when setting up a new site, I recommend either forking or cloning the repo from GitHub**
+ **_(Specifically I recommend forking via GitHub)_.**
+Unless you know how to use git to manage remotes and branches, then you would probably be fine,
+ as the template repo should be safe from uncontrolled pushes.
+
+Following setting up the template repo for your use, please follow the instructions in the 
+ [`/_config.yml`](./_config.yml) and in the ADMIN documentation
+ \[[link](./docs/ADMIN-ONLY.md/#_configyml-file)\]
+ to do some basic configuring
+ and customizing of the jekyll build system and this template. 
 
 ### Locally
 #### system requirements
@@ -132,11 +145,16 @@ bundle exec jekyll serve --trace
 ### General Admin Setup
 These instructions are for the website administrator.
 
-After you have done whatever it si you need to do to set up and install this website system.
-You will need to go and edit the top few fields in the [`_config.yml`](./_config.yml)
+After you have done whatever it is you need to do to set up and install this website system.
+You will need to go and edit the top few fields in the [`/_config.yml`](./_config.yml)
  in order to set up some values for the website.
-MOst of teh felids are either self explanatory or there are instructions in the file to guide you.
+More information about the [`/_config.yml`](./_config.yml) file, 
+ as it pertains to this website-system,
+ can be found in comments inside of the [`/_config.yml`](./_config.yml) file itself,
+ or in the ADMIN documentation \[[link](./docs/ADMIN-ONLY.md/#_configyml-file)\].
+Most of the felids are either self explanatory or there are instructions in the file to guide you.
 
 In addition it would be prudent to perform a find and replace all across the entire repo
  for the string (non-regex, and match case off for best results) `${ProjName}`,
  with whatever you want the title of the site to be. 
+
