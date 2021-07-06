@@ -1,5 +1,5 @@
-{% for entry in site.data.people -%}
-
+<!-- | group_by_expression: "entry", "entry[1].position" Possible filter setting to use to better group people -->
+{%- for entry in site.data.people -%}
 <div class="collapsible-people-entry">
     <div class="collapsible-people-btn" id="collapsible-people-btn-{{- entry[0] -}}"
         onClick="collapsible_people_btn_onClick('{{- entry[0] -}}')">

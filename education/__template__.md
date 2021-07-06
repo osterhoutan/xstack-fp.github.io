@@ -10,7 +10,7 @@ tags: [software, '${software id}'] #, ${additional tags -optional-}]
 # modify these if you want to:
 categories: [software ] #, ${additional catagories}]
 # image: ${image url}
-# Don't modify these:
+# DON'T MODIFY THESE:
 layout: info-post
 permalink: education/:basename
 info_type: education

@@ -43,6 +43,7 @@ Other than that though it is presumed that users have experience with git,
     - [ADMIN Documentation](./docs/ADMIN-ONLY.md)
     - [Directory Structure](./docs/directory_structure.md)
     - [Jekyll + Liquid Basics](./docs/jekyll-liquid.md)
+    - [Adding Content](./docs/adding-content.md)
 
 Most instructions to use this website system are contained in the [`/docs/`](docs) directory
  of the repo.

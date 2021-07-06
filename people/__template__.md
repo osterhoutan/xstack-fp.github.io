@@ -8,7 +8,7 @@ published: false   # set to true to make it public
 tags: [people, person] #, ${additional tags -optional-}]
 # modify these if you want to:
 categories: [people ] #, ${additional catagories}]
-# Don't modify these:
+# DON'T MODIFY THESE:
 layout: info-post
 permalink: people/:basename
 info_type: people

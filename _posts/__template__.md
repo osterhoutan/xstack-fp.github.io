@@ -7,9 +7,8 @@ date: ${date}
 published: false   # set to true to make it public
 tags: # [${primary tag}, ${additional tags -optional-}]
 # modify these if you want to:
-categories: [blog ] #, ${additional catagories}]
 # image: ${image url} # adds an image to the thumb nail used to link to this post. 
-# Don't modify these:
+# DON'T MODIFY THESE:
 layout: post
 ---
 
