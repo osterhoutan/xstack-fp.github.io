@@ -1,5 +1,5 @@
-  Jekyll + Liquid Basics
-==========================
+   Jekyll + Liquid Basics
+============================
 This website-system utilizes the Jekyll ruby static webpage build system,
  which utilizes Liquid tempesting syntax inside of it's files to dynamically 
  build a static site from the provided data & content files.
@@ -9,9 +9,12 @@ This website-system utilizes the Jekyll ruby static webpage build system,
   - [Table of Contents](#table-of-contents)
     - [Helpful External Resources](#helpful-external-resources)
   - [Jekyll](#jekyll)
+    - [`_config.yml` file](#_configyml-file)
     - [Front Matter](#front-matter)
     - [Data Files](#data-files)
   - [Liquid](#liquid)
+  - [Markdown](#markdown)
+    - [$\LaTeX$ Math](#latex-math)
 
 
 
@@ -38,8 +41,26 @@ This website-system utilizes the Jekyll ruby static webpage build system,
   - [In-Depth Tutorial](https://www.tutorialspoint.com/yaml/index.htm)
   - [Cheat Sheet](https://lzone.de/cheat-sheet/YAML)
 
+<br/><br/>
 
-## Jekyll
+
+
+ Jekyll
+--------
+### `_config.yml` file
+[`/_config.yml`](../_config.yml) \
+This is where jekyll looks for global config settings for the build process are set. \
+I have laid out a series of fields already in this file.
+Follow the instructions on what to do with them that are included in comments in the file. \
+_!! **DO NOT** remove any field I have put in, as it could disrupt the functionality of the system !!_
+
+You can however, add whatever fields you want to the file.
+_(NOTE: All top level entries in the file must have unique names_
+ _& not be names of jekyll configured variables,_ 
+ _else risk overwriting or braking existing data or the entire build process !!)_ \
+All data entered into this file will be available via the `site` variable in liquid.
+As well as, any fields jekyll generates for the build.
+
 
 ### Front Matter
 In jekyll `.html`, and `.md` files can contain a section called front matter.
@@ -83,8 +104,12 @@ You can also add any additional files you would like to the `/_data/` directory,
  without breaking anything. 
 
 
+<br/><br/>
 
-## Liquid
+
+
+ Liquid
+--------
 Liquid in a template syntax that jekyll uses to allow the individual files of the website to be built dynamically, into a static website.
 
 The syntax has only a few parts, most of which are best described in the official liquid doc \[[link](https://shopify.github.io/liquid/basics/introduction/)\].
@@ -104,3 +129,64 @@ The system is best learned from the official resources,
  or instigated any conventions to the system that are not mentioned elsewhere in this documentation.
 _(see the tags & id section \[[link](./adding-content.md#tags-and-ids)\]_ 
  _and the `info_type`s section \[[link](./adding-content.md#info_types)\])_
+
+
+<br/><br/>
+
+
+ Markdown
+----------
+In jekyll you can either use HTML or markdown.
+
+The [`/_config.yml`](../_config.yml) defines what markdown engine & syntax is used.
+I have configured it to use jekyll's preferred default 
+ [Kramdown](https://kramdown.gettalong.org/documentation.html),
+Which works mostly like the GitHub Flavored markdown you are used to,
+ just without the 
+ [emoji short-codes](https://www.markdownguide.org/extended-syntax/#using-emoji-shortcodes) 
+ support, 
+ but it does still let you use `@<github-username>` to
+ tag/link to a profile (because of a jekyll plugin).
+
+
+### $\LaTeX$ Math
+Markdown with Kramdown, also supports limited $\LaTeX$ via MathJaX,
+ thx to some infrastructure set up with the website-system.
+This means that Kramdown outputs text in a way that MathJaX will recognize,
+ then when a user loads the page, MathJaX will render the math.
+
+However, unlike in normal GitHub Markdown you must always use double `$$...$$`,
+ even for inline math.
+To get a math block you must have a blank line between the `$$...$$`s and any other text.
+> **_i.e._**
+> ```markdown
+> Inline math test $$\LaTeX$$ some normal text $$E=mc^2$$.
+> 
+> math block test
+> 
+> $$
+> E=mc^2
+> $$
+> 
+> Some more text
+> ```
+You can also use the new age $\LaTeX$ math mode delimiters:
+- `\(...\)` :: for inline math
+- `\[...\]` :: for a math block
+
+However, this is a hacky trick done in part by MatJaX post jekyll build.
+So you must escape you backslash in order for it to show up in Kramdown's output
+ for mathJaX to render. \
+Therefore the example above with this format would look like:
+> **_i.e._**
+> ```markdown
+> Inline math test \\(\LaTeX\\) some normal text \\(E=mc^2\\).
+> 
+> math block test
+> \\[
+> E=mc^2
+> \\]
+> 
+> Some more text
+> ```
+

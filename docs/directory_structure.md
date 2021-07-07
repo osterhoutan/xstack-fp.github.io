@@ -1,4 +1,4 @@
-  The Directory Structure
+   The Directory Structure
 =============================
 
 - `/`
@@ -60,7 +60,7 @@ See more about them in their respective sections.
 But these 3 files do follow a pattern:
 - The top level is a map/dict/obj
   - with a key that is the elements `id` 
-    - see the respective section about `id`'s and `tags` for more info on this (TODO).
+    - see the respective section about `id`'s and `tags` for more info on this \[[link](./adding-content.md#ids-and-tags)\]
   - The value is another map/dict/obj
 
 ### `education.yml` file
@@ -88,7 +88,9 @@ It has a range of felids most information about this is in the header for that f
 
 This directory is where you put your markdown (`.md`) files that are the blog posts for the website.
 These files must be named `yyyy-mm-dd-title.md`.  
-For more information see the section on posts (there is also a simple template in the file). (TODO)
+_(see the section on adding blog content "posts" for more information \[[link](./adding-content.md#blog-content)\])_ 
+There is also a simple template in the file to base your post off of:
+[`/_posts/__template__.md`](#_posts__template__md-file) _(see below)_. 
 
 ### `_posts/__template__.md` file
 [`/_posts/__template__.md`](../_posts/__template__.md)
@@ -96,7 +98,7 @@ For more information see the section on posts (there is also a simple template i
 This is a simple template with junk contents, 
  the important thing contained in it is the jekyll front matter.
 There are instructions on how to fill it out in the template.
-Also check out the section on jekyll front matter. (TODO)
+_Also check out the section on jekyll front matter \[[link](./jekyll-liquid.md#front-matter)\]._ 
 
 
 
@@ -105,11 +107,13 @@ Also check out the section on jekyll front matter. (TODO)
 
 This directory is where you can put supplementary info-post documents for the various 
  education, talks and other resources you wish to link.
-There is another section to see with more info on info-post documents (TODO),
+There is another section to see with more info on info-post documents \[[link](./adding-content.md#info-posts)\],
  that you should read for more info on these pages.
 
-There is also an [`index.html`](../education/index.html) file in this directory,
- it contains delicate jekyll+liquid code for generating the 
+There is also an [`ABOUT.md`](#educationaboutmd-file) file inside of this directory.
+ ([`/education/`](../education)),
+ it is where you can add content that will be displayed between the page title and 
+ the generated list of content for the category.
 
 ### `education/__template__.md` file
 [`/education/__template__.md`](../education/__template__.md)
@@ -118,8 +122,9 @@ This is a simple template with junk contents,
  the important thing contained in it is the jekyll front matter.
 There are instructions on how to fill it out in the template.
 
-Also check out the section on jekyll front matter (TODO),
- especially the section about the front matter in info-posts & posts in general (TODO).
+Also check out the section on jekyll front matter \[[link](./jekyll-liquid.md#front-matter)\],
+ as well as, the comments about the front matter in [info-posts](./adding-content.md#info-posts) 
+ & [blog posts](./adding-content.md#blog-content) in general.
 
 ### `education/ABOUT.md` file
 [`/education/ABOUT.md`](../education/ABOUT.md)
@@ -127,7 +132,7 @@ Also check out the section on jekyll front matter (TODO),
 This is a markdown file, 
  that allows you to add supplementary content to the top of the education/talks page.
 Works similarly to the info-post & blog-post markdown files for the main content 
- _(see section on markdown file contents for more info (TODO))_.
+ _(see section on markdown file contents for more info \[[link](./jekyll-liquid.md#markdown)\])_.
 
 DO NOT modify any felid in the front matter of this file, 
   below the comment instructing you to not modify the following values.
@@ -157,7 +162,6 @@ This directory is where you can put images that you would like to link,
  in any markdown file, or in the education, people, and/or software entries 
  in their respective `.yml` files.
 
-You can learn what the url to these image files will be in the multimedia input section (TODO).
 Though it is highly recommended ease of use, for those unfamiliar with jekyll+liquid, 
  to upload images to external hosts like [imgur.com](https://imgur.com) and use absolute links to link them.
 
@@ -168,11 +172,13 @@ Though it is highly recommended ease of use, for those unfamiliar with jekyll+li
 
 This directory is where you can put supplementary info-post documents for the various 
  people, who you have contributed to the project.
-There is another section to see with more info on info-post documents (TODO),
+There is another section to see with more info on info-post documents \[[link](./adding-content.md#info-posts)\],
  that you should read for more info on these pages.
 
-There is also an [`index.html`](../people/index.html) file in this directory,
- it contains delicate jekyll+liquid code for generating the 
+There is also an [`ABOUT.md`](#peopleaboutmd-file) file inside of this directory.
+ ([`/people/`](../people)),
+ it is where you can add content that will be displayed between the page title and 
+ the generated list of content for the category.
 
 ### `people/__template__.md` file
 [`/people/__template__.md`](../people/__template__.md)
@@ -181,8 +187,9 @@ This is a simple template with junk contents,
  the important thing contained in it is the jekyll front matter.
 There are instructions on how to fill it out in the template.
 
-Also check out the section on jekyll front matter (TODO),
- especially the section about the front matter in info-posts & posts in general (TODO).
+Also check out the section on jekyll front matter \[[link](./jekyll-liquid.md#front-matter)\],
+ as well as, the comments about the front matter in [info-posts](./adding-content.md#info-posts) 
+ & [blog posts](./adding-content.md#blog-content) in general.
 
 ### `people/ABOUT.md` file
 [`/people/ABOUT.md`](../people/ABOUT.md)
@@ -190,7 +197,7 @@ Also check out the section on jekyll front matter (TODO),
 This is a markdown file, 
  that allows you to add supplementary content to the top of the people page.
 Works similarly to the info-post & blog-post markdown files for the main content 
- _(see section on markdown file contents for more info (TODO))_.
+ _(see section on markdown file contents for more info \[[link](./jekyll-liquid.md#markdown)\])_.
 
 DO NOT modify any felid in the front matter of this file, 
   below the comment instructing you to not modify the following values.
@@ -232,7 +239,7 @@ This is because, the website uses javascript,
 This is a markdown file, 
  that allows you to add supplementary content to the top of the publications page.
 Works similarly to the info-post & blog-post markdown files for the main content 
- _(see section on markdown file contents for more info (TODO))_.
+ _(see section on markdown file contents for more info \[[link](./jekyll-liquid.md#markdown)\])_.
 
 DO NOT modify any felid in the front matter of this file, 
   below the comment instructing you to not modify the following values.
@@ -277,11 +284,13 @@ It will show up at the top of the items drop down info box, before anything else
 
 This directory is where you can put supplementary info-post documents for the various 
  software, that this project produces.
-There is another section to see with more info on info-post documents (TODO),
+There is another section to see with more info on info-post documents \[[link](./adding-content.md#info-posts)\],
  that you should read for more info on these pages.
 
-There is also an [`index.html`](../software/index.html) file in this directory,
- it contains delicate jekyll+liquid code for generating the 
+There is also an [`ABOUT.md`](#softwareaboutmd-file) file inside of this directory.
+ ([`/software/`](../software)),
+ it is where you can add content that will be displayed between the page title and 
+ the generated list of content for the category.
 
 ### `software/__template__.md` file
 [`/software/__template__.md`](../software/__template__.md)
@@ -290,8 +299,9 @@ This is a simple template with junk contents,
  the important thing contained in it is the jekyll front matter.
 There are instructions on how to fill it out in the template.
 
-Also check out the section on jekyll front matter (TODO), 
- especially the section about the front matter in info-posts & posts in general (TODO).
+Also check out the section on jekyll front matter \[[link](./jekyll-liquid.md#front-matter)\],
+ as well as, the comments about the front matter in [info-posts](./adding-content.md#info-posts) 
+ & [blog posts](./adding-content.md#blog-content) in general.
 
 ### `software/ABOUT.md` file
 [`/software/ABOUT.md`](../software/ABOUT.md)
@@ -299,7 +309,7 @@ Also check out the section on jekyll front matter (TODO),
 This is a markdown file, 
  that allows you to add supplementary content to the top of the software page.
 Works similarly to the info-post & blog-post markdown files for the main content 
- _(see section on markdown file contents for more info (TODO))_.
+ _(see section on markdown file contents for more info \[[link](./jekyll-liquid.md#markdown)\])_.
 
 DO NOT modify any felid in the front matter of this file, 
   below the comment instructing you to not modify the following values.
@@ -335,8 +345,9 @@ But do not edit any felid in the front-matter below the comment indicating that 
  should not be edited.
 Otherwise feel free to modify and add additional felids as you see fit.
 
-Also check out the section on jekyll front matter (TODO), 
- especially the section about the front matter in info-posts & posts in general (TODO).
+Also check out the section on jekyll front matter \[[link](./jekyll-liquid.md#front-matter)\],
+ as well as, the comments about the front matter in [info-posts](./adding-content.md#info-posts) 
+ & [blog posts](./adding-content.md#blog-content) in general.
 
 Non-Website-Admins, should probably not tough this file unless they get permission first.
 
@@ -352,8 +363,9 @@ But do not edit any felid in the front-matter below the comment indicating that 
  should not be edited.
 Otherwise feel free to modify and add additional felids as you see fit.
 
-Also check out the section on jekyll front matter (TODO), 
- especially the section about the front matter in info-posts & posts in general (TODO).
+Also check out the section on jekyll front matter \[[link](./jekyll-liquid.md#front-matter)\],
+ as well as, the comments about the front matter in [info-posts](./adding-content.md#info-posts) 
+ & [blog posts](./adding-content.md#blog-content) in general.
 
 Non-Website-Admins, should probably not tough this file unless they get permission first.
 
@@ -370,8 +382,9 @@ But do not edit any felid in the front-matter below the comment indicating that 
  should not be edited.
 Otherwise feel free to modify and add additional felids as you see fit.
 
-Also check out the section on jekyll front matter (TODO), 
- especially the section about the front matter in info-posts & posts in general (TODO).
+Also check out the section on jekyll front matter \[[link](./jekyll-liquid.md#front-matter)\],
+ as well as, the comments about the front matter in [info-posts](./adding-content.md#info-posts) 
+ & [blog posts](./adding-content.md#blog-content) in general.
 
 Non-Website-Admins, should probably not tough this file unless they get permission first.
 
@@ -392,8 +405,9 @@ But do not edit any felid in the front-matter below the comment indicating that 
  should not be edited.
 Otherwise feel free to modify and add additional felids as you see fit.
 
-Also check out the section on jekyll front matter (TODO), 
- especially the section about the front matter in info-posts & posts in general (TODO).
+Also check out the section on jekyll front matter \[[link](./jekyll-liquid.md#front-matter)\],
+ as well as, the comments about the front matter in [info-posts](./adding-content.md#info-posts) 
+ & [blog posts](./adding-content.md#blog-content) in general.
 
 Non-Website-Admins, should probably not tough this file unless they get permission first.
 

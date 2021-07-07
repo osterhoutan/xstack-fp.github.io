@@ -56,7 +56,7 @@
 {\%- endif -%} -->
 
 
-<script src="{{- "/assets/js/citation.min.js" | strip | absolute_url -}}" type="text/javascript"></script>
+<!-- <script src="{{- "/assets/js/citation.min.js" | strip | absolute_url -}}" type="text/javascript"></script>
 <script>
     const Cite = require('citation-js');
     // Cite.plugins.input.addDataParser('@bibtex/object', {
@@ -69,4 +69,15 @@
     //         return citejs.parse.bibtex.json(data)
     //     }
     // });
+</script> -->
+
+
+<!-- ======================================================================= -->
+<!--                           ADD MATHJAX SUPPORT                           -->
+<!-- ======================================================================= -->
+<script type="text/javascript">
+    window.MathJax = {{- site.mathjax | jsonify -}};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>

@@ -1,5 +1,5 @@
-  How To
-==========
+   How To
+============
 This documentation does not contain any information on how to setup the website system,
  just how to use it once it has been setup.
 Please see the main [`/README.md`](../README.md) for those instructions.
@@ -12,6 +12,7 @@ Please see the main [`/README.md`](../README.md) for those instructions.
   - [ADMIN documentation](./ADMIN-ONLY.md)
   - [Directory Structure](./directory_structure.md)
   - [Jekyll + Liquid Basics](./jekyll-liquid.md)
+  - [Adding Content](./adding-content.md)
 
 
 ## The Basics

@@ -144,7 +144,14 @@ kramdown:
   entity_output:    as_char
   toc_levels:       1..6
   enable_coderay:   false
-mathjax:            true
+mathjax: {
+  tex: { 
+    packages: ['base', 'ams']
+  },
+  loader: { 
+    load: ['ui/menu', '[tex]/ams']
+  }
+}
 sass:
   sass_dir:         _sass
   style:            compressed
