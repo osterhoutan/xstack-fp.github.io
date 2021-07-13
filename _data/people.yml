@@ -58,3 +58,26 @@ bob101:
     abstract  : | 
                   Resident expert at maze solving algorithms & fetching coffee.
                   _Feel free to tag me in any issues with the aMAZEsoft project in it's repo._
+
+tanmay_tirpankar:
+    name      : Tanmay Tirpankar
+    email     : tirpankartanmay@gmail.com
+    links     :
+        website     : https://www.tanmaytirpankar.com   # URL your personal webpage and/or portfolio
+        github      : tanmaytirpankar   # github username
+        gitlab      : ...   # gitlab username
+        gitlab_url  : ...   # URL to self hosted gitlab user profile (this will supersede the normal gitlab)
+        bitbucket   : ...   # bitbucket username
+        reddit      : ...   # sub-reddit name (prepend "r/" for sub-reddit or "u/" for a user)
+        forum       : ...   # URL to user profile on the proj help forum
+        youtube     : ...   # youtube channel URL (harmless self promotion)
+        vimeo       : ...   # vimeo channel name (who even are you?)
+        twitter     : ...   # twitter handle (if you add this you're probably annoying)
+        instagram   : ...   # instagram profile name (if you add this you're a bad person)
+        facebook    : ...   # facebook page name (if you add this you're old)
+    position  : Ph.D student
+    title     : Software Tinkerer and Verification/Parallel Programmer
+    pronouns  : he/him
+    pfp       : https://media-exp1.licdn.com/dms/image/C5103AQGUGo6hiPywBg/profile-displayphoto-shrink_800_800/0/1580487248461?e=1631750400&v=beta&t=KM_e2RSqyHUdt_MJ_BrIMpYLQSmfAH5a_xZuoWnnIiY
+    abstract  : |
+                  Resident expert at messing around with systems stuff. Affected by a curious bug of tinkering with what should not be tinkered. _Please reach out if you need help with anything or have anything work/non-work related stuff to discuss_
