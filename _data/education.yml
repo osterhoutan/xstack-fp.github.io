@@ -35,3 +35,19 @@ peachy_assignments:
             These were some assignments contributed to
             EduPar 2018 which is trying to collect assignment
             nuggets to be inserted into courses.
+
+
+
+FPTalks:
+    title: FPTalks 2021, a workshop for leading edge Floating-Point Research
+    author: Pavel Panchekha
+    url:  https://fpbench.org/talks/fptalks21.html
+    date: July 14 2021
+    icon: https://fpbench.org/img/logo.png
+    cite_key: fpbench
+    abstract: |
+            FPTalks is an annual workshop hosted by Dr. Pavel Panchekha. It
+            brings together researchers to discuss the ongoing work in floating-
+            point research and share achievements. It is a part of the FPBench
+            community.
+        
