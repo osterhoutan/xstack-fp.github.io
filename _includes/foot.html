@@ -35,67 +35,75 @@
     <h3>Links</h3>
     <ul class="icons alt">
       {% if site.links.docs %}
-      <li><a href="{{- site.links.docs -}}" class="icon fa-book" rel="nofollow"><span
+      <li><a href="{{- site.links.docs -}}" title="{{- site.links.docs -}}" class="icon fa-book" rel="nofollow"><span
             class="label">documentation</span></a></li>
       {%- endif %}
       {% if site.links.email %}
-      <li><a href="mailto://{{- site.links.email -}}" class="icon fa-envelope" rel="nofollow"><span
+      <li><a href="mailto://{{- site.links.email -}}" title="{{- site.links.email -}}" class="icon fa-envelope" rel="nofollow"><span
             class="label">email</span></a></li>
       {%- endif %}
       {% if site.links.website %}
-      <li><a href="{{- site.links.website -}}" class="icon fa-globe" rel="nofollow"><span
+      <li><a href="{{- site.links.website -}}" title="{{- site.links.website -}}" class="icon fa-globe" rel="nofollow"><span
             class="label">website</span></a></li>
       {%- endif %}
+      {% if site.links.phone %}
+      <li><a href="tel:{{- site.links.phone -}}" title="{{- site.links.phone -}}" class="icon fa-phone" rel="nofollow"><span
+            class="label">phone</span></a></li>
+      {%- endif %}
+      {% if site.links.fax %}
+      <li><a href="fax:{{- site.links.fax -}}" title="{{- site.links.fax -}}" class="icon fa-phone" rel="nofollow"><span
+        class="label">phone</span></a></li>
+      {%- endif %}
       {% if site.links.github %}
-      <li><a href="https://github.com/{{- site.links.github -}}" class="icon fa-github" rel="nofollow"><span
+      <li><a href="https://github.com/{{- site.links.github -}}" title="{{- site.links.github -}}" class="icon fa-github" rel="nofollow"><span
             class="label">GitHub</span></a></li>
       {%- endif %}
       {% if site.links.gitlab_url %}
-      <li><a href="{{- site.links.gitlab_url -}}" class="icon fa-gitlab" rel="nofollow"><span
+      <li><a href="{{- site.links.gitlab_url -}}" title="{{- site.links.gitlab_url -}}" class="icon fa-gitlab" rel="nofollow"><span
         class="label">GitLab</span></a></li>
       {% elsif site.links.gitlab %}
-        <li><a href="https://gitlab.com/{{- site.links.gitlab -}}" class="icon fa-gitlab" rel="nofollow"><span
+        <li><a href="https://gitlab.com/{{- site.links.gitlab -}}" title="{{- site.links.gitlab -}}" class="icon fa-gitlab" rel="nofollow"><span
           class="label">GitLab</span></a></li>
       {%- else -%}
       {%- endif %}
       {% if site.links.bitbucket %}
-        <li><a href="https://bitbucket.com/{{- site.links.bitbucket -}}" class="icon fa-bitbucket" rel="nofollow"><span
+        <li><a href="https://bitbucket.com/{{- site.links.bitbucket -}}" title="{{- site.links.bitbucket -}}" class="icon fa-bitbucket" rel="nofollow"><span
               class="label">bitbucket</span></a></li>
       {%- endif %}
       {% if site.links.repo %}
-        <li><a href="{{- site.links.repo -}}" class="icon fa-code" rel="nofollow"><span
+        <li><a href="{{- site.links.repo -}}" title="{{- site.links.repo -}}" class="icon fa-code" rel="nofollow"><span
               class="label">project repo</span></a></li>
       {%- endif %}
       {% if site.links.forum %}
-      <li><a href="{{- site.links.forum -}}" class="icon fa-comments"
+      <li><a href="{{- site.links.forum -}}" title="{{- site.links.forum -}}" class="icon fa-comments"
           rel="nofollow"><span class="label">Forum</span></a></li>
       {%- endif %}
       {% if site.links.reddit %}
-      <li><a href="https://reddit.com/{{- site.links.reddit -}}" class="icon fa-reddit"
+      <li><a href="https://reddit.com/{{- site.links.reddit -}}" title="{{- site.links.reddit -}}" class="icon fa-reddit"
           rel="nofollow"><span class="label">Twitter</span></a></li>
       {%- endif %}
       {% if site.links.youtube %}
-      <li><a href="{{- site.links.youtube -}}" class="icon fa-youtube"
+      <li><a href="{{- site.links.youtube -}}" title="{{- site.links.youtube -}}" class="icon fa-youtube"
           rel="nofollow"><span class="label">YouTube</span></a></li>
       {%- endif %}
       {% if site.links.vimeo %}
-      <li><a href="https://vimeo.com/channels/{{- site.links.vimeo -}}" class="icon fa-vimeo"
+      <li><a href="https://vimeo.com/channels/{{- site.links.vimeo -}}" title="{{- site.links.vimeo -}}" class="icon fa-vimeo"
           rel="nofollow"><span class="label">YouTube</span></a></li>
       {%- endif %}
       {% if site.links.twitter %}
-      <li><a href="https://twitter.com/{{- site.links.twitter -}}" class="icon fa-twitter"
+      <li><a href="https://twitter.com/{{- site.links.twitter -}}" title="{{- site.links.twitter -}}" class="icon fa-twitter"
           rel="nofollow"><span class="label">Twitter</span></a></li>
       {%- endif %}
       {% if site.links.tiktok %}
-      <li><a href="{{- site.links.tiktok -}}" class="icon fa-tiktok"
+      <li><a href="{{- site.links.tiktok -}}" title="{{- site.links.tiktok -}}" class="icon fa-tiktok"
           rel="nofollow"><span class="label">tiktok</span></a></li>
       {%- endif %}
       {% if site.links.instagram %}
-      <li><a href="https://instagram.com/{{- site.links.instagram -}}" class="icon fa-instagram"
+      <li><a href="https://instagram.com/{{- site.links.instagram -}}" title="{{- site.links.instagram -}}" class="icon fa-instagram"
           rel="nofollow"><span class="label">Instagram</span></a></li>
       {%- endif %}
       {% if site.links.facebook %}
-      <li><a href="https://facebook.com/{{- site.links.facebook -}}" class="icon fa-facebook"
+      <li><a href="https://facebook.com/{{- site.links.facebook -}}" title="{{- site.links.facebook -}}" class="icon fa-facebook"
           rel="nofollow"><span class="label">Facebook</span></a></li>
       {%- endif %}
     </ul>
